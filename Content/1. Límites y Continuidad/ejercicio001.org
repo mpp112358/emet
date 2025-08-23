@@ -1,5 +1,6 @@
-Link: /Límites y Continuidad
-Title: /Ejercicio 1
+Link: /limits
+Title: Ejercicio 1
+
 #+title: Ejercicio001
 
 [[../_img/ejercicio001c.png]]
