@@ -4,7 +4,7 @@ Title: Ejercicio 3
 
 * Calcula los límites siguientes:
 
-- $$\lim_\mathrm{x \rightarrow 2} \dfrac{x+3}{x+6}$$
+- $$\lim_{x \rightarrow 2} \dfrac{x+3}{x+6}$$
 - $$\lim{h}{0}{\dfrac{3}{\sqrt{3h+1}+1}}$$
 - $$\lim{y}{1^-}{y^3-y^2+y-1}$$
 - $$\lim{x}{1^+}{\sqrt{\dfrac{x-1}{x+2}}}$$
