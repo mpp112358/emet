@@ -2,4 +2,6 @@ Title: Ejercicio 4
 
 ** Calcula los límites siguientes:
 
-- \dfrac{1}{x}
+$$
+\dfrac{1}{x}
+$$
