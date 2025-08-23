@@ -1,10 +1,11 @@
+Title: Ejercicio 3
+
 #+title: Ejercicio003
 
 * Calcula los límites siguientes:
-  \begin{enumerate}
-      \item $\limite{x}{2}{\dfrac{x+3}{x+6}}$
-      \item $\limite{h}{0}{\dfrac{3}{\sqrt{3h+1}+1}}$
-      \item $\limite{y}{1^-}{y^3-y^2+y-1}$
-      \item $\limite{x}{1^+}{\sqrt{\dfrac{x-1}{x+2}}}$
-      \item $\limite{x}{1^-}{\sqrt{\dfrac{x-1}{x+2}}}$
-  \end{enumerate}
+
+- $$\limite{x}{2}{\dfrac{x+3}{x+6}}$$
+- $$\limite{h}{0}{\dfrac{3}{\sqrt{3h+1}+1}}$$
+- $$\limite{y}{1^-}{y^3-y^2+y-1}$$
+- $$\limite{x}{1^+}{\sqrt{\dfrac{x-1}{x+2}}}$$
+- $$\limite{x}{1^-}{\sqrt{\dfrac{x-1}{x+2}}}$$
