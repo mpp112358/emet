@@ -4,6 +4,7 @@ Date: 2025-08-22
 
  
 Dibujar la gráfica de una función que tenga todas las características que se indican.
+
 $$
 
 \begin{array}{|l|l|l|}

@@ -3,7 +3,8 @@ Date: 2025-08-22
 # Ejercicio 43
 
  
-Demostrar que existe un valor $$ a \in (-3,1)$$  tal que la función $$ f$$  siguiente es continua en su dominio:
+Demostrar que existe un valor  $$ a \in (-3,1)$$   tal que la función  $$ f$$   siguiente es continua en su dominio:
+
 
 $$
  f(x)=\left\{ \begin{array}{ll}
