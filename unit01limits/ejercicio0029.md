@@ -6,10 +6,10 @@ Date: 2025-08-22
 Calcula los límites que se piden para cada una de las funciones siguientes:
 
 A.    Para $$
- f(x)=\begin{array}{ll}
+ f(x)=\left\{ \begin{array}{ll}
  3-x &  x<2 \\
  \dfrac{x}{2}+1 &  x>2
-\end{array} ,
+\end{array}\right. ,
 $$$$\lim\limits_{ x \rightarrow  2^-}  f$$ , $$\lim\limits_{ x \rightarrow  2^+}  f$$  y $$\lim\limits_{ x \rightarrow  2}  f$$ .
 
 B.    Para $$
