@@ -5,7 +5,7 @@ Date: 2025-08-22
 
 Para la función cuya gráfica se indica, determinar los limites siguientes:
 
-[[../_img/ejercicio1b.png]]
+[[../_img/ejercicio0001b.png]]
 
 A.  $$\lim\limits_{x \rightarrow -\infty} g$$
 B.  $$\lim\limits_{x \rightarrow -3} g$$
