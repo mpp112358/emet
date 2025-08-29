@@ -5,7 +5,7 @@ Date: 2025-08-22
 
 Para la función cuya gráfica se indica, determinar los limites siguientes:
 
-[[https://emet.blot.im/Content/_img/ejercicio1d.png]]
+[[../_img/ejercicio001d.png]]
 
 A.  $$\lim\limits_{x \rightarrow -\infty} f$$
 B.  $$\lim\limits_{x \rightarrow -2} f$$
