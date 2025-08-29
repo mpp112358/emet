@@ -5,7 +5,7 @@ Date: 2025-08-22
 
 Para la función cuya gráfica se indica, determinar los limites siguientes:
 
-[[./img/ejercicio1d.png]]
+[[../_img/ejercicio1d.png]]
 
 A.  $$\lim\limits_{x \rightarrow -3^+} f$$
 B.  $$\nexists\lim\limits_{x \rightarrow -1} f$$
