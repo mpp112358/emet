@@ -5,12 +5,20 @@ Date: 2025-08-22
  
 Estudiar la continuidad de las funciones siguientes:
 
-A.   $$ f(x)=\left\{ \begin{array}{ll}
+A.  
+$$
+ f(x)=\left\{ \begin{array}{ll}
  3-x &  x<2 \\
  \dfrac{x}{2}+1 &  x>2
-\end{array}\right.$$ 
-B.   $$ f(x)=\left\{ \begin{array}{ll}
+\end{array}\right.
+$$
+
+B.  
+$$
+ f(x)=\left\{ \begin{array}{ll}
  3-x &  x<2 \\
  2 &  x=2 \\
  \dfrac{x}{2} &  x>2
-\end{array}\right.$$ 
+\end{array}\right.
+$$
+
