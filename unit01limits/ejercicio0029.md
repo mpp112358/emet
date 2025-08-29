@@ -12,7 +12,7 @@ $$
  \dfrac{x}{2}+1 &  x>2
 \end{array}\right. ,
 $$
- $$\lim\limits_{ x \rightarrow  2^-}  f$$  ,   $$\lim\limits_{ x \rightarrow  +2 }  f$$
+ $$\lim\limits_{ x \rightarrow  2^-}  f$$  ,   $$\lim\limits_{ x \rightarrow  0}  f$$ $$\lim\limits_{ x \rightarrow  +2 }  f$$
 
 B.    Para 
 $$
