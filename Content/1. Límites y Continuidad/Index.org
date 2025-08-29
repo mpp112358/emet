@@ -1,9 +1,0 @@
-Link: /limits
-Title: Límites y Continuidad
-
-#+title: Index
-
-1. Concepto de límite
-2. Cálculo de límites
-3. Continuidad
-4. Asíntotas
