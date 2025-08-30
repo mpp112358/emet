@@ -1,4 +1,5 @@
 Date: 2025-08-22
+Tags: Limits, Piecewise
 
 # Ejercicio 30
 
