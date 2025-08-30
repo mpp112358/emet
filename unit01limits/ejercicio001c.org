@@ -1,6 +1,0 @@
-Link:
-Title: Ejercicio 1c
-
-#+title: Ejercicio001
-
-[[../_img/ejercicio001c.png]]
