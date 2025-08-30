@@ -1,15 +1,13 @@
 Date: 2025-08-22
+Tags: Derivación
 
 # Ejercicio 1
 
  
-Para la función cuya gráfica se indica, determinar los limites siguientes:
+  Calcula las derivadas de las funciones siguientes:
 
-[[../_img/ejercicio0001a.png]]
-
-A.   $$\lim\limits_{ x \rightarrow  -\infty}  f$$ 
-B.   $$\lim\limits_{ x \rightarrow  -2}  f$$ 
-C.   $$\lim\limits_{ x \rightarrow  -1}  f$$ 
-D.   $$\lim\limits_{ x \rightarrow  0}  f$$ 
-E.   $$\lim\limits_{ x \rightarrow  1}  f$$ 
-F.   $$\lim\limits_{ x \rightarrow  \infty}  f$$ 
+  
+A.   $$ f(x) =  \dfrac{x^3-2x^2+x}{(x-1)^2}$$ 
+B.   $$ f(x) = x  \cdot\sin  ^2 x$$ 
+C.   $$ f(x) =  \ln \left( \sqrt{1 - x^2} \right)$$ 
+D.   $$ f(x) =  \sqrt{\arctg \left( x^2 + 1 \right)}$$ 

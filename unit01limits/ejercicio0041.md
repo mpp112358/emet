@@ -1,10 +1,17 @@
 Date: 2025-08-22
+Tags: 1
 
 # Ejercicio 41
 
  
-Escribe la  \emph{extensión continua}  de la función siguiente (se llama  \emph{extensión continua}  de una función  $$ f$$   a una función que coincida con  $$ f$$   en todos los puntos del dominio de  $$ f$$  , pero que además sea continua en aquellos puntos en los que  $$ f$$   tenga discontinuidades evitables):
+Estudiar la continuidad de la función siguiente:
+
+
+
 
 $$
- f(x)= \dfrac{x^3-7x-6}{x^2-9}
+ f(x)=\left\{ \begin{array}{ll}
+ 1-x^2 &  x\neq -1 \\
+ 2 &  x=-1
+\end{array}\right.
 $$

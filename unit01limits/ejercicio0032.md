@@ -1,12 +1,34 @@
 Date: 2025-08-22
+Tags: 1
 
 # Ejercicio 32
 
  
-Hallar el dominio y estudiar la continuidad de las funciones siguientes:
+Calcula los límites que se piden para cada una de las funciones siguientes:
 
-A.   $$ f(x)= \dfrac{1}{(x+2)^2}$$ 
-B.   $$ f(x)= \dfrac{1}{x^2+1}$$ 
-C.   $$ f(x)= \dfrac{x^2-9}{x+3}$$ 
-D.   $$ f(x)= \dfrac{x^3-1}{x^2-1}$$ 
-E.   $$ f(x)= \dfrac{x+1}{x^2-4x+3}$$ 
+
+
+
+A.    Para 
+$$
+ f(x)=\left\{ \begin{array}{ll}
+ \dfrac{6}{x-4} &  x<-2 \\
+ 5-3x &  -2\leq x\leq 1 \\
+ \dfrac{x-1}{\sqrt{x}-1} &  x>1
+\end{array}\right.
+$$
+ ,  $$\lim\limits_{ x \rightarrow  -2}  f , \lim\limits_{ x \rightarrow  1}  f$$  .
+
+
+
+
+B.    Para  $$ f(x)= \dfrac{x}{|x|}$$  ,  $$\lim\limits_{ x \rightarrow  0^+}  f , \lim\limits_{ x \rightarrow  0^-}  f , \lim\limits_{ x \rightarrow  0}  f$$  .
+
+
+
+
+C.    Para  $$ f(x)= \left( \dfrac{5}{4} \right) ^ {\dfrac{|x|-1}{x+1}}$$  ,  $$\lim\limits_{ x \rightarrow  -1}  f$$  .
+
+
+
+

@@ -1,9 +1,10 @@
 Date: 2025-08-22
+Tags: Continuidad,Bolzano
 
 # Ejercicio 47
 
  
-Calcula el dominio y las asíntotas de las funciones siguientes:
+  Justificar, usando el teorema adecuado, que existe algún punto en el intervalo  [ 1,10 ]  en el las funciones  $$ f(x)=x^3 + 3x^2 -1$$   y  $$ g(x)=6x$$   toman el mismo valor.
 
-A.   $$ f(x)= \dfrac{4x^2+3x+4}{x}$$ 
-B.   $$ f(x)= \dfrac{3x^2-5}{x+1}$$ 
+
+

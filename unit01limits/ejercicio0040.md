@@ -1,14 +1,17 @@
 Date: 2025-08-22
+Tags: 1
 
 # Ejercicio 40
 
  
-Calcular los valores de  $$ a$$   y  $$ b$$   para que la función siguiente sea continua:
+Estudiar la continuidad de la función siguiente:
+
+
+
 
 $$
  f(x)=\left\{ \begin{array}{ll}
- x^2 &  x<2 \\
- x+a &  2\leq x \leq5 \\
- -x^2+5x+b &  x>5
+ \dfrac{1}{x-1} &  x<1 \\
+ x^3-2x+5 &  x\geq1
 \end{array}\right.
 $$

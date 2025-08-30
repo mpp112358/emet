@@ -1,6 +1,13 @@
 Date: 2025-08-22
+Tags: 1
 
 # Ejercicio 51
 
  
-Calcula el dominio y las asíntotas de:  $$ f(x)=2x+3x^2-4 \ln  x$$  .
+Calcula el dominio y las asíntotas de las funciones siguientes:
+
+
+
+
+A.   $$ f(x)= \dfrac{4x^2+3x+4}{x}$$ 
+B.   $$ f(x)= \dfrac{3x^2-5}{x+1}$$ 

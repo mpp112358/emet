@@ -1,13 +1,15 @@
 Date: 2025-08-22
+Tags: 1
 
 # Ejercicio 37
 
  
-Estudiar la continuidad de la función siguiente:
+Hallar el dominio y estudiar la continuidad de las funciones siguientes:
 
-$$
- f(x)=\left\{ \begin{array}{ll}
- \dfrac{1}{x-1} &  x<1 \\
- x^3-2x+5 &  x\geq1
-\end{array}\right.
-$$
+
+
+
+A.   $$ f(x)= \sqrt{2x+3}$$ 
+B.   $$ f(x)= \dfrac{|x|}{x}$$ 
+C.   $$ f(x)= \ln (x+1)$$ 
+D.   $$ f(x)=e^ {1/x}$$ 

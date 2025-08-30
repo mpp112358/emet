@@ -1,12 +1,15 @@
 Date: 2025-08-22
+Tags: 1
 
 # Ejercicio 26
 
  
-Calcular los límites siguientes:
+Calcula los límites siguientes:
 
-A.   $$\lim\limits_{ x \rightarrow  \infty}  \left( \dfrac{x^2}{x+2} - \dfrac{x^3}{x^2-4} \right)$$ 
-B.   $$\lim\limits_{ x \rightarrow  \infty}  \left( \sqrt{4x^2-6} - \sqrt{4x^2+x} \right)$$ 
-C.   $$\lim\limits_{ x \rightarrow  -\infty}  \left( \sqrt{4x^2-6} - \sqrt{4x^2-x} \right)$$ 
-D.   $$\lim\limits_{ x \rightarrow  -\infty}  \sqrt{x^2+3} +x$$ 
-E.   $$\lim\limits_{ x \rightarrow  -\infty}  \dfrac{\sqrt{x^2+x}-\sqrt{-x}}{2x+1}$$ 
+
+
+
+A.   $$\lim\limits_{ x \rightarrow  -\infty}  \dfrac{2x^3+7}{x^3-x^2+x+7}$$ 
+B.   $$\lim\limits_{ x \rightarrow  \infty}  \dfrac{x^4+x+3}{1-x^3}$$ 
+C.   $$\lim\limits_{ x \rightarrow  -\infty}  \left( \dfrac{1-x^3}{x^2+7x} \right) ^5$$ 
+D.   $$\lim\limits_{ x \rightarrow  \infty}  \sqrt{\dfrac{8x^2-3}{2x^2+x}}$$ 

@@ -1,8 +1,16 @@
 Date: 2025-08-22
+Tags: 1
 
 # Ejercicio 6
 
  
-Para la función cuya gráfica se indica, determinar los limites siguientes:
+Para la función cuya gráfica se indica, determinar los límites siguientes:
 
-[[../_img/ejercicio1f.png]]
+
+
+
+
+
+
+
+[[../_img/ejercicio1e.png]]

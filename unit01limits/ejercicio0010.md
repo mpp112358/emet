@@ -1,14 +1,18 @@
 Date: 2025-08-22
+Tags: 1
 
 # Ejercicio 10
 
  
 Dibujar la gráfica de una función que tenga todas las características que se indican.
 
+
+
+
 $$
 
 \begin{array}{|l|l|l|}
-   \text{dom } g=(- \infty ,1) \cup (2, \infty )&\lim\limits_{ x \rightarrow  -1^+}  g = \infty &\lim\limits_{ x \rightarrow  2^+}  g = \infty \\ \lim\limits_{ x \rightarrow  -\infty}  g =4&\lim\limits_{ x \rightarrow  -1^-}  g = \infty &\lim\limits_{ x \rightarrow  \infty}  g =5 \\ \lim\limits_{ x \rightarrow  -2^-}  g =- \infty && \\ 
+   \text{dom } f= \mathbb{R} - \{ 0 \} &\lim\limits_{ x \rightarrow  0^-}  f =0&f(2)=2;f(3)=1 \\ \lim\limits_{ x \rightarrow  -\infty}  f = \infty &f(x)=1, \forall \, x \, \in (0,1)&\lim\limits_{ x \rightarrow  \infty}  f = \infty \\ 
 \end{array}
 
 $$

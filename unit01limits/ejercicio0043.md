@@ -1,14 +1,18 @@
 Date: 2025-08-22
+Tags: 1
 
 # Ejercicio 43
 
  
-Demostrar que existe un valor  $$ a \in (-3,1)$$   tal que la función  $$ f$$   siguiente es continua en su dominio:
+Calcular los valores de  $$ a$$   y  $$ b$$   para que la función siguiente sea continua:
+
+
 
 
 $$
  f(x)=\left\{ \begin{array}{ll}
- x+2 &  \text{si }-3\leq x<a \\
- e^x-1 &  \text{si }a\leq x\leq1
+ x^2 &  x<2 \\
+ x+a &  2\leq x \leq5 \\
+ -x^2+5x+b &  x>5
 \end{array}\right.
 $$

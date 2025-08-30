@@ -1,13 +1,13 @@
 Date: 2025-08-22
+Tags: Derivación
 
 # Ejercicio 17
 
  
-Calcula los límites siguientes:
+  Calcula las derivadas de las funciones siguientes:
 
-A.   $$\lim\limits_{ x \rightarrow  1^+}  \sqrt{\dfrac{x-1}{x+2}}$$ 
-B.   $$\lim\limits_{ x \rightarrow  1^-}  \sqrt{\dfrac{x-1}{x+2}}$$ 
-C.   $$\lim\limits_{ x \rightarrow  2^+}  \ln ^2(x-2)$$ 
-D.   $$\lim\limits_{ x \rightarrow  2^-}  \ln ^2(x-2)$$ 
-E.   $$\lim\limits_{ x \rightarrow  1^+} \arcsin   x$$ 
-F.   $$\lim\limits_{ x \rightarrow  1^-} \arcsin   x$$ 
+  
+A.   $$ f(x) = \sin  \left( \cos \left(  1 +  \dfrac{1}{x^2} \right) \right)$$ 
+B.   $$ f(x) =  \sqrt{\dfrac{1}{x+1}}$$ 
+C.   $$ f(x) =  \log _2  \left(  x  \cdot\arcsin   x  \right)$$ 
+D.   $$ f(x) =  \dfrac{\ln x}{x^2}$$ 

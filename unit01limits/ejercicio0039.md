@@ -1,23 +1,28 @@
 Date: 2025-08-22
+Tags: 1
 
 # Ejercicio 39
 
  
-Encontrar el valor de  $$ a$$   para el que cada una de las funciones siguientes es continua:
+Estudiar la continuidad de las funciones siguientes:
+
+
+
 
 A.  
 $$
  f(x)=\left\{ \begin{array}{ll}
- 2x+3 &  x\leq 2 \\
- ax+1 &  x>2
+ 3-x &  x<2 \\
+ \dfrac{x}{2}+1 &  x>2
 \end{array}\right.
 $$
 
 B.  
 $$
  f(x)=\left\{ \begin{array}{ll}
- x^2-1 &  x<3 \\
- 2ax &  x\geq 3
+ 3-x &  x<2 \\
+ 2 &  x=2 \\
+ \dfrac{x}{2} &  x>2
 \end{array}\right.
 $$
 

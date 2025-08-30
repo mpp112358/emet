@@ -1,11 +1,15 @@
 Date: 2025-08-22
+Tags: 1
 
 # Ejercicio 20
 
  
 Calcula los límites siguientes:
 
-A.   $$\lim\limits_{ x \rightarrow  5}  \dfrac{x-5}{x^2-25}$$ 
-B.   $$\lim\limits_{ x \rightarrow  -1}  \dfrac{x^3-3x-2}{x^2+x}$$ 
-C.   $$\lim\limits_{ y \rightarrow  0}  \dfrac{5y^3+8y^2}{3y^4-16y^2}$$ 
-D.   $$\lim\limits_{ x \rightarrow  1}  \dfrac{\dfrac{1}{x}-1}{x-1}$$ 
+
+
+
+A.   $$\lim\limits_{ x \rightarrow  -2}  \dfrac{x-2}{x^2-4}$$ 
+B.   $$\lim\limits_{ x \rightarrow  5}  \dfrac{1}{x^2-10x+25}$$ 
+C.   $$\lim\limits_{ x \rightarrow  1}  5^ {\dfrac{1}{x-1}}$$ 
+D.   $$\lim\limits_{ x \rightarrow  \pi/2}  \tg  x$$ 

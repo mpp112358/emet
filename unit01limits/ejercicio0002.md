@@ -1,16 +1,14 @@
 Date: 2025-08-22
+Tags: 1
 
 # Ejercicio 2
 
- 
-Para la función cuya gráfica se indica, determinar los limites siguientes:
 
-[[../_img/ejercicio0001b.png]]
+[[../_img/ejercicio0001a.png]]
 
-A.   $$\lim\limits_{ x \rightarrow  -\infty}  g$$ 
-B.   $$\lim\limits_{ x \rightarrow  -3}  g$$ 
-C.   $$\lim\limits_{ x \rightarrow  -1}  g$$ 
-D.   $$\lim\limits_{ x \rightarrow  0}  g$$ 
-E.   $$\lim\limits_{ x \rightarrow  1}  g$$ 
-F.   $$\lim\limits_{ x \rightarrow  2}  g$$ 
-G.   $$\lim\limits_{ x \rightarrow  \infty}  g$$ 
+A.   $$\lim\limits_{ x \rightarrow  -\infty}  f$$ 
+B.   $$\lim\limits_{ x \rightarrow  -2}  f$$ 
+C.   $$\lim\limits_{ x \rightarrow  -1}  f$$ 
+D.   $$\lim\limits_{ x \rightarrow  0}  f$$ 
+E.   $$\lim\limits_{ x \rightarrow  1}  f$$ 
+F.   $$\lim\limits_{ x \rightarrow  \infty}  f$$ 

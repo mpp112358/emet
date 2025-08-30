@@ -1,14 +1,18 @@
 Date: 2025-08-22
+Tags: 1
 
 # Ejercicio 9
 
  
 Dibujar la gráfica de una función que tenga todas las características que se indican.
 
+
+
+
 $$
 
 \begin{array}{|l|l|l|}
-   \text{dom } f= \mathbb{R} - \{ 0 \} &\lim\limits_{ x \rightarrow  0^-}  f =0&f(2)=2;f(3)=1 \\ \lim\limits_{ x \rightarrow  -\infty}  f = \infty &f(x)=1, \forall \, x \, \in (0,1)&\lim\limits_{ x \rightarrow  \infty}  f = \infty \\ 
+   \text{dom } h= \mathbb{R} - \{ -2,2 \} &h(-3)=1&\lim\limits_{ x \rightarrow  2^-}  h =- \infty \\ \lim\limits_{ x \rightarrow  -\infty}  h =- \infty &\lim\limits_{ x \rightarrow  -2^-}  h =- \infty &\lim\limits_{ x \rightarrow  2^+}  h = \infty \\ \lim\limits_{ x \rightarrow  -3}  h =-2&\lim\limits_{ x \rightarrow  -2^+}  h = \infty &\lim\limits_{ x \rightarrow  \infty}  h = \infty \\ 
 \end{array}
 
 $$

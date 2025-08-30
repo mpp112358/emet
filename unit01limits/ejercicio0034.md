@@ -1,11 +1,13 @@
 Date: 2025-08-22
+Tags: 1
 
 # Ejercicio 34
 
- 
-Hallar el dominio y estudiar la continuidad de las funciones siguientes:
+ (Mod. 2007, B.2, 2 ptos.) Obtener el valor de  $$ k$$   sabiendo que:
 
-A.   $$ f(x)= \sqrt{2x+3}$$ 
-B.   $$ f(x)= \dfrac{|x|}{x}$$ 
-C.   $$ f(x)= \ln (x+1)$$ 
-D.   $$ f(x)=e^ {1/x}$$ 
+
+
+
+$$
+ \underset{x \rightarrow \infty}{\lim} \left( \dfrac{x + 3}{x} \right) ^ {k x + 5}  = e^2
+$$

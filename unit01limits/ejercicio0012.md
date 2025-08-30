@@ -1,14 +1,18 @@
 Date: 2025-08-22
+Tags: 1
 
 # Ejercicio 12
 
  
 Dibujar la gráfica de una función que tenga todas las características que se indican.
 
+
+
+
 $$
 
 \begin{array}{|l|l|l|}
-   \text{dom } g_"= \mathbb{R} - [ 0,1 ] &\lim\limits_{ x \rightarrow  1^+}  g_2 =- \infty &g_2(-3)=g_2(2)=0 \\ \lim\limits_{ x \rightarrow  \infty}  g_2 =3&\lim\limits_{ x \rightarrow  0^-}  g_2 =- \infty &g_2(3)=3;g_2(4)=5;g_2(5)=4 \\ 
+   \text{dom } f= \mathbb{R} -(-2,2)&\lim\limits_{ x \rightarrow  -4}  f =-3&f(-2)=f(2)=0 \\ \lim\limits_{ x \rightarrow  -\infty}  f = \infty &f(-4)=-2&\lim\limits_{ x \rightarrow  \infty}  f =-2 \\ 
 \end{array}
 
 $$

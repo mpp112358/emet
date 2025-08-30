@@ -1,11 +1,15 @@
 Date: 2025-08-22
+Tags: 1
 
 # Ejercicio 24
 
  
 Calcula los límites siguientes:
 
-A.   $$\lim\limits_{ x \rightarrow  -\infty}  \dfrac{2x^3+7}{x^3-x^2+x+7}$$ 
-B.   $$\lim\limits_{ x \rightarrow  \infty}  \dfrac{x^4+x+3}{1-x^3}$$ 
-C.   $$\lim\limits_{ x \rightarrow  -\infty}  \left( \dfrac{1-x^3}{x^2+7x} \right) ^5$$ 
-D.   $$\lim\limits_{ x \rightarrow  \infty}  \sqrt{\dfrac{8x^2-3}{2x^2+x}}$$ 
+
+
+
+A.   $$\lim\limits_{ x \rightarrow  2}  \dfrac{\sqrt{x}-\sqrt{2}}{x-2}$$ 
+B.   $$\lim\limits_{ x \rightarrow  5}  \dfrac{x^2-25}{2-\sqrt{x-1}}$$ 
+C.   $$\lim\limits_{ x \rightarrow  4}  \dfrac{3-\sqrt{5+x}}{1-\sqrt{5-x}}$$ 
+D.   $$\lim\limits_{ x \rightarrow  3}  \dfrac{x-3}{\sqrt{2x+3}-3}$$ 

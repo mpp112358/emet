@@ -1,28 +1,14 @@
 Date: 2025-08-22
+Tags: 1
 
 # Ejercicio 29
 
  
-Calcula los límites que se piden para cada una de las funciones siguientes:
+Calcula los límites siguientes:
 
-A.    Para 
-$$
- f(x)=\left\{ \begin{array}{ll}
- 3-x &  x<2 \\
- \dfrac{x}{2}+1 &  x>2
-\end{array}\right. ,
-$$
- $$\lim\limits_{ x \rightarrow  2^-}  f , \lim\limits_{ x \rightarrow  2^+}  f , \lim\limits_{ x \rightarrow  2}  f$$  .
 
-B.    Para 
-$$
- f(x)=\left\{ \begin{array}{ll}
- x^2 &  x<-1 \\
- -x &  |x|\leq1 \\
- 3-2x &  x>1
-\end{array}\right. ,
-$$
- $$\lim\limits_{ x \rightarrow  0}  f , \lim\limits_{ x \rightarrow  -1}  f , \lim\limits_{ x \rightarrow  1}  f$$  .
 
-C.    Para  $$ f(x)= \dfrac{x^2-9}{|x-3|}$$  ,  $$\lim\limits_{ x \rightarrow  3}  f$$  .
 
+A.   $$\lim\limits_{ x \rightarrow  \infty}  \left( 1+ \dfrac{3}{x} + \dfrac{5}{x^2} \right) ^x$$ 
+B.   $$\lim\limits_{ x \rightarrow  \infty}  \left( \dfrac{x}{x+1} \right) ^x$$ 
+C.   $$\lim\limits_{ x \rightarrow  \infty}  \left( \dfrac{2x-3}{2x+5} \right) ^ {2x+1}$$ 

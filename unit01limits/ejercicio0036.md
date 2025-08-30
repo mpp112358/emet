@@ -1,24 +1,15 @@
 Date: 2025-08-22
+Tags: 1
 
 # Ejercicio 36
 
  
-Estudiar la continuidad de las funciones siguientes:
+Hallar el dominio y estudiar la continuidad de las funciones siguientes:
 
-A.  
-$$
- f(x)=\left\{ \begin{array}{ll}
- 3-x &  x<2 \\
- \dfrac{x}{2}+1 &  x>2
-\end{array}\right.
-$$
 
-B.  
-$$
- f(x)=\left\{ \begin{array}{ll}
- 3-x &  x<2 \\
- 2 &  x=2 \\
- \dfrac{x}{2} &  x>2
-\end{array}\right.
-$$
 
+
+A.   $$ f(x)= \sqrt{\dfrac{x^2-x}{x^2-1}}$$ 
+B.   $$ f(x)= \dfrac{x-4}{\sqrt{x}-2}$$ 
+C.   $$ f(x)= \sqrt[3]{2x-1}$$ 
+D.   $$ f(x)= \dfrac{x}{\ln(x-1)}$$ 

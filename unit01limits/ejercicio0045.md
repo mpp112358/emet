@@ -1,9 +1,10 @@
 Date: 2025-08-22
+Tags: 1
 
 # Ejercicio 45
 
  
-Calcula el dominio y las asíntotas de las funciones siguientes:
+Demostrar que la ecuación  $$ x^3+x^2-7x+1=0$$   tiene al menos una solución en el intervalo  $$ [ 0,1 ]$$  .
 
-A.   $$ f(x)= \dfrac{x^2-x-2}{x^2-4x+4}$$ 
-B.   $$ f(x)= \dfrac{-x^3+1}{2x^2+2x-12}$$ 
+
+
