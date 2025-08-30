@@ -1,5 +1,5 @@
 Date: 2025-08-22
-Tags: 1
+Tags: 
 
 # Ejercicio 51
 

@@ -1,5 +1,5 @@
 Date: 2025-08-22
-Tags: Límites,Asíntotas,Trozos,Composición
+Tags: [Límites,Asíntotas,Trozos,Composición]
 
 # Ejercicio 59
 

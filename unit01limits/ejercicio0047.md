@@ -1,5 +1,5 @@
 Date: 2025-08-22
-Tags: Continuidad,Bolzano
+Tags: [Continuidad,Bolzano]
 
 # Ejercicio 47
 

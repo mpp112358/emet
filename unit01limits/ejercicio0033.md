@@ -1,5 +1,5 @@
 Date: 2025-08-22
-Tags: Límites,Simetría,Trigonometría
+Tags: [Límites,Simetría,Trigonometría]
 
 # Ejercicio 33
 

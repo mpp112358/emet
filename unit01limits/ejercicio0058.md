@@ -1,5 +1,5 @@
 Date: 2025-08-22
-Tags: Límites,Continuidad,Asíntotas,Trozos,Ln
+Tags: [Límites,Continuidad,Asíntotas,Trozos,Ln]
 
 # Ejercicio 58
 
