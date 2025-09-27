@@ -4,7 +4,7 @@ Tags: [derivada]
 # Ejercicio 2.117
 
  
-El modelo logístico es un modelo matemático utilizado para describir la evolución de una población a lo largo del tiempo, cuando los recursos son limitados. Es uno de los modelos matemáticos más comunes en viología y describe cómo la población se estabiliza cuando alcanza la capacidad de carga del entrono, esto es, el tamaño máximo que puede alcanzar una población antes de que los recursos se vuelva insuficientes, lo que genera competencia y, en muchos casos, una desaceleración de la tas ade crecimiento o una crisis en la población.
+El modelo logístico es un modelo matemático utilizado para describir la evolución de una población a lo largo del tiempo, cuando los recursos son limitados. Es uno de los modelos matemáticos más comunes en viología y describe cómo la población se estabiliza cuando alcanza la capacidad de carga del entrono, esto es, el tamaño máximo que puede alcanzar una población antes de que los recursos se vuelva insuficientes, lo que genera competencia y, en muchos casos, una desaceleración de la tasa de crecimiento o una crisis en la población.
 
 Un ejemplo de modelo logístico lo encontramos en las colonias de hormigas, que están compuestas por una red de túneles, entradas, cámaras de cría y áreas de almacenamiento, donde las hormigas establecen su hábitar.
 

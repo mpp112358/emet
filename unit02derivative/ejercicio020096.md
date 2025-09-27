@@ -10,8 +10,8 @@ $$
  f ( x ) =  \left\{
 \begin{array}{ll}
   
-3 a x + b &  \tmop{si}  x  \leqslant  0 \\ 
-e^ {x ( a x + b )} &  \tmop{si}  x > 0
+3 a x + b &    x  \leqslant  0 \\ 
+e^ {x ( a x + b )} &    x > 0
 
 \end{array}
  \right.
