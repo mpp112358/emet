@@ -4,11 +4,10 @@ Tags: [derivada]
 # Ejercicio 2.79
 
  (Septiembre 2001, B.2, 2 ptos.) Sea  $$ P ( x )$$   un polinomio de grado 4 tal que:
- \begin{itemize}
-\item $P ( x )$ es una función par.
-\item Dos de sus raíces son $x = 1$, $x = - \sqrt{5}$.
-\item $P ( 0 ) = 5$.
-\end{itemize} 
+- $P ( x )$ es una función par.
+- Dos de sus raíces son $x = 1$, $x = - \sqrt{5}$.
+- $P ( 0 ) = 5$.
+
 Se pide:
 
 A.    Hallar sus puntos de inflexión.
