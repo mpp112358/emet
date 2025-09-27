@@ -5,7 +5,7 @@ Tags: [derivada]
 
  (Mod. 2004, A.2, 2 ptos.) Dada la función
 
- $$
+$$
 f ( x ) = \left\{\begin{array}{ll}(e^x-1)/(x^2-x)&\text{si }x\neq 0\\ a&\text{si }x=0\end{array}\right.
 $$
 
