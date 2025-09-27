@@ -6,10 +6,14 @@ Tags: [derivada]
  
 Esboza la gráfica de las funciones siguientes, estudiando previamente su continuidad y derivabilidad:
 
-A.   $$ f(x)= \left\{ \begin{array}{ll}
+A.  
+$$
+ f(x)= \left\{ \begin{array}{ll}
  \dfrac{1}{x} &  x\leq0 \\
  \ln x &  0<x\leq1 \\
  x &  x>1
-\end{array}\right.$$ 
+\end{array}\right.
+$$
+
 B.   $$ f(x)=  \sqrt[3]{x}$$ 
 C.   $$ f(x)= e^ {-x^2}$$ 
