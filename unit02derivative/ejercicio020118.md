@@ -9,7 +9,7 @@ En un hospital, un equipo de investigación está analizando cómo se metaboliza
 \item Fase de absorción: en las primeras dos horas, el fármaco se distribuye por el organismo.
 \item Fase de eliminación: a partir de la segunda hora, el fármaco empieza a eliminarse.
 \end{itemize} 
-Este comportamiento se modeliza meidante la siguiente función matemática:
+Este comportamiento se modeliza mediante la siguiente función matemática:
 
 $$
  
