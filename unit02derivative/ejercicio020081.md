@@ -5,9 +5,7 @@ Tags: [derivada]
 
  
 Considera la función  $$ f : \mathbb{R} \longrightarrow \mathbb{R}$$   definida por
- \begin{center}
 \[f ( x ) = e^{\frac{2 x}{x^2 + 1}}\]
-\end{center}
 A.    Calcula las asíntotas de la gráfica de  $$ f$$  .
 
 B.    Determina los intervalos de crecimiento y decrecimiento, y los extremos relativos de  $$ f$$  (puntos donde se obtienen y valor que alcanzan).

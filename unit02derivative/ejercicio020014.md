@@ -18,4 +18,4 @@ $$
 B.   $$ f(x)=\sin   e^x$$ 
 C.   $$ f(x)= \ln \left( \ln \left( \ln  x \right) \right)$$ 
 D.   $$ f(x)=\sin  \left( \ln |x| \right)$$ 
-E.   $$ f(x)=x^ {\sen x}$$ 
+E.   $$ f(x)=x^ {\sin x}$$ 

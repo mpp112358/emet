@@ -6,6 +6,6 @@ Tags: [derivada]
  
 Calcula los límites siguientes:
 
-A.   $$\lim\limits_{ x \rightarrow  0}  \dfrac{e^x-1}{\sen x}$$ 
+A.   $$\lim\limits_{ x \rightarrow  0}  \dfrac{e^x-1}{\sin x}$$ 
 B.   $$\lim\limits_{ x \rightarrow  \infty}  \dfrac{x}{\ln\left(1+2e^x\right)}$$ 
 C.   $$\lim\limits_{ x \rightarrow  0^+}  \sqrt{x} \ln  x$$ 

@@ -5,7 +5,5 @@ Tags: [derivada]
 
  
 Se sabe que
- \begin{center}
-$\underset{x \rightarrow 0}{\lim} \dfrac{x - \alpha \tmop{sen} x}{x^2}$
-\end{center} 
+$$\underset{x \rightarrow 0}{\lim} \dfrac{x - \alpha \sin x}{x^2}$$
 es finito. Determina el valor de  $$ \alpha$$   y calcula el límite.
