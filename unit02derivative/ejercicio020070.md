@@ -4,7 +4,11 @@ Tags: [derivada]
 # Ejercicio 2.70
 
  (Mod. 2006, B.2, 2 ptos.) Se considera la función:
-$$f ( x ) = \dfrac{1}{2 + \sin x - \cos x}$$
+
+$$
+f ( x ) = \dfrac{1}{2 + \sin x - \cos x}
+$$
+
 Se pide:
 
 A.    Calcular sus extremos locales y/o globales en el intervalo  $$ [ -  \pi ,  \pi ]$$  .

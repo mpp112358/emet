@@ -5,7 +5,9 @@ Tags: [derivada]
 
  (Septiembre 2004, A.4, 3 ptos.) Sabiendo que una función tiene como derivada:
 
-$$f' ( x ) = ( x - 4 )^2 ( x^2 - 8 x + 7 )$$
+$$
+f' ( x ) = ( x - 4 )^2 ( x^2 - 8 x + 7 )
+$$
 
 A.    Hallar los intervalos de crecimiento y decrecimiento de  $$ f$$  .
 

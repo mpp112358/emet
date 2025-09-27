@@ -4,7 +4,11 @@ Tags: [derivada]
 # Ejercicio 2.69
 
  (Mod. 2004, B.3, 3 ptos.) Se considera la función
-$$f ( x ) = \dfrac{1}{1 + ( \sin x )^2}$$
+
+$$
+f ( x ) = \dfrac{1}{1 + ( \sin x )^2}
+$$
+
 A.    Calcular sus puntos críticos en el intervalo abierto  $$ ( -  \pi ,  \pi )$$  .
 
 B.    Calcular los extremos relativos y/o absolutos de la función  $$ f( x )$$   en el intervalo cerrado  $$ [  -  \pi ,  \pi ]$$  .
