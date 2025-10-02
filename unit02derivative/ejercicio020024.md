@@ -1,5 +1,5 @@
 Date: 2025-09-25
-Tags: [derivada]
+Tags: [derivada,extremos]
 
 # Ejercicio 2.24
 
@@ -7,5 +7,5 @@ Tags: [derivada]
 Hallar los extremos relativos y absolutos de las funciones siguientes:
 
 A.   $$ f(x)= x^3-2x+4$$ 
-B.   $$ f(x)=  \dfrac{1}{x^2+1}$$ 
+B.   $$ f(x)= \dfrac{ 1}{ x^2+1}$$ 
 C.   $$ f(x)=  \ln \left( x^2+1 \right)$$ 

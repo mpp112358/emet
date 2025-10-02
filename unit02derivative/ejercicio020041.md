@@ -1,5 +1,5 @@
 Date: 2025-09-25
-Tags: [derivada]
+Tags: [derivada,gráfica,continuidad,derivabilidad]
 
 # Ejercicio 2.41
 
@@ -9,8 +9,8 @@ Esboza la gráfica de las funciones siguientes, estudiando previamente su contin
 A.  
 $$
  f(x)= \left\{ \begin{array}{ll}
- \dfrac{1}{x}-1 &  |x|\geq\dfrac{1}{2} \\
- -4x^2+2 &  |x|<\dfrac{1}{2}
+\dfrac{ 1}{ x} -1 &  |x| \geq\dfrac{ 1}{ 2} \\
+ -4x^2+2 &  |x|<\dfrac{ 1}{ 2}
 \end{array}\right.
 $$
 

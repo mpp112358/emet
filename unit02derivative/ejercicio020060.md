@@ -1,11 +1,11 @@
 Date: 2025-09-25
-Tags: [derivada]
+Tags: [derivada,lhopital]
 
 # Ejercicio 2.60
 
  
 Calcula los límites siguientes:
 
-A.   $$\lim\limits_{ x \rightarrow  0}  \dfrac{e^x-1}{\sin x}$$ 
-B.   $$\lim\limits_{ x \rightarrow  \infty}  \dfrac{x}{\ln\left(1+2e^x\right)}$$ 
+A.   $$\lim\limits_{ x \rightarrow  0} \dfrac{ e^x-1}{\sin   x}$$ 
+B.   $$\lim\limits_{ x \rightarrow  \infty} \dfrac{ x}{ \ln \left( 1+2e^x \right)}$$ 
 C.   $$\lim\limits_{ x \rightarrow  0^+}  \sqrt{x} \ln  x$$ 

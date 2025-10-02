@@ -1,5 +1,5 @@
 Date: 2025-09-25
-Tags: [derivada]
+Tags: [derivada,derivabilidad,función-a-trozos]
 
 # Ejercicio 2.7
 
@@ -9,6 +9,6 @@ Halla los valores de  $$ a$$   y  $$ b$$   para los que la función siguiente es
 $$
  f(x)=\left\{ \begin{array}{ll}
  3-x &  x<1 \\
- ax^2+bx &  x\geq 1
+ ax^2+bx &  x \geq  1
 \end{array}\right.
 $$

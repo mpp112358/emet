@@ -1,5 +1,5 @@
 Date: 2025-09-25
-Tags: [derivada]
+Tags: [derivada,modelización,continuidad,función-a-trozos,extremos,asíntotas]
 
 # Ejercicio 2.118
 
@@ -14,8 +14,8 @@ Este comportamiento se modeliza mediante la siguiente función matemática:
 $$
  
 f(x) = \left\{ \begin{array}{ll}
- x^2 = 6x + 11 &  0 \leq x < 2 \\
- \dfrac{9}{\sqrt{5x - 1}} &  x \geq 2
+ x^2 = 6x + 11 &  0  \leq  x < 2 \\
+\dfrac{ 9}{ \sqrt{5x - 1}} &  x  \geq  2
 \end{array}\right.
 $$
  

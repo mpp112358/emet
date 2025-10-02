@@ -1,12 +1,11 @@
 Date: 2025-09-25
-Tags: [derivada]
+Tags: [derivada,lhopital]
 
 # Ejercicio 2.82
 
  
 Se sabe que
-$$
-\underset{x \rightarrow 0}{\lim} \dfrac{x - \alpha \sin x}{x^2}
-$$
-
+ \begin{center}
+$\underset{x \rightarrow 0}{\lim} \dfrac{x - \alpha \tmop{sen} x}{x^2}$
+\end{center} 
 es finito. Determina el valor de  $$ \alpha$$   y calcula el límite.

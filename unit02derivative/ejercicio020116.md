@@ -1,5 +1,5 @@
 Date: 2025-09-25
-Tags: [derivada]
+Tags: [derivada,extremos,modelización]
 
 # Ejercicio 2.116
 
@@ -9,8 +9,8 @@ Un equipo de ingenieros realiza pruebas de consumo de un nuevo vehículo híbrid
 $$
  
 c(v) = \left\{ \begin{array}{ll}
- \dfrac{5v}{3} &  0 \leq v < 3 \\
- 14 - 4v + \dfrac{v^2}{3} &  v \geq 3
+\dfrac{ 5v}{ 3} &  0  \leq  v < 3 \\
+ 14 - 4v + \dfrac{ v^2}{ 3} &  v  \geq  3
 \end{array}\right.
 $$
 

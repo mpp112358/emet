@@ -1,5 +1,5 @@
 Date: 2025-09-25
-Tags: [derivada]
+Tags: [derivada,modelización,tvm,monotonía]
 
 # Ejercicio 2.117
 
@@ -8,11 +8,11 @@ El modelo logístico es un modelo matemático utilizado para describir la evoluc
 
 Un ejemplo de modelo logístico lo encontramos en las colonias de hormigas, que están compuestas por una red de túneles, entradas, cámaras de cría y áreas de almacenamiento, donde las hormigas establecen su hábitar.
 
-Un grupo dei nvestigadores ha estudiado el momento en el que unas hormigas forman una nueva colonia y ha modelizado el número de hormigas ( $$ H(t)$$  ) después de  $$ t$$   meses con la función:
+Un grupo de investigadores ha estudiado el momento en el que unas hormigas forman una nueva colonia y ha modelizado el número de hormigas ( $$ H(t)$$  ) después de  $$ t$$   meses con la función:
 
 $$
  
-H(t) =  \dfrac{6400}{1 + 159 e^{-0.5t}}
+H(t) = \dfrac{ 6400}{ 1 + 159 e^{ -0.5t}}
 $$
 
 A.    ¿Cuántas hormigas formaron la nueva colonia inicialmente?
