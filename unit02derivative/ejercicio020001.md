@@ -1,5 +1,5 @@
 Date: 2025-09-25
-Tags: [derivada,definición-derivada]
+Tags: derivada,definición-derivada
 
 # Ejercicio 2.1
 
