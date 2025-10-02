@@ -6,6 +6,6 @@ Tags: [derivada,lhopital]
  
 Se sabe que
  \begin{center}
-$\underset{x \rightarrow 0}{\lim} \dfrac{x - \alpha \tmop{sen} x}{x^2}$
+$\underset{x \rightarrow 0}{\lim} \dfrac{x - \alpha \sin x}{x^2}$
 \end{center} 
 es finito. Determina el valor de  $$ \alpha$$   y calcula el límite.
