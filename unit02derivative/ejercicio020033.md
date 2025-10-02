@@ -1,4 +1,4 @@
-Date: 2025-09-25
+Date: 2025-09-25 10:11
 Tags: [derivada,monotonía]
 
 # Ejercicio 2.33

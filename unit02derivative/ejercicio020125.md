@@ -1,4 +1,4 @@
-Date: 2025-09-25
+Date: 2025-09-25 10:55
 Tags: [derivada,paridad,derivabilidad,extremos]
 
 # Ejercicio 2.125

@@ -1,4 +1,4 @@
-Date: 2025-09-25
+Date: 2025-09-25 10:17
 Tags: [derivada,optimización]
 
 # Ejercicio 2.50

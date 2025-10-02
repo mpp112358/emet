@@ -1,4 +1,4 @@
-Date: 2025-09-25
+Date: 2025-09-25 10:46
 Tags: [derivada,extremos,puntos-de-inflexión,valor-absoluto]
 
 # Ejercicio 2.111

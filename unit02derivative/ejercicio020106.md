@@ -1,4 +1,4 @@
-Date: 2025-09-25
+Date: 2025-09-25 9:01
 Tags: [derivada]
 
 # Ejercicio 2.106

@@ -1,4 +1,4 @@
-Date: 2025-09-25
+Date: 2025-09-25 9:05
 Tags: [derivada,lhopital]
 
 # Ejercicio 2.76

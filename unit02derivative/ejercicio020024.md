@@ -1,4 +1,4 @@
-Date: 2025-09-25
+Date: 2025-09-25 10:00
 Tags: [derivada,extremos]
 
 # Ejercicio 2.24

@@ -1,4 +1,4 @@
-Date: 2025-09-25
+Date: 2025-09-25 10:30
 Tags: [derivada,extremos,modelización]
 
 # Ejercicio 2.116

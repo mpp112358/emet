@@ -1,4 +1,4 @@
-Date: 2025-09-25
+Date: 2025-09-25 10:12
 Tags: [derivada,gráfica]
 
 # Ejercicio 2.34

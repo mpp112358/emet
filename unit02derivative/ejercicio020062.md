@@ -1,4 +1,4 @@
-Date: 2025-09-25
+Date: 2025-09-25 10:40
 Tags: [derivada,continuidad,derivabilidad,monotonía,extremos,tangente]
 
 # Ejercicio 2.62

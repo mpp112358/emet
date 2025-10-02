@@ -1,4 +1,4 @@
-Date: 2025-09-25
+Date: 2025-09-25 10:50
 Tags: [derivada,polinomios,extremos]
 
 # Ejercicio 2.121

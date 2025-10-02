@@ -1,4 +1,4 @@
-Date: 2025-09-25
+Date: 2025-09-25 10:13
 Tags: [derivada,gráfica,continuidad,derivabilidad]
 
 # Ejercicio 2.41

@@ -1,4 +1,4 @@
-Date: 2025-09-25
+Date: 2025-09-25 10:31
 Tags: [derivada,modelización,tvm,monotonía]
 
 # Ejercicio 2.117

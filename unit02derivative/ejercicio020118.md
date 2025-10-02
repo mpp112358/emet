@@ -1,4 +1,4 @@
-Date: 2025-09-25
+Date: 2025-09-25 10:33
 Tags: [derivada,modelización,continuidad,función-a-trozos,extremos,asíntotas]
 
 # Ejercicio 2.118
