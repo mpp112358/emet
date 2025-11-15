@@ -7,7 +7,7 @@ Tags: [Matrices]
 Sean las matrices
 
 $$
- A= \matriz{cc}{x&y\\-y&x} \hspace{0.5cm} \text{y} \hspace{0.5cm} B= \matriz{cc}{-1&2\\1&0}
+ A=\left()\begin{array}{{cc}} {x&y\\-y&x} \end{array}\right)  \hspace{0.5cm} \text{y} \hspace{0.5cm} B=\left()\begin{array}{{cc}} {-1&2\\1&0} \end{array}\right) 
 $$
  
 Si  $$ AB=BA$$   y  $$ A+A^t=3I$$  , calcular  $$ x$$   e  $$ y$$  .

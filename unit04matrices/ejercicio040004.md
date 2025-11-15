@@ -7,7 +7,7 @@ Tags: [Matrices]
 Dadas las matrices
 
 $$
- A= \matriz{ccc}{1&2&1\\3&0&2} \text{, } B= \matriz{ccc}{2&1&2\\0&1&3} \text{, y } C= \matriz{cccc}{1&0&2&-1\\1&2&5&-4\\0&1&0&2} ,
+ A=\left()\begin{array}{{ccc}} {1&2&1\\3&0&2} \end{array}\right)  \text{, } B=\left()\begin{array}{{ccc}} {2&1&2\\0&1&3} \end{array}\right)  \text{, y } C=\left()\begin{array}{{cccc}} {1&0&2&-1\\1&2&5&-4\\0&1&0&2} \end{array}\right)  ,
 $$
  
 calcular  $$ (A+B)C$$   y  $$ AC+BC$$  .

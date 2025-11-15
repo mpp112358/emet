@@ -7,7 +7,7 @@ Tags: [Matrices]
 Dadas las matrices
 
 $$
- A= \matriz{ccc}{2&-1&0\\4&5&2\\3&-1&4\\2&-2&0} , \hspace{.5cm} B= \matriz{ccc}{1&1&-2\\5&0&1\\3&0&-1\\2&0&0} \text{, y} \hspace{.5cm} C= \matriz{ccc}{3&3&3\\-1&0&2\\5&-1&4\\1&1&-1} ,
+ A=\left()\begin{array}{{ccc}} {2&-1&0\\4&5&2\\3&-1&4\\2&-2&0} \end{array}\right)  , \hspace{.5cm} B=\left()\begin{array}{{ccc}} {1&1&-2\\5&0&1\\3&0&-1\\2&0&0} \end{array}\right)  \text{, y} \hspace{.5cm} C=\left()\begin{array}{{ccc}} {3&3&3\\-1&0&2\\5&-1&4\\1&1&-1} \end{array}\right)  ,
 $$
  
 calcular:

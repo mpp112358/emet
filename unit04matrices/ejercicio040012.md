@@ -4,4 +4,4 @@ Tags: [Matrices]
 # Ejercicio 4.12
 
  
-Determine los valores de  $$ x$$   e  $$ y$$   que cumplen la igualdad  $$ \matriz{cc}{1&0\\3&-1} \matriz{c}{x\\y} = \matriz{cc}{2&1\\-x&y} \matriz{c}{1\\1}$$  .
+Determine los valores de  $$ x$$   e  $$ y$$   que cumplen la igualdad  $$\left()\begin{array}{{cc}} {1&0\\3&-1} \end{array}\right) \left()\begin{array}{{c}} {x\\y} \end{array}\right)  =\left()\begin{array}{{cc}} {2&1\\-x&y} \end{array}\right) \left()\begin{array}{{c}} {1\\1} \end{array}\right) $$  .

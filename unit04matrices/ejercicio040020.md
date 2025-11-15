@@ -6,6 +6,6 @@ Tags: [Matrices]
  
 Calcula la potencia enésima de cada una de las siguientes matrices:
 
-A.   $$ A= \matriz{cccc}{0&1&1&1\\0&0&1&1\\0&0&0&1\\0&0&0&0}$$ 
-B.   $$ A= \matriz{cc}{1&1\\1&1}$$ 
-C.   $$ A= \matriz{ccc}{1&1&1\\0&1&1\\0&0&1}$$ 
+A.   $$ A=\left()\begin{array}{{cccc}} {0&1&1&1\\0&0&1&1\\0&0&0&1\\0&0&0&0} \end{array}\right) $$ 
+B.   $$ A=\left()\begin{array}{{cc}} {1&1\\1&1} \end{array}\right) $$ 
+C.   $$ A=\left()\begin{array}{{ccc}} {1&1&1\\0&1&1\\0&0&1} \end{array}\right) $$ 

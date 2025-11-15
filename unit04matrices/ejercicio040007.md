@@ -4,4 +4,4 @@ Tags: [Matrices]
 # Ejercicio 4.7
 
  
-Escribir como producto de matrices la matriz  $$ A= \matriz{cc}{ax&ay\\bx&by}$$  .
+Escribir como producto de matrices la matriz  $$ A=\left()\begin{array}{{cc}} {ax&ay\\bx&by} \end{array}\right) $$  .

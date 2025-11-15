@@ -4,4 +4,4 @@ Tags: [Matrices]
 # Ejercicio 4.17
 
  
-Dada la matriz  $$ A= \matriz{cc}{1&0\\0&-1}$$  , hállese  $$ A^{ 2004}$$  .
+Dada la matriz  $$ A=\left()\begin{array}{{cc}} {1&0\\0&-1} \end{array}\right) $$  , hállese  $$ A^{ 2004}$$  .

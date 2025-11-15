@@ -3,4 +3,4 @@ Tags: [Matrices]
 
 # Ejercicio 4.39
 
- (Septiembre 2015) Dada la matriz  $$ A= \matriz{cc}{3&1\\1&0}$$  , hallar todas las matrices  $$ B= \matriz{cc}{a&b\\c&d}$$   que conmutan con  $$ A$$  (es decir, que cumplen  $$ AB=BA$$  ).
+ (Septiembre 2015) Dada la matriz  $$ A=\left()\begin{array}{{cc}} {3&1\\1&0} \end{array}\right) $$  , hallar todas las matrices  $$ B=\left()\begin{array}{{cc}} {a&b\\c&d} \end{array}\right) $$   que conmutan con  $$ A$$  (es decir, que cumplen  $$ AB=BA$$  ).

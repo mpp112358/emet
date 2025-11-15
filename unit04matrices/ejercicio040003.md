@@ -7,7 +7,7 @@ Tags: [Matrices]
 Sean las matrices:
 
 $$
- A= \matriz{cc}{2&-1\\3&-2} \text{, } B= \matriz{ccc}{0&1&2\\-1&1&-1} \text{, } C= \matriz{ccc}{-1&2&5\\3&4&-1} .
+ A=\left()\begin{array}{{cc}} {2&-1\\3&-2} \end{array}\right)  \text{, } B=\left()\begin{array}{{ccc}} {0&1&2\\-1&1&-1} \end{array}\right)  \text{, } C=\left()\begin{array}{{ccc}} {-1&2&5\\3&4&-1} \end{array}\right)  .
 $$
  
 Realizar, cuando sea posible, los siguientes productos de matrices:

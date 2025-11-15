@@ -17,5 +17,5 @@ $$
 siendo,
 
 $$
- A= \matriz{cc}{1&-2\\8&1} \text{ y } B= \matriz{cc}{2&4\\3&0} .
+ A=\left()\begin{array}{{cc}} {1&-2\\8&1} \end{array}\right)  \text{ y } B=\left()\begin{array}{{cc}} {2&4\\3&0} \end{array}\right)  .
 $$
