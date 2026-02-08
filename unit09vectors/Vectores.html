@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Vectores - Transcripción Completa</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 40px; color: #333; max-width: 900px; background-color: #f4f7f6; }
+        .container { background-color: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; text-align: center; border-bottom: 2px solid #2c3e50; padding-bottom: 10px; }
+        .exercise { margin-bottom: 35px; padding: 20px; border-left: 5px solid #3498db; background-color: #fcfcfc; }
+        .exercise-title { font-weight: bold; color: #2980b9; margin-bottom: 10px; display: block; }
+        .solution { margin-top: 15px; padding: 15px; background-color: #e8f6f3; border-radius: 4px; border-left: 5px solid #1abc9c; }
+        .solution-title { font-weight: bold; color: #16a085; display: block; margin-bottom: 5px; }
+        ol { margin-left: 20px; }
+        .vector { font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Vectores: Relación de Ejercicios</h1>
+
+    <div class="exercise">
+        <span class="exercise-title">Ejercicio 9.1. (Junio 2000, A.1, 2 ptos.)</span>
+        <p>Resolver la siguiente ecuación vectorial \(\vec{x} \wedge (2,1,-1) = (1,3,5)\) sabiendo que \(|\vec{x}| = \sqrt{6}\), donde el símbolo \(\wedge\) significa producto vectorial.</p>
+                <div class="solution">
+            <span class="solution-title">Solución:</span>
+            \(\vec{x} = (1, -2, 1)\) y \(\vec{x} = \left(\frac{5}{3}, -\frac{5}{3}, \frac{2}{3}\right)\)
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">Ejercicio 9.2.</span>
+        <p>Estudiar si son linealmente independientes los vectores \(\vec{a} = (3,1,2)\), \(\vec{b} = (0,1,1)\) y \(\vec{c} = (1,1,1)\). Expresar el vector \(\vec{v} = (0,0,1)\) como combinación lineal de \(\vec{a}, \vec{b}\) y \(\vec{c}\).</p>
+        <div class="solution">
+            <span class="solution-title">Solución:</span>
+            Son linealmente independientes porque \(\det(\vec{a}, \vec{b}, \vec{c}) \neq 0\).<br>
+            Resolviendo el sistema:
+            \[ \begin{pmatrix} 3 & 0 & 1 \\ 1 & 1 & 1 \\ 2 & 1 & 1 \end{pmatrix} \begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix} \implies \begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 1 \\ 3 \\ -3 \end{pmatrix} \]
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">Ejercicio 9.3.</span>
+        <p>Considera los vectores \(\vec{u} = (1,1,1)\), \(\vec{v} = (2,2,a)\) y \(\vec{w} = (2,0,0)\).</p>
+        <ol type="a">
+            <li>Hallar los valores de \(a\) para los que los vectores \(\vec{u}, \vec{v}, \vec{w}\) son linealmente dependientes.</li>
+            <li>Para \(a = -1\), hallar el ángulo que forman los vectores \(\vec{u} + \vec{v}\) y \(\vec{u} - \vec{v}\).</li>
+        </ol>
+        <div class="solution">
+            <span class="solution-title">Solución:</span>
+            a) \(a = 2\). <br>
+            b) \(\cos \alpha = \frac{(\vec{u}+\vec{v}) \cdot (\vec{u}-\vec{v})}{|\vec{u}+\vec{v}| |\vec{u}-\vec{v}|} \implies \alpha \approx 149.48^\circ\)
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">Ejercicio 9.4.</span>
+        <p>Hallar un vector unitario que sea perpendicular a los vectores \(\vec{v} = (1,2,3)\) y \(\vec{w} = (-1,0,2)\).</p>
+        <div class="solution">
+            <span class="solution-title">Solución:</span>
+            \(\pm \frac{1}{\sqrt{45}}(4, -5, 2)\)
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">Ejercicio 9.5.</span>
+        <p>Dados los vectores \(\vec{u} = (1,2,3)\) y \(\vec{v} = (m, -1, 4)\), hallar \(m\) para que:</p>
+        <ol type="a">
+            <li>Sean perpendiculares.</li>
+            <li>Sean paralelos.</li>
+        </ol>
+        <div class="solution">
+            <span class="solution-title">Solución:</span>
+            a) \(m = -10\). <br>
+            b) No existe \(m\) tal que sean paralelos (componentes no proporcionales).
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">Ejercicio 9.6.</span>
+        <p>Determinar el valor de \(k\) para que los vectores \(\vec{a} = (1,0,-1)\), \(\vec{b} = (k,1,1)\) y \(\vec{c} = (0,-2,0)\) sean coplanarios.</p>
+        <div class="solution">
+            <span class="solution-title">Solución:</span>
+            \(k = -1\)
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">Ejercicio 9.7.</span>
+        <p>Dados los vectores \(\vec{u} = (3,-1,5)\) y \(\vec{v} = (1,2,1)\), hallar un valor de \(k\) tal que el vector \(\vec{u} + k\vec{v}\) sea perpendicular a \(\vec{v}\).</p>
+        <div class="solution">
+            <span class="solution-title">Solución:</span>
+            \(k = -10/6 = -5/3\)
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">Ejercicio 9.8.</span>
+        <p>Dados los puntos \(A(2,1,3)\), \(B(1,2,3)\) y \(C(-1,-1,0)\), hallar las coordenadas de un cuarto punto \(D\) para que \(ABCD\) sea un paralelogramo.</p>
+        <div class="solution">
+            <span class="solution-title">Solución:</span>
+            \(D(0, -2, 0)\)
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">Ejercicio 9.9.</span>
+        <p>Hallar el área del triángulo de vértices \(A(1,1,1)\), \(B(2,1,3)\) y \(C(0,2,2)\).</p>
+        <div class="solution">
+            <span class="solution-title">Solución:</span>
+            Área = \(\frac{\sqrt{14}}{2} \approx 1.87\) u²
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">Ejercicio 9.10.</span>
+        <p>Hallar el volumen del paralelepípedo definido por los vectores que unen el punto \(A(1,1,1)\) con los puntos \(B(2,1,0)\), \(C(0,2,1)\) y \(D(2,3,2)\).</p>
+                <div class="solution">
+            <span class="solution-title">Solución:</span>
+            \(V = |[\vec{AB}, \vec{AC}, \vec{AD}]| = 2\) u³
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">Ejercicio 9.11.</span>
+        <p>Hallar un vector unitario perpendicular a los vectores \(\vec{u} = (1,-1,1)\) y \(\vec{v} = (2,0,2)\).</p>
+        <div class="solution">
+            <span class="solution-title">Solución:</span>
+            \(\pm \frac{1}{\sqrt{2}}(-1, 0, 1)\)
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">Ejercicio 9.12.</span>
+        <p>Dados los vectores \(\vec{a} = (1,2,-1)\) y \(\vec{b} = (1,3,2)\), hallar un vector \(\vec{x}\) tal que \(\vec{x} \cdot \vec{a} = 1\) y \(\vec{x} \wedge \vec{a} = \vec{b}\).</p>
+        <div class="solution">
+            <span class="solution-title">Solución:</span>
+            No tiene solución, ya que \(\vec{a} \cdot \vec{b} \neq 0\) (el producto vectorial debe ser perpendicular a los vectores originales).
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">Ejercicio 9.13.</span>
+        <p>Determinar si los vectores \(\vec{u} = (1,-1,0)\), \(\vec{v} = (0,1,2)\) y \(\vec{w} = (k,1,2k)\) son linealmente dependientes según el valor de \(k\).</p>
+        <div class="solution">
+            <span class="solution-title">Solución:</span>
+            Siempre son linealmente dependientes para cualquier valor de \(k\) pues el determinante es siempre 0.
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">Ejercicio 9.14.</span>
+        <p>Hallar la proyección del vector \(\vec{u} = (2,1,2)\) sobre el vector \(\vec{v} = (3,4,8)\).</p>
+        <div class="solution">
+            <span class="solution-title">Solución:</span>
+            \(Proy_{\vec{v}}\vec{u} = \frac{\vec{u} \cdot \vec{v}}{|\vec{v}|} = \frac{26}{\sqrt{89}}\)
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">Ejercicio 9.15.</span>
+        <p>Dados los vectores \(\vec{u} = (k,1,1)\), \(\vec{v} = (1,k,1)\) y \(\vec{w} = (1,1,k)\), hallar los valores de \(k\) para los que formen una base de \(\mathbb{R}^3\).</p>
+        <div class="solution">
+            <span class="solution-title">Solución:</span>
+            \(k \neq 1\) y \(k \neq -2\)
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">Ejercicio 9.16.</span>
+        <p>Dados \(\vec{u} = (3,1,-1)\) y \(\vec{v} = (2,3,4)\), hallar \(\vec{u} \wedge \vec{v}\) y el área del paralelogramo que definen.</p>
+        <div class="solution">
+            <span class="solution-title">Solución:</span>
+            \(\vec{u} \wedge \vec{v} = (7, -14, 7)\). Área = \(\sqrt{7^2 + (-14)^2 + 7^2} = 7\sqrt{6} \approx 17.15\) u²
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">Ejercicio 9.17.</span>
+        <p>Hallar el área del triángulo de vértices \(A(1,3,5)\), \(B(2,5,8)\) y \(C(-1,-2,0)\).</p>
+        <div class="solution">
+            <span class="solution-title">Solución:</span>
+            Área = \(\frac{1}{2}|\vec{AB} \wedge \vec{AC}| = \frac{\sqrt{38}}{2} \approx 3.08\) u²
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">Ejercicio 9.18.</span>
+        <p>Hallar el volumen del tetraedro de vértices \(A(0,0,0)\), \(B(1,1,1)\), \(C(0,2,0)\) y \(D(0,0,3)\).</p>
+                <div class="solution">
+            <span class="solution-title">Solución:</span>
+            \(V = \frac{1}{6}|[\vec{AB}, \vec{AC}, \vec{AD}]| = 1\) u³
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">Ejercicio 9.19.</span>
+        <p>Sea el triángulo de vértices \(A(2,1,0)\), \(B(0,4,0)\) y \(C(0,0,5)\). Calcular su área y sus ángulos.</p>
+        <div class="solution">
+            <span class="solution-title">Solución:</span>
+            Área = 10.5 u². <br>
+            Ángulos: \(\hat{A} \approx 71.56^\circ, \hat{B} \approx 63.43^\circ, \hat{C} \approx 45.01^\circ\)
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">Ejercicio 9.20.</span>
+        <p>El triángulo \(ABC\) es rectángulo en \(A\), siendo \(A(3,0,-1)\), \(B(6,-4,5)\) y \(C(5,3,z)\). Calcúlese el valor de \(z\) y hállese el área del triángulo.</p>
+        <div class="solution">
+            <span class="solution-title">Solución:</span>
+            Como es rectángulo en \(A\): \(\vec{AB} \cdot \vec{AC} = 0 \implies z = 0\). <br>
+            Área = \(\frac{\sqrt{854}}{2} \approx 14.61\) u²
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">Ejercicio 9.21.</span>
+        <p>Sean los vectores \(\vec{u} = (1,-1,0)\), \(\vec{v} = (0,1,2)\) y \(\vec{w} = (\alpha+1, 2\alpha, 2-3\alpha)\). Se pide:</p>
+        <ol type="a">
+            <li>Hallar los valores de \(\alpha\) para los que \(\vec{u}, \vec{v}, \vec{w}\) son linealmente dependientes.</li>
+            <li>Hallar los valores de \(\alpha\) para los que \(\vec{w}\) es perpendicular a \(\vec{u}\).</li>
+            <li>Hallar los valores de \(\alpha\) para los que el tetraedro cuyas aristas son los vectores \(\vec{u}, \vec{v}, \vec{w}\) tiene volumen.</li>
+        </ol>
+        <div class="solution">
+            <span class="solution-title">Solución:</span>
+            a) \(\det = 0 \implies \alpha = -1\). <br>
+            b) \(\vec{u} \cdot \vec{w} = 0 \implies \alpha = 1\). <br>
+            c) Tiene volumen si son linealmente independientes: \(\alpha \neq -1\).
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
