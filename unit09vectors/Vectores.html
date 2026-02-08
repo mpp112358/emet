@@ -2,118 +2,216 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Ejercicios de Vectores - MathML</title>
+    <title>Ejercicios de Vectores - MathML Completo</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; }
-        .exercise { border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; border-radius: 5px; }
-        .title { font-weight: bold; color: #2c3e50; }
-        .solution { background: #f9f9f9; padding: 10px; margin-top: 10px; border-left: 4px solid #3498db; }
-        math { font-family: "Latin Modern Math", "STIX Two Math", serif; font-size: 1.1em; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; max-width: 900px; margin: 40px auto; color: #333; }
+        .exercise { border-bottom: 1px solid #eee; padding: 25px 0; }
+        .title { font-weight: bold; color: #2c3e50; font-size: 1.1em; margin-bottom: 10px; }
+        .solution { background-color: #f8f9fa; padding: 15px; border-left: 4px solid #3498db; margin-top: 10px; font-size: 0.95em; }
+        math { font-family: "Latin Modern Math", serif; }
+        .vector-arrow { text-decoration: overline; }
     </style>
 </head>
 <body>
 
-<h1>Relación de Ejercicios: Vectores</h1>
+    <h1>Vectores: Relación Completa de Ejercicios</h1>
 
-<div class="exercise">
-    <div class="title">Ejercicio 9.1 (Junio 2000)</div>
-    <p>Resolver la siguiente ecuación vectorial
-    <math display="inline">
-        <mover><mi>x</mi><mo>&#x2192;</mo></mover>
-        <mo>&#x2227;</mo>
-        <mo>(</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo>,</mo><mo>-</mo><mn>1</mn><mo>)</mo>
-        <mo>=</mo>
-        <mo>(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>)</mo>
-    </math>
-    sabiendo que
-    <math display="inline">
-        <mo>|</mo><mover><mi>x</mi><mo>&#x2192;</mo></mover><mo>|</mo>
-        <mo>=</mo>
-        <msqrt><mn>6</mn></msqrt>
-    </math>.</p>
-
-    <div class="solution">
-        <strong>Solución:</strong>
-        <math display="inline">
-            <mover><mi>x</mi><mo>&#x2192;</mo></mover>
-            <mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mo>-</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo>)</mo>
-        </math> y
-        <math display="inline">
-            <mover><mi>x</mi><mo>&#x2192;</mo></mover>
-            <mo>=</mo>
-            <mo>(</mo>
-            <mfrac><mn>5</mn><mn>3</mn></mfrac><mo>,</mo>
-            <mo>-</mo><mfrac><mn>5</mn><mn>3</mn></mfrac><mo>,</mo>
-            <mfrac><mn>2</mn><mn>3</mn></mfrac>
-            <mo>)</mo>
-        </math>
+    <div class="exercise">
+        <div class="title">Ejercicio 9.1</div>
+        <p>Resolver la siguiente ecuación vectorial
+            <math><mover><mi>x</mi><mo>&rarr;</mo></mover><mo>&and;</mo><mo>(</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo>,</mo><mo>-</mo><mn>1</mn><mo>)</mo><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>)</mo></math>
+            sabiendo que
+            <math><mo>|</mo><mover><mi>x</mi><mo>&rarr;</mo></mover><mo>|</mo><mo>=</mo><msqrt><mn>6</mn></msqrt></math>.
+        </p>
+                <div class="solution">
+            <strong>Solución:</strong>
+            <math><mover><mi>x</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mo>-</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo>)</mo></math> y
+            <math><mover><mi>x</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mfrac><mn>5</mn><mn>3</mn></mfrac><mo>,</mo><mo>-</mo><mfrac><mn>5</mn><mn>3</mn></mfrac><mo>,</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>)</mo></math>
+        </div>
     </div>
-</div>
 
-<div class="exercise">
-    <div class="title">Ejercicio 9.2</div>
-    <p>Estudiar si son linealmente independientes los vectores
-    <math><mover><mi>a</mi><mo>&#x2192;</mo></mover><mo>=</mo><mo>(</mo><mn>3</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>,
-    <math><mover><mi>b</mi><mo>&#x2192;</mo></mover><mo>=</mo><mo>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>)</mo></math> y
-    <math><mover><mi>c</mi><mo>&#x2192;</mo></mover><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>)</mo></math>.
-    Expresar <math><mover><mi>v</mi><mo>&#x2192;</mo></mover><mo>=</mo><mo>(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>)</mo></math> como combinación lineal de ellos.</p>
-
-    <div class="solution">
-        <strong>Solución:</strong> Son independientes pues
-        <math><mo>det</mo><mo>(</mo><mover><mi>a</mi><mo>&#x2192;</mo></mover><mo>,</mo><mover><mi>b</mi><mo>&#x2192;</mo></mover><mo>,</mo><mover><mi>c</mi><mo>&#x2192;</mo></mover><mo>)</mo><mo>&#x2260;</mo><mn>0</mn></math>.
-        Coordenadas:
-        <math>
-            <mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo>
-            <mo>=</mo>
-            <mo>(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>-</mo><mn>3</mn><mo>)</mo>
-        </math>
-    </div>
-</div>
-
-<div class="exercise">
-    <div class="title">Ejercicio 9.3</div>
-    <p>Dados <math><mover><mi>u</mi><mo>&#x2192;</mo></mover><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>)</mo></math>, <math><mover><mi>v</mi><mo>&#x2192;</mo></mover><mo>=</mo><mo>(</mo><mn>2</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi>a</mi><mo>)</mo></math> y <math><mover><mi>w</mi><mo>&#x2192;</mo></mover><mo>=</mo><mo>(</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>)</mo></math>:</p>
-    <ol>
-        <li>Independencia lineal: Dependientes si <math><mi>a</mi><mo>=</mo><mn>2</mn></math>.</li>
-        <li>Ortogonalidad: <math><mo>(</mo><mover><mi>u</mi><mo>&#x2192;</mo></mover><mo>+</mo><mover><mi>v</mi><mo>&#x2192;</mo></mover><mo>)</mo><mo>&#x22C5;</mo><mo>(</mo><mover><mi>u</mi><mo>&#x2192;</mo></mover><mo>-</mo><mover><mi>w</mi><mo>&#x2192;</mo></mover><mo>)</mo><mo>=</mo><mn>0</mn></math> si <math><mi>a</mi><mo>=</mo><mo>-</mo><mn>1</mn></math>.</li>
-    </ol>
-</div>
-
-<div class="exercise">
-    <div class="title">Ejercicio 9.8 (Volumen de Tetraedro)</div>
-    <p>Hallar el volumen del tetraedro con vértices A(0,0,1), B(0,1,5), C(2,2,-1) y D(-2,-2,-4).</p>
+    <div class="exercise">
+        <div class="title">Ejercicio 9.2</div>
+        <p>Estudiar si son linealmente independientes los vectores
+            <math><mover><mi>a</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>3</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>,
+            <math><mover><mi>b</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>)</mo></math> y
+            <math><mover><mi>c</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>)</mo></math>.
+            Expresar <math><mover><mi>v</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>)</mo></math> como combinación lineal de ellos.
+        </p>
         <div class="solution">
-        <strong>Solución:</strong>
-        <math display="block">
-            <mi>V</mi><mo>=</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>|</mo><mo>det</mo><mo>(</mo><mover><mi>AB</mi><mo>&#x2192;</mo></mover><mo>,</mo><mover><mi>AC</mi><mo>&#x2192;</mo></mover><mo>,</mo><mover><mi>AD</mi><mo>&#x2192;</mo></mover><mo>)</mo><mo>|</mo>
-            <mo>=</mo><mfrac><mn>7</mn><mn>3</mn></mfrac>
-        </math>
-        Altura desde A: <math><mi>h</mi><mo>&#x2248;</mo><mn>0.12</mn></math>
+            <strong>Solución:</strong> Independientes pues el determinante es -1. Coordenadas: (1, 3, -3).
+        </div>
     </div>
-</div>
 
-<div class="exercise">
-    <div class="title">Ejercicio 9.20</div>
-    <p>Triángulo rectángulo en A, con A(3,0,-1), B(6,-4,5) y C(5,3,z).</p>
-    <div class="solution">
-        <strong>Solución:</strong>
-        <math><mi>z</mi><mo>=</mo><mn>0</mn></math>.
-        Área: <math><mfrac><msqrt><mn>854</mn></msqrt><mn>2</mn></mfrac><mo>&#x2248;</mo><mn>14.61</mn></math>
+    <div class="exercise">
+        <div class="title">Ejercicio 9.3</div>
+        <p>Considera <math><mover><mi>u</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>)</mo></math>, <math><mover><mi>v</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>2</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi>a</mi><mo>)</mo></math> y <math><mover><mi>w</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>)</mo></math>.
+            a) Hallar <math><mi>a</mi></math> para que sean dependientes.
+            b) Para <math><mi>a</mi><mo>=</mo><mo>-</mo><mn>1</mn></math>, hallar el ángulo entre
+            <math><mover><mi>u</mi><mo>&rarr;</mo></mover><mo>+</mo><mover><mi>v</mi><mo>&rarr;</mo></mover></math> y
+            <math><mover><mi>u</mi><mo>&rarr;</mo></mover><mo>-</mo><mover><mi>v</mi><mo>&rarr;</mo></mover></math>.
+        </p>
+        <div class="solution">
+            <strong>Solución:</strong> a) <math><mi>a</mi><mo>=</mo><mn>2</mn></math>. b) Ángulo &approx; 149,48&deg;.
+        </div>
     </div>
-</div>
 
-<div class="exercise">
-    <div class="title">Ejercicio 9.21</div>
-    <p>Dados <math><mover><mi>u</mi><mo>&#x2192;</mo></mover><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mo>-</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>)</mo></math>, <math><mover><mi>v</mi><mo>&#x2192;</mo></mover><mo>=</mo><mo>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math> y <math><mover><mi>w</mi><mo>&#x2192;</mo></mover><mo>=</mo><mo>(</mo><mn>1</mn><mo>+</mo><mi>&#x3b1;</mi><mo>,</mo><mn>2</mn><mi>&#x3b1;</mi><mo>,</mo><mn>2</mn><mo>-</mo><mn>3</mn><mi>&#x3b1;</mi><mo>)</mo></math>:</p>
-    <div class="solution">
-        <strong>Solución:</strong>
-        <ol>
-            <li>Linealmente dependientes si <math><mi>&#x3b1;</mi><mo>=</mo><mo>-</mo><mn>1</mn></math>.</li>
-            <li>Perpendiculares si <math><mi>&#x3b1;</mi><mo>=</mo><mn>1</mn></math>.</li>
-            <li>Tiene volumen si <math><mi>&#x3b1;</mi><mo>&#x2260;</mo><mo>-</mo><mn>1</mn></math>.</li>
-        </ol>
+    <div class="exercise">
+        <div class="title">Ejercicio 9.4</div>
+        <p>&iquest;Son coplanarios los puntos <math><mi>A</mi><mo>(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>)</mo></math>, <math><mi>B</mi><mo>(</mo><mn>3</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>, <math><mi>C</mi><mo>(</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>8</mn><mo>)</mo></math> y <math><mi>D</mi><mo>(</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>)</mo></math>?</p>
+        <div class="solution">
+            <strong>Solución:</strong> No, el determinante de los vectores es -15.
+        </div>
     </div>
-</div>
+
+    <div class="exercise">
+        <div class="title">Ejercicio 9.5</div>
+        <p>Hallar el área del triángulo de vértices <math><mi>A</mi><mo>(</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>1</mn><mo>)</mo></math>, <math><mi>B</mi><mo>(</mo><mn>4</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>)</mo></math> y <math><mi>C</mi><mo>(</mo><mn>6</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>0</mn><mo>)</mo></math>.</p>
+        <div class="solution">
+            <strong>Solución:</strong>
+            <math><mfrac><msqrt><mn>329</mn></msqrt><mn>2</mn></mfrac><mo>&approx;</mo><mn>9,07</mn></math> u<sup>2</sup>.
+        </div>
+    </div>
+
+    <div class="exercise">
+        <div class="title">Ejercicio 9.6</div>
+        <p>Hallar un vector perpendicular a <math><mover><mi>u</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>3</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math> y <math><mover><mi>v</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>)</mo></math> que tenga norma 2.</p>
+        <div class="solution">
+            <strong>Solución:</strong>
+            <math><mo>&plusmn;</mo><mfrac><mn>2</mn><msqrt><mn>11</mn></msqrt></mfrac><mo>(</mo><mo>-</mo><mn>1</mn><mo>,</mo><mo>-</mo><mn>3</mn><mo>,</mo><mn>3</mn><mo>)</mo></math>.
+        </div>
+    </div>
+
+    <div class="exercise">
+        <div class="title">Ejercicio 9.7</div>
+        <p>Dados <math><mover><mi>a</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mi>k</mi><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>)</mo></math>, <math><mover><mi>b</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mi>k</mi><mo>,</mo><mn>1</mn><mo>)</mo></math> y <math><mover><mi>c</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi>k</mi><mo>)</mo></math>.
+            a) &iquest;Para qu&eacute; <math><mi>k</mi></math> son base de <math><msup><mi>&reals;</mi><mn>3</mn></msup></math>?
+            b) Para <math><mi>k</mi><mo>=</mo><mo>-</mo><mn>1</mn></math>, hallar el &aacute;ngulo entre <math><mover><mi>a</mi><mo>&rarr;</mo></mover></math> y <math><mover><mi>b</mi><mo>&rarr;</mo></mover></math>.
+        </p>
+        <div class="solution">
+            <strong>Solución:</strong> a) <math><mi>k</mi><mo>&ne;</mo><mn>1</mn></math> y <math><mi>k</mi><mo>&ne;</mo><mo>-</mo><mn>2</mn></math>. b) 120&deg;.
+        </div>
+    </div>
+
+    <div class="exercise">
+        <div class="title">Ejercicio 9.8</div>
+        <p>Hallar el volumen del tetraedro de v&eacute;rtices <math><mi>A</mi><mo>(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>)</mo></math>, <math><mi>B</mi><mo>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>5</mn><mo>)</mo></math>, <math><mi>C</mi><mo>(</mo><mn>2</mn><mo>,</mo><mn>2</mn><mo>,</mo><mo>-</mo><mn>1</mn><mo>)</mo></math> y <math><mi>D</mi><mo>(</mo><mo>-</mo><mn>2</mn><mo>,</mo><mo>-</mo><mn>2</mn><mo>,</mo><mo>-</mo><mn>4</mn><mo>)</mo></math>.</p>
+        <div class="solution">
+            <strong>Solución:</strong> Volumen = 7/3 u<sup>3</sup>.
+        </div>
+    </div>
+
+    <div class="exercise">
+        <div class="title">Ejercicio 9.9</div>
+        <p>Hallar el &aacute;rea del paralelogramo definido por los vectores <math><mover><mi>u</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>)</mo></math> y <math><mover><mi>v</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>)</mo></math>.</p>
+        <div class="solution">
+            <strong>Solución:</strong>
+            <math><mn>3</mn><msqrt><mn>2</mn></msqrt><mo>&approx;</mo><mn>4,24</mn></math> u<sup>2</sup>.
+        </div>
+    </div>
+
+    <div class="exercise">
+        <div class="title">Ejercicio 9.10</div>
+        <p>Hallar el volumen del paralelep&iacute;pedo definido por <math><mi>A</mi><mo>(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>)</mo></math>, <math><mi>B</mi><mo>(</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>)</mo></math>, <math><mi>C</mi><mo>(</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo>)</mo></math> y <math><mi>D</mi><mo>(</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>.</p>
+                <div class="solution">
+            <strong>Solución:</strong> 2 u<sup>3</sup>.
+        </div>
+    </div>
+
+    <div class="exercise">
+        <div class="title">Ejercicio 9.11</div>
+        <p>Hallar un vector unitario perpendicular a <math><mover><mi>u</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mo>-</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>)</mo></math> y <math><mover><mi>v</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>.</p>
+        <div class="solution">
+            <strong>Solución:</strong>
+            <math><mo>&plusmn;</mo><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac><mo>(</mo><mo>-</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>)</mo></math>.
+        </div>
+    </div>
+
+    <div class="exercise">
+        <div class="title">Ejercicio 9.12</div>
+        <p>Dados <math><mover><mi>a</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mo>-</mo><mn>1</mn><mo>)</mo></math> y <math><mover><mi>b</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>, buscar <math><mover><mi>x</mi><mo>&rarr;</mo></mover></math> tal que
+            <math><mover><mi>x</mi><mo>&rarr;</mo></mover><mo>&sdot;</mo><mover><mi>a</mi><mo>&rarr;</mo></mover><mo>=</mo><mn>1</mn></math> y
+            <math><mover><mi>x</mi><mo>&rarr;</mo></mover><mo>&and;</mo><mover><mi>a</mi><mo>&rarr;</mo></mover><mo>=</mo><mover><mi>b</mi><mo>&rarr;</mo></mover></math>.
+        </p>
+        <div class="solution">
+            <strong>Solución:</strong> No existe tal vector (el producto vectorial ser&iacute;a perpendicular a <math><mover><mi>a</mi><mo>&rarr;</mo></mover></math>, pero <math><mover><mi>a</mi><mo>&sdot;</mo></mover><mover><mi>b</mi><mo>&rarr;</mo></mover><mo>&ne;</mo><mn>0</mn></math>).
+        </div>
+    </div>
+
+    <div class="exercise">
+        <div class="title">Ejercicio 9.13</div>
+        <p>Estudiar la dependencia lineal de <math><mover><mi>u</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mo>-</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>)</mo></math>, <math><mover><mi>v</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math> y <math><mover><mi>w</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mi>k</mi><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mi>k</mi><mo>)</mo></math>.</p>
+        <div class="solution">
+            <strong>Solución:</strong> Son siempre dependientes para cualquier <math><mi>k</mi></math> (determinante siempre 0).
+        </div>
+    </div>
+
+    <div class="exercise">
+        <div class="title">Ejercicio 9.14</div>
+        <p>Hallar la proyecci&oacute;n del vector <math><mover><mi>u</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math> sobre <math><mover><mi>v</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>8</mn><mo>)</mo></math>.</p>
+        <div class="solution">
+            <strong>Solución:</strong>
+            <math><mfrac><mn>26</mn><msqrt><mn>89</mn></msqrt></mfrac></math>.
+        </div>
+    </div>
+
+    <div class="exercise">
+        <div class="title">Ejercicio 9.15</div>
+        <p>&iquest;Para qu&eacute; valores de <math><mi>k</mi></math> son base <math><mover><mi>u</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mi>k</mi><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>)</mo></math>, <math><mover><mi>v</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mi>k</mi><mo>,</mo><mn>1</mn><mo>)</mo></math> y <math><mover><mi>w</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi>k</mi><mo>)</mo></math>?</p>
+        <div class="solution">
+            <strong>Solución:</strong> <math><mi>k</mi><mo>&ne;</mo><mn>1</mn></math> y <math><mi>k</mi><mo>&ne;</mo><mo>-</mo><mn>2</mn></math>.
+        </div>
+    </div>
+
+    <div class="exercise">
+        <div class="title">Ejercicio 9.16</div>
+        <p>Hallar el producto vectorial y el &aacute;rea del paralelogramo para <math><mover><mi>u</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>3</mn><mo>,</mo><mn>1</mn><mo>,</mo><mo>-</mo><mn>1</mn><mo>)</mo></math> y <math><mover><mi>v</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>)</mo></math>.</p>
+        <div class="solution">
+            <strong>Solución:</strong> <math><mover><mi>u</mi><mo>&rarr;</mo></mover><mo>&and;</mo><mover><mi>v</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>7</mn><mo>,</mo><mo>-</mo><mn>14</mn><mo>,</mo><mn>7</mn><mo>)</mo></math>. &Aacute;rea = <math><mn>7</mn><msqrt><mn>6</mn></msqrt></math>.
+        </div>
+    </div>
+
+    <div class="exercise">
+        <div class="title">Ejercicio 9.17</div>
+        <p>Calcular el &aacute;rea del tri&aacute;ngulo de v&eacute;rtices <math><mi>A</mi><mo>(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>)</mo></math>, <math><mi>B</mi><mo>(</mo><mn>2</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>8</mn><mo>)</mo></math> y <math><mi>C</mi><mo>(</mo><mo>-</mo><mn>1</mn><mo>,</mo><mo>-</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo>)</mo></math>.</p>
+        <div class="solution">
+            <strong>Solución:</strong> <math><mfrac><msqrt><mn>38</mn></msqrt><mn>2</mn></mfrac></math> u<sup>2</sup>.
+        </div>
+    </div>
+
+    <div class="exercise">
+        <div class="title">Ejercicio 9.18</div>
+        <p>Calcular el volumen del tetraedro de v&eacute;rtices <math><mi>A</mi><mo>(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>)</mo></math>, <math><mi>B</mi><mo>(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>)</mo></math>, <math><mi>C</mi><mo>(</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo>)</mo></math> y <math><mi>D</mi><mo>(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>3</mn><mo>)</mo></math>.</p>
+                <div class="solution">
+            <strong>Solución:</strong> 1 u<sup>3</sup>.
+        </div>
+    </div>
+
+    <div class="exercise">
+        <div class="title">Ejercicio 9.19</div>
+        <p>Dado el tri&aacute;ngulo <math><mi>A</mi><mo>(</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>)</mo></math>, <math><mi>B</mi><mo>(</mo><mn>0</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>0</mn><mo>)</mo></math> y <math><mi>C</mi><mo>(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>5</mn><mo>)</mo></math>, calcular &aacute;rea y &aacute;ngulos.</p>
+        <div class="solution">
+            <strong>Solución:</strong> &Aacute;rea = 10,5. &Aacute;ngulos: A=71,56&deg;, B=63&deg;, C=45&deg;.
+        </div>
+    </div>
+
+    <div class="exercise">
+        <div class="title">Ejercicio 9.20</div>
+        <p>El tri&aacute;ngulo <math><mi>A</mi><mi>B</mi><mi>C</mi></math> es rect&aacute;ngulo en <math><mi>A</mi></math>, con <math><mi>A</mi><mo>(</mo><mn>3</mn><mo>,</mo><mn>0</mn><mo>,</mo><mo>-</mo><mn>1</mn><mo>)</mo></math>, <math><mi>B</mi><mo>(</mo><mn>6</mn><mo>,</mo><mo>-</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>)</mo></math> y <math><mi>C</mi><mo>(</mo><mn>5</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi>z</mi><mo>)</mo></math>. Hallar <math><mi>z</mi></math> y el &aacute;rea.</p>
+        <div class="solution">
+            <strong>Solución:</strong> <math><mi>z</mi><mo>=</mo><mn>0</mn></math>. &Aacute;rea = <math><mfrac><msqrt><mn>854</mn></msqrt><mn>2</mn></mfrac><mo>&approx;</mo><mn>14,61</mn></math>.
+        </div>
+    </div>
+
+    <div class="exercise">
+        <div class="title">Ejercicio 9.21</div>
+        <p>Dados <math><mover><mi>u</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mo>-</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>)</mo></math>, <math><mover><mi>v</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math> y <math><mover><mi>w</mi><mo>&rarr;</mo></mover><mo>=</mo><mo>(</mo><mn>1</mn><mo>+</mo><mi>&alpha;</mi><mo>,</mo><mn>2</mn><mi>&alpha;</mi><mo>,</mo><mn>2</mn><mo>-</mo><mn>3</mn><mi>&alpha;</mi><mo>)</mo></math>.
+            a) Dep. lineal. b) Perpendicularidad. c) Volumen del tetraedro.
+        </p>
+        <div class="solution">
+            <strong>Solución:</strong> a) <math><mi>&alpha;</mi><mo>=</mo><mo>-</mo><mn>1</mn></math>. b) <math><mi>&alpha;</mi><mo>=</mo><mn>1</mn></math>. c) Tiene volumen si <math><mi>&alpha;</mi><mo>&ne;</mo><mo>-</mo><mn>1</mn></math>.
+        </div>
+    </div>
 
 </body>
 </html>
