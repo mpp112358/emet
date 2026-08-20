@@ -6,10 +6,10 @@
 [[../_img/ejercicio001g.png]]
 
 Calcula los límites siguientes:
-- $\displaystyle\lim_{{x \rightarrow - \infty}}_{}_{} f$
-- $\displaystyle\lim_{{x \rightarrow - 3}}_{}_{} f$
-- $\displaystyle\lim_{{x \rightarrow - 2^{-}}}_{}_{} f$
-- $\displaystyle\lim_{{x \rightarrow - 2^{+}}}_{}_{} f$
-- $\displaystyle\lim_{{x \rightarrow - 2}}_{}_{} f$
-- $\displaystyle\lim_{{x \rightarrow 0}}_{}_{} f$
-- $\displaystyle\lim_{{x \rightarrow  \infty}}_{}_{} f$
+- $$\displaystyle\lim_{{x \rightarrow - \infty}}_{}_{} f$$
+- $$\displaystyle\lim_{{x \rightarrow - 3}}_{}_{} f$$
+- $$\displaystyle\lim_{{x \rightarrow - 2^{-}}}_{}_{} f$$
+- $$\displaystyle\lim_{{x \rightarrow - 2^{+}}}_{}_{} f$$
+- $$\displaystyle\lim_{{x \rightarrow - 2}}_{}_{} f$$
+- $$\displaystyle\lim_{{x \rightarrow 0}}_{}_{} f$$
+- $$\displaystyle\lim_{{x \rightarrow  \infty}}_{}_{} f$$
