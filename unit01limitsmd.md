@@ -1,0 +1,161 @@
+
+
+# Tema 1: Límites y continuidad
+
+
+## Ejercicio
+
+![img](./_img/ejercicio001g.png)
+
+-   $\displaystyle\lim_{ {x} \rightarrow {-\infty} } {f}$
+-   $\displaystyle\lim_{ {x} \rightarrow {-3} } {f}$
+-   $\displaystyle\lim_{ {x} \rightarrow {-2^-} } {f}$
+
+-   $\displaystyle\lim_{ {x} \rightarrow {-2^+} } {f}$
+-   $\displaystyle\lim_{ {x} \rightarrow {-2} } {f}$
+-   $\displaystyle\lim_{ {x} \rightarrow {0} } {f}$
+-   $\displaystyle\lim_{ {x} \rightarrow {\infty} } {f}$
+
+
+## Ejercicio
+
+Dibuja la gráfica de una función $f$ tal que:
+
+$$\begin{array}{|l|l|l|} \hline
+\text{dom }f=\mathbb{R}-(-2,2)&\displaystyle\lim_{ {x} \rightarrow {-4} } {f}=-3&f(-2)=f(2)=0\\ \hline
+\displaystyle\lim_{ {x} \rightarrow {-\infty} } {f}=\infty&f(-4)=-2&\displaystyle\lim_{ {x} \rightarrow {\infty} } {f}=-2\\ \hline\end{array}$$
+
+
+## Ejercicio
+
+![img](./_img/ejercicio0001a.png)
+
+-   $\displaystyle\lim_{ {x} \rightarrow {-\infty} } {f}$
+-   $\displaystyle\lim_{ {x} \rightarrow {-2} } {f}$
+-   $\displaystyle\lim_{ {x} \rightarrow {-1} } {f}$
+
+-   $\displaystyle\lim_{ {x} \rightarrow {0} } {f}$
+-   $\displaystyle\lim_{ {x} \rightarrow {1} } {f}$
+-   $\displaystyle\lim_{ {x} \rightarrow {\infty} } {f}$
+
+
+## Ejercicio
+
+![img](./_img/ejercicio0001b.png)
+
+-   $\displaystyle\lim_{ {x} \rightarrow {-\infty} } {g}$
+-   $\displaystyle\lim_{ {x} \rightarrow {-3} } {g}$
+-   $\displaystyle\lim_{ {x} \rightarrow {-1} } {g}$
+-   $\displaystyle\lim_{ {x} \rightarrow {0} } {g}$
+
+-   $\displaystyle\lim_{ {x} \rightarrow {1} } {g}$
+-   $\displaystyle\lim_{ {x} \rightarrow {2} } {g}$
+-   $\displaystyle\lim_{ {x} \rightarrow {\infty} } {g}$
+
+
+## Ejercicio
+
+![img](./_img/ejercicio001c.png)
+
+
+## Ejercicio
+
+![img](./_img/ejercicio001d.png)
+
+
+## Ejercicio
+
+![img](./_img/ejercicio001e.png)
+
+
+## Ejercicio
+
+![img](./_img/ejercicio001f.png)
+
+
+## Ejercicio
+
+![img](./_img/ejercicio001f.png)
+
+
+## Ejercicio
+
+Dibuja la gráfica de una función $f$ tal que:
+
+$$\begin{array}{|l|l|l|} \hline
+\text{dom }f=\mathbb{R}-(-2,2)&\displaystyle\lim_{ {x} \rightarrow {-4} } {f}=-3&f(-2)=f(2)=0\\ \hline
+\displaystyle\lim_{ {x} \rightarrow {-\infty} } {f}=\infty&f(-4)=-2&\displaystyle\lim_{ {x} \rightarrow {\infty} } {f}=-2\\ \hline\end{array}$$
+
+
+## Ejercicio
+
+Dibuja la gráfica de una función $f$ tal que:
+
+$$\begin{array}{|l|l|l|} \hline
+\text{dom }h=\mathbb{R}-\{-2,2\}&h(-3)=1&\displaystyle\lim_{ {x} \rightarrow {2^-} } {h}=-\infty\\ \hline
+\displaystyle\lim_{ {x} \rightarrow {-\infty} } {h}=-\infty&\displaystyle\lim_{ {x} \rightarrow {-2^-} } {h}=-\infty&\displaystyle\lim_{ {x} \rightarrow {2^+} } {h}=\infty\\ \hline
+\displaystyle\lim_{ {x} \rightarrow {-3} } {h}=-2&\displaystyle\lim_{ {x} \rightarrow {-2^+} } {h}=\infty&\displaystyle\lim_{ {x} \rightarrow {\infty} } {h}=\infty\\ \hline\end{array}$$
+
+
+## Ejercicio
+
+Dibuja la gráfica de una función $f$ tal que:
+
+![img](./_img/ejercicio002b.png)
+
+
+## Ejercicio
+
+Dibuja la gráfica de una función $f$ tal que:
+
+![img](./_img/ejercicio002c.png)
+
+
+## Ejercicio
+
+Dibuja la gráfica de una función $f$ tal que:
+
+![img](./_img/ejercicio002e.png)
+
+
+## Ejercicio
+
+Dibuja la gráfica de una función $f$ tal que:
+
+![img](./_img/ejercicio002f.png)
+
+
+## Ejercicio
+
+Dibuja la gráfica de una función $f$ tal que:
+
+![img](./_img/ejercicio002g.png)
+
+
+## Ejercicio
+
+Dibuja la gráfica de una función $f$ tal que:
+
+![img](./_img/ejercicio002h.png)
+
+
+## Ejercicio
+
+Sea $f$ una función de la que se sabe que:
+
+-   $\text{dom} f =\mathbb{R}$;
+-   $f(1)=0$;
+-   $\displaystyle\lim_{ {x} \rightarrow {1^-} } {f} = \infty$; $\displaystyle\lim_{ {x} \rightarrow {1^+} } {f}=-\infty$; y,
+-   $\displaystyle\lim_{ {x} \rightarrow {-\infty} } {f}=\displaystyle\lim_{ {x} \rightarrow {\infty} } {f}=2$.
+
+1.  Determine razonadamente o discuta la inexistencia del límite siguiente: $\displaystyle\lim_{ {x} \rightarrow {1} } {f^2}$.
+2.  Calcule $\displaystyle\lim_{ {x} \rightarrow {1} } {(f \circ f)}$ (sugerencia: calcule primero los límites laterales).
+
+
+## Ejercicio
+
+$\text{dom} f =\mathbb{R}$; $f(1)=0$; $\displaystyle\lim_{ {x} \rightarrow {1^-} } {f} = \infty$; $\displaystyle\lim_{ {x} \rightarrow {1^+} } {f}=-\infty$; y, $\displaystyle\lim_{ {x} \rightarrow {-\infty} } {f}=\displaystyle\lim_{ {x} \rightarrow {\infty} } {f}=2$.
+
+1.  Determine razonadamente o discuta la inexistencia del límite siguiente: $\displaystyle\lim_{ {x} \rightarrow {1} } {f^2}$.
+2.  Calcule $\displaystyle\lim_{ {x} \rightarrow {1} } {(f \circ f)}$ (sugerencia: calcule primero los límites laterales).
+
