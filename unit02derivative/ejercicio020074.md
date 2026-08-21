@@ -1,9 +1,0 @@
-Date: 2025-09-25 9:04
-Tags: [derivada,lhopital]
-
-# Ejercicio 2.74
-
- (Junio 2005, B.3, 3 ptos.) Calcular los límites siguientes:
-
-A.   $$ \underset{x \rightarrow \infty}{\lim} \left( \sqrt{x^2 + x}  -  \sqrt{x^2 - x} \right)$$ 
-B.   $$ \underset{x \rightarrow \infty}{\lim}  x  \left[ \arctg ( e^x ) -  \dfrac{\pi}{2} \right]$$ 
