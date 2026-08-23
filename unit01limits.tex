@@ -1,0 +1,293 @@
+% Created 2026-08-23 Sun 17:23
+% Intended LaTeX compiler: pdflatex
+\documentclass[10pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose, tmargin=1.5cm, bmargin=1.5cm, lmargin=1.5cm, rmargin=1.5cm}
+\author{Departamento de Matemáticas}
+\date{\today}
+\title{Matemáticas II}
+\hypersetup{
+ pdfauthor={Departamento de Matemáticas},
+ pdftitle={Matemáticas II},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 30.2 (Org mode 9.7.29)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\section{Límites y continuidad}
+\label{sec:orgeb7309d}
+\subsection{Ejemplo}
+\label{sec:orgf8a2eba}
+\begin{center}
+\includegraphics[width=.9\linewidth]{./_img/ejercicio001g.png}
+\end{center}
+
+\begin{itemize}
+\item \(\displaystyle\lim_{ {x} \rightarrow {-\infty} } {f}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {-3} } {f}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {-2^-} } {f}\)
+\end{itemize}
+\begin{itemize}
+\item \(\displaystyle\lim_{ {x} \rightarrow {-2^+} } {f}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {-2} } {f}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {0} } {f}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {\infty} } {f}\)
+\end{itemize}
+\subsection{Ejemplo}
+\label{sec:orgbd09ef0}
+
+Dibuja la gráfica de una función \(f\) tal que:
+
+$$\begin{array}{|l|l|} \hline
+\text{dom }f=\mathbb{R}-(-2,2)&\displaystyle\lim_{ {x} \rightarrow {-4} } {f}=-3 \\ \hline f(-2)=f(2)=0 & \displaystyle\lim_{ {x} \rightarrow {-\infty} } {f}=\infty \\ \hline f(-4)=-2 & \displaystyle\lim_{ {x} \rightarrow {\infty} } {f}=-2  \\ \hline\end{array}$$
+\subsection*{Tareas}
+\label{sec:org9796cd4}
+\begin{itemize}
+\item Estudiar:
+\begin{itemize}
+\item Concepto de límite finito o infinito (en un punto, laterales, en el infinito).
+\item Teorema de existencia del límite.
+\end{itemize}
+\item Encuentra un ejemplo de que cada uno de los tipos de límite (finito en un punto, infinito en un punto, no exitente en un punto, lateral finito, lateral infinito,\ldots{}).
+\item Ejercicios 1.3 - 1.15.
+\end{itemize}
+\subsection{Ejercicio}
+\label{sec:org246da8b}
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{./_img/ejercicio0001a.png}
+\end{center}
+
+\begin{itemize}
+\item \(\displaystyle\lim_{ {x} \rightarrow {-\infty} } {f}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {-2} } {f}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {-1} } {f}\)
+\end{itemize}
+\begin{itemize}
+\item \(\displaystyle\lim_{ {x} \rightarrow {0} } {f}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {1} } {f}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {\infty} } {f}\)
+\end{itemize}
+\subsection{Ejercicio}
+\label{sec:orge1488f2}
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{./_img/ejercicio0001b.png}
+\end{center}
+
+\begin{itemize}
+\item \(\displaystyle\lim_{ {x} \rightarrow {-\infty} } {g}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {-3} } {g}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {-1} } {g}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {0} } {g}\)
+\end{itemize}
+\begin{itemize}
+\item \(\displaystyle\lim_{ {x} \rightarrow {1} } {g}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {2} } {g}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {\infty} } {g}\)
+\end{itemize}
+\subsection{Ejercicio}
+\label{sec:orgc683c24}
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{./_img/ejercicio001c.png}
+\end{center}
+\subsection{Ejercicio}
+\label{sec:org0be557b}
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{./_img/ejercicio001d.png}
+\end{center}
+\subsection{Ejercicio}
+\label{sec:orgcdbcd5a}
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{./_img/ejercicio001e.png}
+\end{center}
+\subsection{Ejercicio}
+\label{sec:orgf4b0291}
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{./_img/ejercicio001f.png}
+\end{center}
+\subsection{Ejercicio}
+\label{sec:orgeb5308f}
+
+Dibuja la gráfica de una función \(f\) tal que:
+
+$$\begin{array}{|l|l|l|} \hline
+\text{dom }h=\mathbb{R}-\{-2,2\}&h(-3)=1&\displaystyle\lim_{ {x} \rightarrow {2^-} } {h}=-\infty\\ \hline
+\displaystyle\lim_{ {x} \rightarrow {-\infty} } {h}=-\infty&\displaystyle\lim_{ {x} \rightarrow {-2^-} } {h}=-\infty&\displaystyle\lim_{ {x} \rightarrow {2^+} } {h}=\infty\\ \hline
+\displaystyle\lim_{ {x} \rightarrow {-3} } {h}=-2&\displaystyle\lim_{ {x} \rightarrow {-2^+} } {h}=\infty&\displaystyle\lim_{ {x} \rightarrow {\infty} } {h}=\infty\\ \hline\end{array}$$
+\subsection{Ejercicio}
+\label{sec:org2008067}
+
+Dibuja la gráfica de una función \(f\) tal que:
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{./_img/ejercicio002b.png}
+\end{center}
+\subsection{Ejercicio}
+\label{sec:org2384a34}
+
+Dibuja la gráfica de una función \(f\) tal que:
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{./_img/ejercicio002c.png}
+\end{center}
+\subsection{Ejercicio}
+\label{sec:orgf99aa92}
+
+Dibuja la gráfica de una función \(f\) tal que:
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{./_img/ejercicio002e.png}
+\end{center}
+\subsection{Ejercicio}
+\label{sec:orgb0d66c3}
+
+Dibuja la gráfica de una función \(f\) tal que:
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{./_img/ejercicio002f.png}
+\end{center}
+\subsection{Ejercicio}
+\label{sec:orge8e6cc7}
+
+Dibuja la gráfica de una función \(f\) tal que:
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{./_img/ejercicio002g.png}
+\end{center}
+\subsection{Ejercicio}
+\label{sec:org3960b11}
+
+Dibuja la gráfica de una función \(f\) tal que:
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{./_img/ejercicio002h.png}
+\end{center}
+\subsection{Ejemplo}
+\label{sec:org2af2253}
+
+Sea \(f\) una función de la que se sabe que:
+
+\begin{itemize}
+\item \(\text{dom} f =\mathbb{R}\);
+\item \(f(1)=0\);
+\item \(\displaystyle\lim_{ {x} \rightarrow {1^-} } {f} = \infty\); \(\displaystyle\lim_{ {x} \rightarrow {1^+} } {f}=-\infty\); y,
+\item \(\displaystyle\lim_{ {x} \rightarrow {-\infty} } {f}=\displaystyle\lim_{ {x} \rightarrow {\infty} } {f}=2\).
+\end{itemize}
+
+
+\begin{enumerate}
+\item Determine razonadamente o discuta la inexistencia del límite siguiente: \(\displaystyle\lim_{ {x} \rightarrow {1} } {f^2}\).
+\item Calcule \(\displaystyle\lim_{ {x} \rightarrow {1} } {(f \circ f)}\) (sugerencia: calcule primero los límites laterales).
+\end{enumerate}
+\subsection*{Tareas}
+\label{sec:orgfd4c7dc}
+\begin{itemize}
+\item Estudiar: límites de funciones elementales en su dominio.
+\item Estudiar: límites de operaciones (\(+\), \(\cdot\), \(/\), \(\circ\)).
+\item Ejercicios: 1.17.
+\end{itemize}
+\subsection{Ejercicio}
+\label{sec:orgd708efb}
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{./_img/f3.png}
+\end{center}
+\begin{center}
+\includegraphics[width=.9\linewidth]{./_img/g3.png}
+\end{center}
+\begin{itemize}
+\item \(\displaystyle\lim_{ {x} \rightarrow {-1} } {f}\), \(\displaystyle\lim_{ {x} \rightarrow {4} } {f}\) y \(\displaystyle\lim_{ {x} \rightarrow {1} } {g}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {-\infty} } {(f+g)}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {-1^-} } {(g \circ f)}\)
+\end{itemize}
+\subsection*{Ejemplo}
+\label{sec:orgc076db0}
+\begin{itemize}
+\item \(\displaystyle\lim_{ {x} \rightarrow {-\infty} } {\left( x^3+10x^2+1 \right)}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {\pi^-} } {\ln \left(\sin x\right)}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {\infty} } {\left( \dfrac{1}{2} \right)^{x^2-x}}\)
+\end{itemize}
+\begin{itemize}
+\item \(\displaystyle\lim_{ {x} \rightarrow {0^-} } {\dfrac{1}{1-e^{1/x}}}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {0^+} } {\dfrac{1}{1-e^{1/x}}}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {0^+} } {\dfrac{1}{1-e^{1/x}}}\)
+\end{itemize}
+\subsection{Ejercicio}
+\label{sec:orgd676895}
+
+\begin{itemize}
+\item \(\displaystyle\lim_{ {x} \rightarrow {1^+} } {\sqrt{\dfrac{x-1}{x+2}}}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {1^-} } {\sqrt{\dfrac{x-1}{x+2}}}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {2^+} } {\ln\left(\dfrac{x}{-2+x}\right)}\)
+\end{itemize}
+\begin{itemize}
+\item \(\displaystyle\lim_{ {x} \rightarrow {2} } {\ln^2(x-2)}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {\infty} } {\dfrac{1}{\dfrac{\pi}{2}-\text{atan } x}}\)
+\end{itemize}
+\subsection{Ejercicio}
+\label{sec:orga3f0b3a}
+
+\begin{itemize}
+\item \(\displaystyle\lim_{ {x} \rightarrow {\infty} } {\left( x^5-3x^2+1 \right)}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {\pi^-} } {\dfrac{1}{x\sin x}}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {\infty} } {\left( \dfrac{1}{2} \right)^{x^2-x}}\)
+\end{itemize}
+\begin{itemize}
+\item \(\displaystyle\lim_{ {x} \rightarrow {0^-} } {\dfrac{1}{1-e^{1/x}}}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {0^+} } {\dfrac{1}{1-e^{1/x}}}\)
+\end{itemize}
+\subsection{Ejemplo}
+\label{sec:orgc306fb0}
+
+\(\displaystyle\lim_{ {x} \rightarrow {1} } {5^{\frac{1}{x-1}}}\)
+\subsection{Ejemplo}
+\label{sec:org81da02f}
+
+\begin{itemize}
+\item \(\displaystyle\lim_{ {x} \rightarrow {1} } {\dfrac{x^4-1}{x^3-1}}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {1} } {\dfrac{\dfrac{1}{x}-1}{x-1}}\)
+\end{itemize}
+\subsection{Ejemplo}
+\label{sec:orgcee98ff}
+
+\(\displaystyle\lim_{ {x} \rightarrow {4} } {\dfrac{3-\sqrt{5+x}}{1-\sqrt{5-x}}}\)
+\subsection{Ejemplo}
+\label{sec:orgd77cc36}
+
+\begin{itemize}
+\item \(\displaystyle\lim_{ {x} \rightarrow {\infty} } {\sqrt{ \dfrac{x^4-1}{x^3-1} }}\)
+\item \(\displaystyle\lim_{ {x} \rightarrow {\infty} } {\dfrac{1-x}{\sqrt{x^2-1}}}\)
+\end{itemize}
+\subsection{Ejemplo}
+\label{sec:orgd318e43}
+
+\(\displaystyle\lim_{ {x} \rightarrow {-\infty} } {\sqrt{x^2+3}+x}\)
+\subsection{Ejemplo}
+\label{sec:org7459a00}
+
+\(\displaystyle\lim_{ {x} \rightarrow {\infty} } {\left( \dfrac{x^2}{x-1} - \dfrac{x^2}{x+1} \right)}\)
+\subsection{Ejemplo}
+\label{sec:org44d78fe}
+
+\(\displaystyle\lim_{ {x} \rightarrow {0} } {\left(\dfrac{1+x^2}{1-x^2}\right)^{\dfrac{1+3x^2}{x^2}}}\)
+\end{document}
