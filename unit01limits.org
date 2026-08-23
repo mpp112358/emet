@@ -1,11 +1,15 @@
 #+title: Matemáticas II
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
 #+REVEAL_MARGIN: 0.05
-#+REVEAL_TITLE_SLIDE: <h1>%t</h1>
+#+REVEAL_TITLE_SLIDE:
+#+REVEAL_HLEVEL: 2
 #+OPTIONS: toc:nil
+#+startup: num
+#+MY_OFFSET: 0
 
-* Tema 1: Límites y continuidad
-** Ejercicio
+
+* Límites y continuidad
+** Ejemplo
 #+REVEAL_HTML: <div style="display: grid; grid-template-columns: 60% auto auto;">
 #+ATTR_HTML: :width 100%
 [[./_img/ejercicio001g.png]]
@@ -21,13 +25,22 @@
 #+REVEAL_HTML: </div>
 #+REVEAL_HTML: </div>
 
-** Ejercicio
+** Ejemplo
 
 Dibuja la gráfica de una función $f$ tal que:
 
-$$\begin{array}{|l|l|l|} \hline
-\text{dom }f=\mathbb{R}-(-2,2)&\displaystyle\lim_{ {x} \rightarrow {-4} } {f}=-3&f(-2)=f(2)=0\\ \hline
-\displaystyle\lim_{ {x} \rightarrow {-\infty} } {f}=\infty&f(-4)=-2&\displaystyle\lim_{ {x} \rightarrow {\infty} } {f}=-2\\ \hline\end{array}$$
+$$\begin{array}{|l|l|} \hline
+\text{dom }f=\mathbb{R}-(-2,2)&\displaystyle\lim_{ {x} \rightarrow {-4} } {f}=-3 \\ \hline f(-2)=f(2)=0 & \displaystyle\lim_{ {x} \rightarrow {-\infty} } {f}=\infty \\ \hline f(-4)=-2 & \displaystyle\lim_{ {x} \rightarrow {\infty} } {f}=-2  \\ \hline\end{array}$$
+
+** Tareas
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+- Estudiar:
+  - Concepto de límite finito o infinito (en un punto, laterales, en el infinito).
+  - Teorema de existencia del límite.
+- Encuentra un ejemplo de que cada uno de los tipos de límite (finito en un punto, infinito en un punto, no exitente en un punto, lateral finito, lateral infinito,...).
+- Ejercicios 1.3 - 1.15.
 
 ** Ejercicio
 
@@ -76,18 +89,6 @@ $$\begin{array}{|l|l|l|} \hline
 ** Ejercicio
 
 [[./_img/ejercicio001f.png]]
-
-** Ejercicio
-
-[[./_img/ejercicio001f.png]]
-
-** Ejercicio
-
-Dibuja la gráfica de una función $f$ tal que:
-
-$$\begin{array}{|l|l|l|} \hline
-\text{dom }f=\mathbb{R}-(-2,2)&\displaystyle\lim_{ {x} \rightarrow {-4} } {f}=-3&f(-2)=f(2)=0\\ \hline
-\displaystyle\lim_{ {x} \rightarrow {-\infty} } {f}=\infty&f(-4)=-2&\displaystyle\lim_{ {x} \rightarrow {\infty} } {f}=-2\\ \hline\end{array}$$
 
 ** Ejercicio
 
@@ -149,6 +150,74 @@ Sea $f$ una función de la que se sabe que:
 
 ** Ejercicio
 
-$\text{dom} f =\mathbb{R}$; $f(1)=0$; $\displaystyle\lim_{ {x} \rightarrow {1^-} } {f} = \infty$; $\displaystyle\lim_{ {x} \rightarrow {1^+} } {f}=-\infty$; y, $\displaystyle\lim_{ {x} \rightarrow {-\infty} } {f}=\displaystyle\lim_{ {x} \rightarrow {\infty} } {f}=2$.
-a. Determine razonadamente o discuta la inexistencia del límite siguiente: $\displaystyle\lim_{ {x} \rightarrow {1} } {f^2}$.
-b. Calcule $\displaystyle\lim_{ {x} \rightarrow {1} } {(f \circ f)}$ (sugerencia: calcule primero los límites laterales).
+#+REVEAL_HTML: <div style="display: grid; grid-template-columns: auto auto;">
+[[./_img/f3.png]]
+#+REVEAL_HTML: <div>
+[[./_img/g3.png]]
+#+REVEAL_HTML: </div>
+#+REVEAL_HTML: </div>
+
+
+- $\displaystyle\lim_{ {x} \rightarrow {-1} } {f}$, $\displaystyle\lim_{ {x} \rightarrow {4} } {f}$ y $\displaystyle\lim_{ {x} \rightarrow {1} } {g}$
+- $\displaystyle\lim_{ {x} \rightarrow {-\infty} } {(f+g)}$
+- $\displaystyle\lim_{ {x} \rightarrow {-1^-} } {(g \circ f)}$
+
+** Ejercicio
+
+#+REVEAL_HTML: <div style="display: grid; grid-template-columns: auto auto;">
+- $\displaystyle\lim_{ {x} \rightarrow {1^+} } {\sqrt{\dfrac{x-1}{x+2}}}$
+- $\displaystyle\lim_{ {x} \rightarrow {1^-} } {\sqrt{\dfrac{x-1}{x+2}}}$
+- $\displaystyle\lim_{ {x} \rightarrow {2^+} } {\ln\left(\dfrac{x}{-2+x}\right)}$
+#+REVEAL_HTML: <div>
+- $\displaystyle\lim_{ {x} \rightarrow {2} } {\ln^2(x-2)}$
+- $\displaystyle\lim_{ {x} \rightarrow {\infty} } {\dfrac{1}{\dfrac{\pi}{2}-\text{atan } x}}$
+#+REVEAL_HTML: </div>
+#+REVEAL_HTML: </div>
+
+** Ejercicio
+
+#+REVEAL_HTML: <div style="display: grid; grid-template-columns: auto auto;">
+- $\displaystyle\lim_{ {x} \rightarrow {\infty} } {\left( x^5-3x^2+1 \right)}$
+- $\displaystyle\lim_{ {x} \rightarrow {\pi^-} } {\dfrac{1}{x\sin x}}$
+- $\displaystyle\lim_{ {x} \rightarrow {\infty} } {\left( \dfrac{1}{2} \right)^{x^2-x}}$
+#+REVEAL_HTML: <div>
+- $\displaystyle\lim_{ {x} \rightarrow {0^-} } {\dfrac{1}{1-e^{1/x}}}$
+- $\displaystyle\lim_{ {x} \rightarrow {0^+} } {\dfrac{1}{1-e^{1/x}}}$
+#+REVEAL_HTML: </div>
+#+REVEAL_HTML: </div>
+
+** Ejemplo
+
+$\displaystyle\lim_{ {x} \rightarrow {1} } {5^{\frac{1}{x-1}}}$
+
+** Ejemplo
+
+- $\displaystyle\lim_{ {x} \rightarrow {1} } {\dfrac{x^4-1}{x^3-1}}$
+- $\displaystyle\lim_{ {x} \rightarrow {1} } {\dfrac{\dfrac{1}{x}-1}{x-1}}$
+
+
+** Ejemplo
+
+$\displaystyle\lim_{ {x} \rightarrow {4} } {\dfrac{3-\sqrt{5+x}}{1-\sqrt{5-x}}}$
+
+** Ejemplo
+
+- $\displaystyle\lim_{ {x} \rightarrow {\infty} } {\sqrt{ \dfrac{x^4-1}{x^3-1} }}$
+- $\displaystyle\lim_{ {x} \rightarrow {\infty} } {\dfrac{1-x}{\sqrt{x^2-1}}}$
+
+** Ejemplo
+
+$\limite{x}{-\infty}{\sqrt{x^2+3}+x}$
+
+** Ejemplo
+
+$\limite{x}{\infty}{\left( \dfrac{x^2}{x-1} - \dfrac{x^2}{x+1} \right)}$
+
+** Ejemplo
+
+$\limite{x}{0}{\left(\dfrac{1+x^2}{1-x^2}\right)^{\dfrac{1+3x^2}{x^2}}}$
+
+
+# Local Variables:
+# my-org-num-start: 1
+# End:
