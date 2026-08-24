@@ -16,6 +16,9 @@
 
 
 * Límites y continuidad
+:PROPERTIES:
+:ID:       6f1f6c6c-0942-40d6-bcd3-f0f4275d86e7
+:END:
 ** Ejemplo
 :PROPERTIES:
 :ID:       a4f2fc71-59e7-4eb2-b45e-1c5fa1e4e870

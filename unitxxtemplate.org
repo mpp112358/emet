@@ -1,0 +1,22 @@
+#+title: Matemáticas II
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_MARGIN: 0.05
+#+REVEAL_TITLE_SLIDE:
+#+REVEAL_HLEVEL: 2
+#+OPTIONS: toc:nil
+#+startup: num
+#+MY_OFFSET: 0
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [10pt, a4paper]
+#+LATEX_HEADER: \usepackage[T1]{fontenc}
+#+LATEX_HEADER: \usepackage[utf8]{inputenc}
+#+LATEX_HEADER: \usepackage[a4paper]{geometry}
+#+LATEX_HEADER: \geometry{verbose, tmargin=1.5cm, bmargin=1.5cm, lmargin=1.5cm, rmargin=1.5cm}
+#+AUTHOR: Departamento de Matemáticas
+
+
+
+# Local Variables:
+# my-org-num-start: 1
+# eval: (my-load-refs)
+# End:
