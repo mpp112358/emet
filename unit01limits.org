@@ -5,13 +5,14 @@
 #+REVEAL_HLEVEL: 2
 #+OPTIONS: toc:nil
 #+startup: num
-#+MY_OFFSET: 0
+#+MY_ORG_NUM_START: 1
 #+LATEX_CLASS: article
 #+LATEX_CLASS_OPTIONS: [10pt, a4paper]
 #+LATEX_HEADER: \usepackage[T1]{fontenc}
 #+LATEX_HEADER: \usepackage[utf8]{inputenc}
 #+LATEX_HEADER: \usepackage[a4paper]{geometry}
 #+LATEX_HEADER: \geometry{verbose, tmargin=1.5cm, bmargin=1.5cm, lmargin=1.5cm, rmargin=1.5cm}
+#+EXCLUDE_TAGS: noexport
 #+AUTHOR: Departamento de Matemáticas
 
 
@@ -345,7 +346,13 @@ $\displaystyle\lim_{ {x} \rightarrow {\infty} } {\left( \dfrac{x^2}{x-1} - \dfra
 $\displaystyle\lim_{ {x} \rightarrow {0} } {\left(\dfrac{1+x^2}{1-x^2}\right)^{\dfrac{1+3x^2}{x^2}}}$
 
 
+
+* File code :noexport:
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
+
 # Local Variables:
-# my-org-num-start: 1
 # eval: (my-load-refs)
 # End:

@@ -5,18 +5,25 @@
 #+REVEAL_HLEVEL: 2
 #+OPTIONS: toc:nil
 #+startup: num
-#+MY_OFFSET: 0
+#+MY_ORG_NUM_START: 1
 #+LATEX_CLASS: article
 #+LATEX_CLASS_OPTIONS: [10pt, a4paper]
 #+LATEX_HEADER: \usepackage[T1]{fontenc}
 #+LATEX_HEADER: \usepackage[utf8]{inputenc}
 #+LATEX_HEADER: \usepackage[a4paper]{geometry}
 #+LATEX_HEADER: \geometry{verbose, tmargin=1.5cm, bmargin=1.5cm, lmargin=1.5cm, rmargin=1.5cm}
+#+EXCLUDE_TAGS: noexport
 #+AUTHOR: Departamento de Matemáticas
 
 
+* Unit title
+
+* File code :noexport:
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
 
 # Local Variables:
-# my-org-num-start: 1
 # eval: (my-load-refs)
 # End:
