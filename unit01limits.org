@@ -345,7 +345,40 @@ $\displaystyle\lim_{ {x} \rightarrow {\infty} } {\left( \dfrac{x^2}{x-1} - \dfra
 
 $\displaystyle\lim_{ {x} \rightarrow {0} } {\left(\dfrac{1+x^2}{1-x^2}\right)^{\dfrac{1+3x^2}{x^2}}}$
 
+** Ejercicio
+:PROPERTIES:
+:ID:       85b88b58-78cb-468b-b026-95b48557a1ae
+:END:
 
+$\displaystyle\lim_{ {x} \rightarrow {5} } {\dfrac{1}{x^2-10x+25}}$
+
+** Ejercicio
+:PROPERTIES:
+:ID:       ee9ac2b7-c957-4cdf-a062-86b9bf225192
+:END:
+
+$\displaystyle\lim_{ {x} \rightarrow {0} } {\left(e^{2/x}+1\right)}$
+
+** Ejercicio
+:PROPERTIES:
+:ID:       0a12988a-7ff1-4721-bbf9-8d6398e3628b
+:END:
+
+$\displaystyle\lim_{ {x} \rightarrow {0} } {\left(e^{2/x}+1\right)}$
+
+** Ejercicio
+:PROPERTIES:
+:ID:       f3790f2c-5707-435b-9117-916c58e6c956
+:END:
+
+$\displaystyle\lim_{ {x} \rightarrow {0} } {\left(e^{2/x}+1\right)}$
+
+** Ejercicio
+:PROPERTIES:
+:ID:       597ef999-e978-4639-b4ba-624521b5fa26
+:END:
+
+$\displaystyle\lim_{ {x} \rightarrow {2} } {\dfrac{x^2-x-2}{x^3-3x^2+4}}$
 
 * File code :noexport:
 :PROPERTIES:
