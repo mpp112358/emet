@@ -58,7 +58,21 @@ $$\begin{array}{|l|l|} \hline
   - Concepto de límite finito o infinito (en un punto, laterales, en el infinito).
   - Teorema de existencia del límite.
 - Encuentra un ejemplo de que cada uno de los tipos de límite (finito en un punto, infinito en un punto, no exitente en un punto, lateral finito, lateral infinito,...).
-- Ejercicios: [[id:06125781-3834-403d-abb5-065afc25e265][1.3]] - [[id:1b76ff04-e2a0-4a22-a649-50bf5d2a27e8][1.15]]
+- Ejercicios: [[id:dfedc18e-867a-4cab-b6cf-668b0450d6ce][1.3]] - [[id:1b76ff04-e2a0-4a22-a649-50bf5d2a27e8][1.16]]
+
+
+** Ejercicio
+:PROPERTIES:
+:ID:       dfedc18e-867a-4cab-b6cf-668b0450d6ce
+:END:
+
+Calcula las derivadas de las funciones siguientes:
+
+- $f(x) = \dfrac{x^3-2x^2+x}{(x-1)^2}$
+- $f(x) = x \cdot \sin^2 x$
+- $f(x) = \ln \left( \sqrt{1 - x^2} \right)$
+- $f(x) = \sqrt{\text{atan } \left( x^2 + 1 \right)}$
+
 
 ** Ejercicio
 :PROPERTIES:
@@ -345,6 +359,13 @@ $\displaystyle\lim_{ {x} \rightarrow {\infty} } {\left( \dfrac{x^2}{x-1} - \dfra
 
 $\displaystyle\lim_{ {x} \rightarrow {0} } {\left(\dfrac{1+x^2}{1-x^2}\right)^{\dfrac{1+3x^2}{x^2}}}$
 
+** Tareas
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+- Estudiar: indeterminaciones.
+- Ejercicios:
+
 ** Ejercicio
 :PROPERTIES:
 :ID:       85b88b58-78cb-468b-b026-95b48557a1ae
@@ -379,6 +400,62 @@ $\displaystyle\lim_{ {x} \rightarrow {0} } {\left(e^{2/x}+1\right)}$
 :END:
 
 $\displaystyle\lim_{ {x} \rightarrow {2} } {\dfrac{x^2-x-2}{x^3-3x^2+4}}$
+
+** Ejercicio
+:PROPERTIES:
+:ID:       9ff5122e-6ca1-4f47-b4d4-e20cd3d2803c
+:END:
+
+$\displaystyle\lim_{ {x} \rightarrow {5} } {\dfrac{x^2-25}{2-\sqrt{x-1}}}$
+
+** Ejercicio
+:PROPERTIES:
+:ID:       24e24083-6721-40e8-8561-f5add9f7a51d
+:END:
+
+$\displaystyle\lim_{ {x} \rightarrow {-\infty} } {\dfrac{x+1}{x^2+3}}$
+
+** Ejercicio
+:PROPERTIES:
+:ID:       dc8ff41f-e45c-4891-b4d9-22bb9105b8f6
+:END:
+
+$\displaystyle\lim_{ {x} \rightarrow {\infty} } {\dfrac{7x^3}{x^3-3x^2+6x}}$
+
+** Ejercicio
+:PROPERTIES:
+:ID:       0fe68182-ac48-4af6-9cdc-3fac59f6f806
+:END:
+
+$\displaystyle\lim_{ {x} \rightarrow {-\infty} } {\left(\dfrac{1-x^3}{x^2+7x}\right)^5}$
+
+** Ejercicio
+:PROPERTIES:
+:ID:       5aec0c83-ceb2-4c1d-98fb-9c08e864e9d9
+:END:
+
+$\displaystyle\lim_{ {x} \rightarrow {-\infty} } {\dfrac{\sqrt{x^2+1}}{x+1}}$
+
+** Ejercicio
+:PROPERTIES:
+:ID:       1835fc2e-f078-4ea2-9494-b6349c52edf8
+:END:
+
+$\displaystyle\lim_{ {x} \rightarrow {\infty} } {\left(\sqrt{4x^2-6}-\sqrt{4x^2+x}\right)}$
+
+** Ejercicio
+:PROPERTIES:
+:ID:       3258276d-48e5-4b6d-b08e-e6352f7701db
+:END:
+
+$\displaystyle\lim_{ {x} \rightarrow {\infty} } {\left(\dfrac{2x-3}{2x+5}\right)^{2x+1}}$
+
+** Ejercicio
+:PROPERTIES:
+:ID:       933f5444-38a7-4d03-92c3-455506bf99c2
+:END:
+
+$\displaystyle\lim_{ {x} \rightarrow {\infty} } {\dfrac{2^x+3^x}{4^x+5^x}}$
 
 * File code :noexport:
 :PROPERTIES:
