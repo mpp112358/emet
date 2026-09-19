@@ -240,7 +240,7 @@ Sea $f$ una función de la que se sabe que:
 :CUSTOM_ID: 1.17
 :END:
 
-#+REVEAL_HTML: <div style="display: grid; grid-template-columns: auto auto;">
+#+REVEAL_HTML: <div style="display: grid; grid-template-columns: 40% 40%;">
 [[./_img/f3.png]]
 #+REVEAL_HTML: <div>
 [[./_img/g3.png]]
@@ -456,6 +456,132 @@ $\displaystyle\lim_{ {x} \rightarrow {\infty} } {\left(\dfrac{2x-3}{2x+5}\right)
 :END:
 
 $\displaystyle\lim_{ {x} \rightarrow {\infty} } {\dfrac{2^x+3^x}{4^x+5^x}}$
+
+
+
+** Ejercicio
+:PROPERTIES:
+:ID:       445145bb-e50f-4a9e-96b1-a5dbf3bbd0be
+:END:
+Obtener el valor de $k$ sabiendo que:
+    $\underset{x \rightarrow \infty}{\lim} \left( \dfrac{x + 3}{x}
+    \right)^{k x + 5} = e^2$
+
+
+** Ejemplo
+:PROPERTIES:
+:ID:       dd0c4eb2-092b-470f-8112-9f4667f1bdc9
+:END:
+$\displaystyle\lim_{ {x} \rightarrow {0^+} } {x\sin\dfrac{1}{x}}$
+
+** Ejemplo
+:PROPERTIES:
+:ID:       df69d0ce-e374-4cd5-9aec-e37caf624f2f
+:END:
+Estudiar la continuidad de $f(x) = \dfrac{1}{\ln |x|}$ en $x=0$.
+
+** Ejemplo
+:PROPERTIES:
+:ID:       4270f363-0160-45c8-b95e-aabdba73573e
+:END:
+Estudiar la continuidad de $f(x) = \left\{ \begin{array}{ll}\dfrac{x+1}{x^2-1} & x<-1 \\ x^2+1 & x \geq -1 \end{array} \right\}$ en $x=-1$.
+
+** Ejemplo
+:PROPERTIES:
+:ID:       29539574-e9b8-4aaa-8f6c-04e2cd3de914
+:END:
+Estudiar la continuidad de $f(x)=\left\{\begin{array}{ll}\dfrac{1}{\ln\left(x^2+1\right)} & \text{si }x\leq1 \\ \dfrac{3x-6}{x^2-4} & \text{si }x>1 \end{array}\right\}$.
+
+** Ejercicio
+:PROPERTIES:
+:ID:       f2482e4a-e806-4b21-8050-5438ae5187ea
+:END:
+Determinar el dominio y estudiar la paridad de la función $f(x) = \sqrt{x^{2} + 3x}$.
+
+** Ejercicio
+:PROPERTIES:
+:ID:       ef5a9c90-5fe6-4eef-9238-a551dbe461e5
+:END:
+
+Hallar el dominio y estudiar la continuidad de las funciones siguientes:
+- $f(x)=\dfrac{x-4}{\sqrt{x}-2}$
+- $f(x)=\ln(x+1)$
+- $f(x)=e^{1/x}$
+- $f(x)=\dfrac{x}{\ln(x-1)}$
+
+** Ejercicio
+:PROPERTIES:
+:ID:       19a6279b-88ef-48d0-91a2-69f57625ed3f
+:END:
+Estudiar la continuidad de la función $f(x) = \left\{ \begin{array}{ll} 2 \sin \left(\dfrac{\pi x^{2}}{2}\right) & \text{si } x \leq 1 \\ \dfrac{x - 1}{\sqrt{x} - 1} & \text{si } x > 1 \end{array} \right\}$ en $x=1$.
+
+** Ejemplo
+:PROPERTIES:
+:ID:       e4d78d98-2b9e-4ea6-a412-31df22f64a86
+:END:
+Demostrar que existe un valor $a \in (-3,1)$ tal que la función $f(x) = \left\{\begin{array}{cc} {x+2} & \text{si } -3 \leq x < a \\ e^x - 1 & \text{si } a \leq x \leq 1  \end{array}\right\}$ es continua.
+
+
+** Ejercicio
+:PROPERTIES:
+:ID:       6b9d25da-902e-456c-8fa2-e35db0b7ecc4
+:END:
+Dada la función $f(x) = \sin\left(\dfrac{\pi}{2}x\right)$. Estudiar la simetría de la función $g(x) = f\left(x f(x)\right)$.
+
+** Ejercicio
+:PROPERTIES:
+:ID:       81ab6cfc-4998-4299-9e9e-67ac1917ebec
+:END:
+
+  Demostrar que la ecuación $x^3+x^2-7x+1=0$ tiene al menos una solución en el intervalo $[0,1]$.
+
+** Ejemplo
+:PROPERTIES:
+:ID:       857dbc81-0b9d-417d-8dfc-ed658586c760
+:END:
+
+  Calcular las asíntotas de $f(x)=\dfrac{x^3-x^2}{x^2-1}$
+
+** Ejercicio
+:PROPERTIES:
+:ID:       a6f16ebc-5e3a-47ae-a7a9-4bd556390554
+:END:
+Calcula el dominio y las asíntotas de las funciones siguientes:
+
+- $f(x)=\dfrac{x^2-5x+1}{x^2-1}$
+- $f(x)=\dfrac{x}{\sqrt{x^2+1}}$
+- $f(x)=\sqrt{\dfrac{x^2-4}{x^2-1}}$
+- $f(x)=\dfrac{2x-3}{|x-1|}$
+
+** Ejercicio
+:PROPERTIES:
+:ID:       1bc7455b-d446-4662-afb4-0a3e72d93ba1
+:END:
+
+Determinar el valor de la constante $k$ sabiendo que la curva de ecuación $y=\dfrac{x^3+kx^2+1}{x^2+1}$ posee una asíntota que pasa por el punto $(1,3)$.
+
+** Ejercicio
+:PROPERTIES:
+:ID:       839449f4-68ef-4ebf-913e-17afffaf3e09
+:END:
+Determinar las asíntotas de la función siguiente, especificando los valores del parámetro real $a$ para los cuales $f$ tiene una asíntota vertical, dos asíntotas verticales, o bien no tiene asíntotas verticales:
+\[f(x)=\dfrac{2x-1}{x^2-x-a}\]
+
+** Ejercicio
+:PROPERTIES:
+:ID:       9419591f-5a35-43a8-bd11-f41fc145f52e
+:END:
+Dada la función $f(x) = \left\{ \begin{array}{ll} \dfrac{x-1}{x^{2} - 1} & \text{si } x < 1, x \neq -1 \\ \dfrac{x^{2} + 1}{4x} & \text{si } x \geq 1 \end{array}  \right\}$:
+- Calcule $f(0)$ y $(f \circ f)(0)$.
+- Estudie su continuidad.
+- Estudie sus asíntotas.
+** Ejercicio
+:PROPERTIES:
+:ID:       bb767260-c817-43e2-b6a2-69b08466e08e
+:END:
+Sea la función $f(x) = \dfrac{x^{2} - 1}{3x - a}$, donde $a$ es un parámetro real.
+- Halle el valor de $a$ para que la gráfica de $f(x)$ presente una asíntota vertical en $x=2$. Para dicho valor, estudie el resto de asíntotas de la gráfica.
+- Obtenga los valores de $a$ para los cuales la gráfica de la función no presenta asíntotas verticales.
 
 * File code :noexport:
 :PROPERTIES:
