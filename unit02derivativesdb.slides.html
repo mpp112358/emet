@@ -1,0 +1,2065 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Tema 2: Derivación</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <!-- reveal.js core (floating major-version tag: always the newest 5.x build) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/black.css" id="theme">
+
+  <style>
+    /* --- Exercise / solution styling --- */
+    .reveal .exercisedb {
+      text-align: left;
+      font-size: 0.85em;
+    }
+    .reveal .exercisedb > :first-child {
+      margin-top: 0;
+    }
+    .reveal .solution {
+      margin-top: 0.6em;
+      padding: 0.5em 0.8em;
+      border-left: 4px solid #4a90d9;
+      background: rgba(74, 144, 217, 0.08);
+    }
+    .reveal .solution::before {
+      content: "Solution";
+      display: block;
+      font-weight: bold;
+      font-size: 0.75em;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      opacity: 0.7;
+      margin-bottom: 0.3em;
+    }
+    .reveal h1 {font-size: 1.5em;}
+    .reveal div.enumeratealpha p {
+      display: list-item;
+      text-align: left;
+      margin-left: 1.5em;
+    }
+    .reveal div.exercisedb p {text-align: left;}
+    .reveal .exercisedb.long {
+      font-size: 0.5em;
+    }
+    .reveal .exercisedb.mid {
+      font-size: 0.75em;
+    }
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Tema 2: Derivación</h1>
+  <p><a href="index.html">Temario</a></p>
+</section>
+
+<section class="slide level1">
+<h1>Exercise 2.1</h1>
+<div class="exercisedb" data-unit="2" data-exnum="1">
+<p>Averigua la derivada de las funciones dadas en los puntos que se
+indican, utilizando la definición de derivada:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)=1/x\)</span>, en <span
+class="math inline">\(x=2\)</span>.</p>
+<p><span class="math inline">\(f(x)=3-x^2\)</span>, en <span
+class="math inline">\(x=-1\)</span>.</p>
+<p><span class="math inline">\(f(x)=\sqrt{x+1}\)</span>, en <span
+class="math inline">\(x=3\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.2</h1>
+<div class="exercisedb" data-unit="2" data-exnum="2">
+<p>Averigua la derivada de las funciones dadas en los puntos que se
+indican, utilizando la definición de derivada:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)=x^2+4\)</span>, en <span
+class="math inline">\(x=1\)</span>.</p>
+<p><span class="math inline">\(f(x)=x^3+x\)</span>, en <span
+class="math inline">\(x=0\)</span>.</p>
+<p><span class="math inline">\(f(x)=\ln x\)</span>, en <span
+class="math inline">\(x=1\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.3</h1>
+<div class="exercisedb" data-unit="2" data-exnum="3">
+<p>Halla la función derivada de cada una de las funciones siguientes,
+utilizando la definición de derivada:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)=7x\)</span>.</p>
+<p><span class="math inline">\(f(x)=x+\sqrt{x}\)</span>.</p>
+<p><span class="math inline">\(f(x)=\sen x\)</span>. Indicación:
+utilizar la identidad trigonométrica, <span
+class="math inline">\(\sen(a+b)=\sen a\cos b+\cos a\sen b\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.4</h1>
+<div class="exercisedb" data-unit="2" data-exnum="4">
+<p>Halla la función derivada de cada una de las funciones siguientes,
+utilizando la definición de derivada:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)=3x^2\)</span>.</p>
+<p><span class="math inline">\(f(x)=\dfrac{x+1}{x-1}\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.5</h1>
+<div class="exercisedb" data-unit="2" data-exnum="5">
+<p>Estudia la derivabilidad de las siguientes funciones:</p>
+<div class="enumeratealpha">
+<p><span
+class="math inline">\(f(x)=\dfrac{x^3-8}{x^2-4x-5}\)</span>.</p>
+<p><span class="math inline">\(f(x)=\thpwf{x^2+1}{x \leq 0}{x^3}{0 &lt;
+x \leq 1}{-x+2}{x \geq 1}\)</span></p>
+<p><span class="math inline">\(f(x)=x^{4/5}\)</span>.</p>
+<p><span class="math inline">\(f(x)=\sqrt[3]{|x|}\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.6</h1>
+<div class="exercisedb" data-unit="2" data-exnum="6">
+<p>Estudia la derivabilidad de las siguientes funciones:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)=\thpwf{(x+1)^2}{x\leq
+0}{2x+1}{0&lt;x&lt;3}{(4-x)^2}{x\geq 3}\)</span>.</p>
+<p><span class="math inline">\(f(x)=3x-2|x|-1\)</span>.</p>
+<p><span class="math inline">\(f(x)=3-\sqrt[3]{x}\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.7</h1>
+<div class="exercisedb" data-unit="2" data-exnum="7">
+<p>Halla los valores de <span class="math inline">\(a\)</span> y <span
+class="math inline">\(b\)</span> para los que la función siguiente es
+derivable en <span class="math inline">\(\mathbb{R}\)</span>: <span
+class="math display">\[f(x)=\twpwf{3-x}{x&lt;1}{ax^2+bx}{x\geq
+1}\]</span></p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.8</h1>
+<div class="exercisedb" data-unit="2" data-exnum="8">
+<p>Determinar los valores de <span class="math inline">\(a\)</span> y
+<span class="math inline">\(b\)</span> para que sea derivable la
+función: <span class="math display">\[f(x)= \twpwf{ax^2+bx-3}{x\leq
+1}{2bx-4}{x&gt;1}\]</span></p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.9</h1>
+<div class="exercisedb" data-unit="2" data-exnum="9">
+<p>Obtener la derivada de las siguientes funciones:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)=2x^8-3x^5+5\)</span></p>
+<p><span class="math inline">\(f(x)=\dfrac{2x+5}{3x-2}\)</span></p>
+<p><span class="math inline">\(f(x)= \dfrac{1-x^2}{1+x^2}\)</span></p>
+<p><span class="math inline">\(f(x)=
+\dfrac{1}{\left(x^2-2x-5\right)^4}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.10</h1>
+<div class="exercisedb" data-unit="2" data-exnum="10">
+<p>Obtener la derivada de las siguientes funciones:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)=3x^{4/3}-6x^{2/3}-2\)</span></p>
+<p><span class="math inline">\(f(x)=\dfrac{x^2}{1-x^3}\)</span></p>
+<p><span class="math inline">\(f(x)= \dfrac{\ln x}{x+1}\)</span></p>
+<p><span class="math inline">\(f(x)=
+\dfrac{1}{\sqrt[5]{2x^2+3x-1}}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.11</h1>
+<div class="exercisedb" data-unit="2" data-exnum="11">
+<p>Obtener la derivada de las siguientes funciones:</p>
+<div class="enumeratealpha">
+<p><span
+class="math inline">\(f(x)=\sqrt{x}-\dfrac{1}{\sqrt{x}}\)</span></p>
+<p><span class="math inline">\(f(x)=
+\dfrac{(x+1)(x+2)}{(x-1)(x-2)}\)</span></p>
+<p><span class="math inline">\(f(x)= \dfrac{1+\ln x}{1-\ln
+x}\)</span></p>
+<p><span class="math inline">\(f(x)=
+\sqrt[4]{\dfrac{x^3+1}{x^2-1}}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.12</h1>
+<div class="exercisedb" data-unit="2" data-exnum="12">
+<p>Obtener la derivada de las siguientes funciones:</p>
+<div class="enumeratealpha">
+<p><span
+class="math inline">\(f(x)=\sqrt[3]{x^2}+2\sqrt{x^3}\)</span></p>
+<p><span class="math inline">\(f(x)= \sqrt[3]{x}\ln x\)</span></p>
+<p><span class="math inline">\(f(x)=
+\left(x^3+3x^2-5x-3\right)^5\)</span></p>
+<p><span class="math inline">\(f(x)= \sqrt{\ln x}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.13</h1>
+<div class="exercisedb" data-unit="2" data-exnum="13">
+<p>Obtener la derivada de las siguientes funciones:</p>
+<div class="enumeratealpha">
+<p><span
+class="math inline">\(f(x)=3x+\dfrac{1}{x}-\dfrac{2}{x^2}+\dfrac{3}{\sqrt[3]{x}}\)</span></p>
+<p><span class="math inline">\(f(x)= \left(2e^x+x^2\right)\ln
+x\)</span></p>
+<p><span class="math inline">\(f(x)= \sqrt{x^2-8x+1}\)</span></p>
+<p><span class="math inline">\(f(x)= \ln
+\sqrt{\dfrac{x-1}{x+1}}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.14</h1>
+<div class="exercisedb" data-unit="2" data-exnum="14">
+<p>Obtener la derivada de las siguientes funciones:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)=
+\thpwf{-x^2}{x\leq0}{x^3}{0&lt;x&lt;1}{2}{x\geq1}\)</span></p>
+<p><span class="math inline">\(f(x)=\sen e^x\)</span></p>
+<p><span class="math inline">\(f(x)=\ln\left(\ln\left(\ln
+x\right)\right)\)</span></p>
+<p><span class="math inline">\(f(x)=\sen\left(\ln|x|\right)\)</span></p>
+<p><span class="math inline">\(f(x)=x^{\sen x}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.15</h1>
+<div class="exercisedb" data-unit="2" data-exnum="15">
+<p>Obtener la derivada de las siguientes funciones:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)= x^2-|x|\)</span></p>
+<p><span
+class="math inline">\(f(x)=\arctg\left(\sqrt{x}-x\right)\)</span></p>
+<p><span class="math inline">\(f(x)=\dfrac{\sen
+2x}{1+\cos^2x}\)</span></p>
+<p><span class="math inline">\(f(x)=\ln\left|\sen x\right|\)</span></p>
+<p><span
+class="math inline">\(f(x)=\left(\cos(2x)\right)^{1/x^2}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.16</h1>
+<div class="exercisedb" data-unit="2" data-exnum="16">
+<p>Halla las cuatro primeras derivadas de cada una de las funciones
+siguientes:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)= x^4+x^3-2x^2+x-5\)</span></p>
+<p><span class="math inline">\(f(x)= x^2+x+3\)</span></p>
+<p><span class="math inline">\(f(x)= \sen^2 x\)</span></p>
+<p><span class="math inline">\(f(x)= \dfrac{x}{x+1}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.17</h1>
+<div class="exercisedb" data-unit="2" data-exnum="17">
+<p>Hallar la ecuación de las rectas tangente y normal a cada curva en el
+punto indicado:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(y= 1-x^2\)</span>, en el punto <span
+class="math inline">\((2,-3)\)</span>.</p>
+<p><span class="math inline">\(y=\left(1+e^{-x}\right)^{-1}\)</span>, en
+el punto de abscisa <span class="math inline">\(0\)</span>.</p>
+<p><span class="math inline">\(y=\sqrt[3]{x}\)</span>, en el punto <span
+class="math inline">\((0,0)\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.18</h1>
+<div class="exercisedb" data-unit="2" data-exnum="18">
+<p>Hallar la ecuación de las rectas tangente y normal a cada curva en el
+punto indicado:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(y=\dfrac{1}{1+x^2}\)</span>, en el punto
+<span class="math inline">\(x=1\)</span>.</p>
+<p><span class="math inline">\(y=\cos(2x)\)</span>, en el punto <span
+class="math inline">\(x=\dfrac{\pi}{4}\)</span>.</p>
+<p><span class="math inline">\(y=x\ln x-x\)</span>, en el punto <span
+class="math inline">\(x=1\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.19</h1>
+<div class="exercisedb" data-unit="2" data-exnum="19">
+<p>Hallar los puntos de la gráfica de <span class="math inline">\(f(x)=
+x^3-3x+5\)</span> en los que la recta tangente es:</p>
+<div class="enumeratealpha">
+<p>paralela a la recta <span class="math inline">\(y=24x\)</span>;</p>
+<p>perpendicular a la recta <span
+class="math inline">\(y=-x/9\)</span>.</p>
+</div>
+<p>Hallar la ecuación de la recta tangente en cada caso.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.20</h1>
+<div class="exercisedb" data-unit="2" data-exnum="20">
+<p>¿Para qué valores de <span class="math inline">\(a\)</span> y <span
+class="math inline">\(b\)</span> la recta <span
+class="math inline">\(2x+y=b\)</span> es tangente a la parábola <span
+class="math inline">\(f(x)=ax^2\)</span> cuando <span
+class="math inline">\(x=2\)</span>?</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.21</h1>
+<div class="exercisedb" data-unit="2" data-exnum="21">
+<p>Hallar las ecuaciones de las rectas tangentes a la parábola <span
+class="math inline">\(y=x^2+x\)</span> que pasan por el punto <span
+class="math inline">\(Q(2,-3)\)</span>.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.22</h1>
+<div class="exercisedb" data-unit="2" data-exnum="22">
+<p>Dada la función <span class="math inline">\(f(x)= x\ln x\)</span>,
+hallar los puntos de la gráfica de <span
+class="math inline">\(f\)</span> en los que la recta tangente es
+horizontal.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.23</h1>
+<div class="exercisedb" data-unit="2" data-exnum="23">
+<p>Hallar los extremos relativos y absolutos de las funciones
+siguientes:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)= 2x^2-8x+9\)</span></p>
+<p><span class="math inline">\(f(x)= \dfrac{1}{x^2-1}\)</span></p>
+<p><span class="math inline">\(f(x)= xe^{2x}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.24</h1>
+<div class="exercisedb" data-unit="2" data-exnum="24">
+<p>Hallar los extremos relativos y absolutos de las funciones
+siguientes:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)= x^3-2x+4\)</span></p>
+<p><span class="math inline">\(f(x)= \dfrac{1}{x^2+1}\)</span></p>
+<p><span class="math inline">\(f(x)= \ln\left(x^2+1\right)\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.25</h1>
+<div class="exercisedb" data-unit="2" data-exnum="25">
+<p>Hallar los extremos relativos y absolutos de las funciones
+siguientes:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)= x^3+x^2-8x+15\)</span></p>
+<p><span class="math inline">\(f(x)= \sqrt{x^2-1}\)</span></p>
+<p><span class="math inline">\(f(x)= \dfrac{x}{\ln x}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.26</h1>
+<div class="exercisedb" data-unit="2" data-exnum="26">
+<p>Hallar los extremos relativos y absolutos de las funciones
+siguientes:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)= \dfrac{x}{x^2+1}\)</span></p>
+<p><span class="math inline">\(f(x)= \dfrac{x^2+1}{x^2-1}\)</span></p>
+<p><span class="math inline">\(f(x)=
+\arctg\left(x^2+1\right)\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.27</h1>
+<div class="exercisedb" data-unit="2" data-exnum="27">
+<p>Hallar los extremos relativos y absolutos de las funciones
+siguientes:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)= \dfrac{x+1}{x^2+2x+2}\)</span></p>
+<p><span class="math inline">\(f(x)=
+\dfrac{x^3+2x^2}{x^2+1}\)</span></p>
+<p><span class="math inline">\(f(x)=
+\arcsen\left(\dfrac{1}{x}\right)\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.28</h1>
+<div class="exercisedb" data-unit="2" data-exnum="28">
+<p>Hallar los valores máximo y mínimo absolutos de <span
+class="math inline">\(f\)</span> sobre el intervalo dado:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)= 3x^5-5x^3-1\)</span>, en <span
+class="math inline">\([-2,2]\)</span>.</p>
+<p><span class="math inline">\(f(x)= x-3\ln x\)</span>, en <span
+class="math inline">\([1,4]\)</span>.</p>
+<p><span class="math inline">\(f(x)= \dfrac{\sen x}{2+\sen x}\)</span>,
+en <span class="math inline">\([-\pi,\pi]\)</span>.</p>
+<p><span class="math inline">\(f(x)=\dfrac{x}{x^3-2}\)</span>, en <span
+class="math inline">\([-2,2]\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.29</h1>
+<div class="exercisedb" data-unit="2" data-exnum="29">
+<p>Hallar los valores máximo y mínimo absolutos de <span
+class="math inline">\(f\)</span> sobre el intervalo dado:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)= x^2+2/x\)</span>, en <span
+class="math inline">\([1/2,2]\)</span>.</p>
+<p><span class="math inline">\(f(x)= \sqrt{1-x^2}\)</span>, en <span
+class="math inline">\([-1,1]\)</span>.</p>
+<p><span class="math inline">\(f(x)= e^x\cos x\)</span>, en <span
+class="math inline">\([-\pi,\pi]\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.30</h1>
+<div class="exercisedb" data-unit="2" data-exnum="30">
+<p>Sea <span class="math inline">\(f(x)=x^2+px+q\)</span>. Hallar los
+valores de <span class="math inline">\(p\)</span> y <span
+class="math inline">\(q\)</span> para los cuales <span
+class="math inline">\(f(1)=3\)</span> sea un valor extremo de <span
+class="math inline">\(f\)</span> en <span
+class="math inline">\([0,2]\)</span>. ¿Es un máximo o un mínimo?</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.31</h1>
+<div class="exercisedb" data-unit="2" data-exnum="31">
+<p>Hallar la ecuación de una función polinómica de tercer grado sabiendo
+que tiene un máximo local en el punto <span
+class="math inline">\(P(0,4)\)</span> y un mínimo local en el punto
+<span class="math inline">\(Q(2,0)\)</span>.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.32</h1>
+<div class="exercisedb" data-unit="2" data-exnum="32">
+<p>Sea la función <span class="math inline">\(f(x)=
+ax^3+bx^2+cx\)</span>. Hallar el valor de los coeficientes <span
+class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>
+y <span class="math inline">\(c\)</span>, si se sabe que en el punto
+<span class="math inline">\((0,0)\)</span> su gráfica posee un extremo
+relativo y que el punto <span class="math inline">\((2,-16)\)</span> es
+un punto de inflexión.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.33</h1>
+<div class="exercisedb" data-unit="2" data-exnum="33">
+<p>Dada la función real de variable real <span
+class="math inline">\(f(x)=\dfrac{3x^2-5}{x+1}\)</span>.</p>
+<div class="enumeratealpha">
+<p>Hállense sus asíntotas horizontales, verticales y oblicuas.</p>
+<p>Hállense los puntos de corte de la gráfica de <span
+class="math inline">\(f\)</span> con los ejes de coordenadas y sus
+intervalos de crecimiento y decrecimiento.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.34</h1>
+<div class="exercisedb" data-unit="2" data-exnum="34">
+<p>Esboza la gráfica de las funciones siguientes (en cada caso, estudia
+previamente: dominio, simetría, cortes con los ejes, intervalos de
+crecimiento, extremos relativos, intervalos de curvatura, puntos de
+inflexión, ramas infinitas y asíntotas):</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)= -x^3+3x\)</span></p>
+<p><span class="math inline">\(f(x)= \dfrac{x}{x^2-1}\)</span></p>
+<p><span class="math inline">\(f(x)= \dfrac{x^2}{x^2+1}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.35</h1>
+<div class="exercisedb" data-unit="2" data-exnum="35">
+<p>Esboza la gráfica de las funciones siguientes (en cada caso, estudia
+previamente: dominio, simetría, cortes con los ejes, intervalos de
+crecimiento, extremos relativos, intervalos de curvatura, puntos de
+inflexión, ramas infinitas y asíntotas):</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)= x^3-6x^2+12x-7\)</span></p>
+<p><span class="math inline">\(f(x)= \dfrac{1}{x^2-2}\)</span></p>
+<p><span class="math inline">\(f(x)=
+\dfrac{x^3-3x^2+4}{x^2}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.36</h1>
+<div class="exercisedb" data-unit="2" data-exnum="36">
+<p>Esboza la gráfica de las funciones siguientes (en cada caso, estudia
+previamente: dominio, simetría, cortes con los ejes, intervalos de
+crecimiento, extremos relativos, intervalos de curvatura, puntos de
+inflexión, ramas infinitas y asíntotas):</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)= x^4-4x^2\)</span></p>
+<p><span class="math inline">\(f(x)= \dfrac{2}{x^3-3x}\)</span></p>
+<p><span class="math inline">\(f(x)=
+\dfrac{x^3-3x^2-8x+20}{2x^2-2x-24}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.37</h1>
+<div class="exercisedb" data-unit="2" data-exnum="37">
+<p>Esboza la gráfica de las funciones siguientes (en cada caso, estudia
+previamente: dominio, simetría, cortes con los ejes, intervalos de
+crecimiento, extremos relativos, intervalos de curvatura, puntos de
+inflexión, ramas infinitas y asíntotas):</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)= 3x^4+4x^3\)</span></p>
+<p><span class="math inline">\(f(x)= \dfrac{x^3-1}{x^3+1}\)</span></p>
+<p><span class="math inline">\(f(x)= \dfrac{x^4-1}{x^3-1}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.38</h1>
+<div class="exercisedb" data-unit="2" data-exnum="38">
+<p>Esboza la gráfica de las funciones siguientes (en cada caso, estudia
+previamente: dominio, simetría, cortes con los ejes, intervalos de
+crecimiento, extremos relativos, intervalos de curvatura, puntos de
+inflexión, ramas infinitas y asíntotas):</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)= \dfrac{3-x}{x-2}\)</span></p>
+<p><span class="math inline">\(f(x)= \dfrac{x^2-2x+2}{x-1}\)</span></p>
+<p><span class="math inline">\(f(x)= \dfrac{x^3}{(x-2)^2}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.39</h1>
+<div class="exercisedb" data-unit="2" data-exnum="39">
+<p>Esboza la gráfica de las funciones siguientes (en cada caso, estudia
+previamente: dominio, simetría, cortes con los ejes, intervalos de
+crecimiento, extremos relativos, intervalos de curvatura, puntos de
+inflexión, ramas infinitas y asíntotas):</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)= \dfrac{x+1}{x^2}\)</span></p>
+<p><span class="math inline">\(f(x)= \dfrac{x^2-4}{x+1}\)</span></p>
+<p><span class="math inline">\(f(x)= \dfrac{x^3-8}{x^2+5}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.40</h1>
+<div class="exercisedb" data-unit="2" data-exnum="40">
+<p>Esboza la gráfica de las funciones siguientes, estudiando previamente
+su continuidad y derivabilidad:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)=
+\twpwf{(x-2)^2-1}{x\leq2}{x-3}{x&gt;2}\)</span></p>
+<p><span class="math inline">\(f(x)= x|x|\)</span></p>
+<p><span class="math inline">\(f(x)= \sqrt{|x|}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.41</h1>
+<div class="exercisedb" data-unit="2" data-exnum="41">
+<p>Esboza la gráfica de las funciones siguientes, estudiando previamente
+su continuidad y derivabilidad:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)=
+\twpwf{\dfrac{1}{x}-1}{|x|\geq\dfrac{1}{2}}{-4x^2+2}{|x|&lt;\dfrac{1}{2}}\)</span></p>
+<p><span class="math inline">\(f(x)= x^2|x-3|\)</span></p>
+<p><span class="math inline">\(f(x)= \ln(x-1)\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.42</h1>
+<div class="exercisedb" data-unit="2" data-exnum="42">
+<p>Esboza la gráfica de las funciones siguientes, estudiando previamente
+su continuidad y derivabilidad:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)= \thpwf{\dfrac{1}{x}}{x\leq0}{\ln
+x}{0&lt;x\leq1}{x}{x&gt;1}\)</span></p>
+<p><span class="math inline">\(f(x)= \sqrt[3]{x}\)</span></p>
+<p><span class="math inline">\(f(x)= e^{-x^2}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.43</h1>
+<div class="exercisedb" data-unit="2" data-exnum="43">
+<p>Esboza la gráfica de las funciones siguientes:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)=\dfrac{\sen x}{2+\cos x}\)</span>,
+en <span class="math inline">\([-2\pi,2\pi]\)</span>.</p>
+<p><span class="math inline">\(f(x)=\dfrac{x}{\ln x}\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.44</h1>
+<div class="exercisedb" data-unit="2" data-exnum="44">
+<p>Esboza la gráfica de las funciones siguientes:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)=x+\sen x\)</span>, en <span
+class="math inline">\([-2\pi,2\pi]\)</span>.</p>
+<p><span class="math inline">\(f(x)=x\ln x\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.45</h1>
+<div class="exercisedb" data-unit="2" data-exnum="45">
+<p>Esboza la gráfica de las funciones siguientes:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(f(x)=
+\arctg\left(x^2+1\right)\)</span>.</p>
+<p><span class="math inline">\(f(x)=x^2e^{-x}\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.46</h1>
+<div class="exercisedb" data-unit="2" data-exnum="46">
+<p>Esboza la gráfica de la función siguiente: <span
+class="math inline">\(f(x)=\ln\left(\dfrac{x^2}{x-1}\right)\)</span>.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.47</h1>
+<div class="exercisedb" data-unit="2" data-exnum="47">
+<p>El coste fabricación de una serie de hornos microondas viene dado por
+la función <span class="math inline">\(C(x)=x^2+40x+30000\)</span>,
+donde <span class="math inline">\(x\)</span> representa el número de
+hornos fabricados. Supongamos que cada horno se vende por 490 euros.</p>
+<div class="enumeratealpha">
+<p>Determínese la función de beneficios.</p>
+<p>¿Cuántos microondas deben fabricarse y venderse para que los
+beneficios sean máximos? ¿Cuál es el importe de esos beneficios
+máximos?</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.48</h1>
+<div class="exercisedb" data-unit="2" data-exnum="48">
+<p>Una empresa de productos de limpieza fabrica cajas de cartón con
+tapa, para comercializar un determinado tipo de detergente. Las cajas
+son prismas rectos de 9000 <span class="math inline">\(cm^3\)</span> de
+volumen y base rectangular de largo igual al doble de su anchura.
+Calcúlense las dimensiones en centímetros (largo, anchura, altura) que
+ha de tener cada caja para que la superficie de cartón empleada en su
+fabricación sea mínima.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.49</h1>
+<div class="exercisedb" data-unit="2" data-exnum="49">
+<p>Se considera un rectángulo <span class="math inline">\(R\)</span> de
+lados <span class="math inline">\(x\)</span>, <span
+class="math inline">\(y\)</span>.</p>
+<div class="enumeratealpha">
+<p>Si el perímetro de <span class="math inline">\(R\)</span> es igual a
+12 m, calcúlense <span class="math inline">\(x\)</span>, <span
+class="math inline">\(y\)</span> para que el área de <span
+class="math inline">\(R\)</span> sea máxima y calcúlese el valor de
+dicha área máxima.</p>
+<p>Si el área de <span class="math inline">\(R\)</span> es igual a 36
+<span class="math inline">\(m^2\)</span>, calcúlense <span
+class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span>
+para que el perímetro de <span class="math inline">\(R\)</span> sea
+mínimo y calcúlese el valor de dicho perímetro mínimo.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.50</h1>
+<div class="exercisedb" data-unit="2" data-exnum="50">
+<p>El coste de un marco para una ventana rectangular es de 50 euros por
+cada metro de lado vertical y de 25 euros por cada metro de lado
+horizontal. Se desea construir una ventana de superficie igual a 2 <span
+class="math inline">\(m^2\)</span>. Calcúlense sus dimensiones (largo y
+alto) para que el marco sea lo más barato posible. Calcúlese el precio
+mínimo del marco de dicha ventana.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.51</h1>
+<div class="exercisedb" data-unit="2" data-exnum="51">
+<p>Una empresa vinícola tiene plantadas 1200 cepas de vid en una finca,
+produciendo cada cepa una media de 16 kg de uva. Existe un estudio
+previo que garantiza que por cada cepa que se añade a la finca, las
+cepas producen de media 0,01 kg menos de uva cada una. Determínese el
+número de cepas que se deben añadir a las existentes para que la
+producción de uvas de la finca sea máxima.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.52</h1>
+<div class="exercisedb" data-unit="2" data-exnum="52">
+<p>Se considera el rectángulo (R) de vértices <span
+class="math inline">\(BOAC\)</span> con <span
+class="math inline">\(B(0,b)\)</span>, <span
+class="math inline">\(O(0,0)\)</span>, <span
+class="math inline">\(A(a,0)\)</span>, <span
+class="math inline">\(C(a,b)\)</span>, <span
+class="math inline">\(a&gt;0\)</span>, <span
+class="math inline">\(b&gt;0\)</span>, y cuyo vértice <span
+class="math inline">\(C\)</span> está situado en la parábola de ecuación
+<span class="math inline">\(y=-x^2+12\)</span>.</p>
+<div class="enumeratealpha">
+<p>Para <span class="math inline">\(a=3\)</span>, determínense las
+coordenadas de los vértices de (R) y calcúlese el área de (R).</p>
+<p>Determínense las coordenadas de los vértices de (R) de manera que el
+área de (R) sea máxima.</p>
+<p>Calcúlese el valor de dicha área máxima.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.53</h1>
+<div class="exercisedb" data-unit="2" data-exnum="53">
+<p>Hallar el punto más cercano al punto <span
+class="math inline">\((-3,1)\)</span> sobre la recta <span
+class="math inline">\(6x+y=9\)</span>.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.54</h1>
+<div class="exercisedb" data-unit="2" data-exnum="54">
+<p>Se inscribe un cilindro circular recto en un cono de altura <span
+class="math inline">\(H\)</span> y radio de la base <span
+class="math inline">\(R\)</span>. ¿Cuál es el máximo volumen posible de
+ese cilindro?</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.55</h1>
+<div class="exercisedb" data-unit="2" data-exnum="55">
+<p>En un cartel rectangular los márgenes superior e inferior miden <span
+class="math inline">\(6\ cm\)</span> cada uno y los laterales <span
+class="math inline">\(4\ cm\)</span>. Si el área del material impreso se
+fija en <span class="math inline">\(384\ cm^2\)</span>, ¿cuáles son las
+dimensiones del cartel de área mínima?</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.56</h1>
+<div class="exercisedb" data-unit="2" data-exnum="56">
+<p>Hallar la ecuación de una recta que pase por el punto <span
+class="math inline">\((3,5)\)</span> y determine un área mínima en el
+primer cuadrante.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.57</h1>
+<div class="exercisedb" data-unit="2" data-exnum="57">
+<p>Una mujer se encuentra en un punto A sobre la playa de un lago
+circular de radio <span class="math inline">\(2\ km\)</span>, y desea
+llegar al punto <span class="math inline">\(C\)</span>, diametralmente
+opuesto al punto <span class="math inline">\(A\)</span> sobre el otro
+lado del lago, en el menor tiempo posible. Puede caminar por el borde
+circular a <span class="math inline">\(4\ km/h\)</span> y remar en un
+bote a <span class="math inline">\(2\ km/h\)</span>. ¿Qué camino debe
+seguir?</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.58</h1>
+<div class="exercisedb" data-unit="2" data-exnum="58">
+<p>Se quiere construir un depósito de barro cilíndrico de volumen <span
+class="math inline">\(432\pi\)</span> <span
+class="math inline">\(dm^3\)</span> para elaborar un vino artesanal
+usando técnicas antiguas. El depósito se sitúa verticalmente, apoyado
+sobre su base circular. Se sabe que al utilizar ese material poroso se
+produce, con el tiempo, una pérdida de líquido a través de la superficie
+que está en contacto con el vino. Dicha pérdida a través de la pared
+lateral es de <span class="math inline">\(10\)</span> <span
+class="math inline">\(cl\)</span> por <span
+class="math inline">\(dm^2\)</span> y a través del suelo de <span
+class="math inline">\(20\)</span> <span
+class="math inline">\(cl\)</span> por <span
+class="math inline">\(dm^2\)</span>. Calcular las dimensiones que debe
+tener el depósito para que la filtración de vino sea mínima.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.59</h1>
+<div class="exercisedb" data-unit="2" data-exnum="59">
+<p>Demuéstrese que la ecuación <span
+class="math inline">\(x=\ln(1+x)\)</span> tiene una única solución.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.60</h1>
+<div class="exercisedb" data-unit="2" data-exnum="60">
+<p>Calcula los límites siguientes:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(\limite{x}{0}{\dfrac{e^x-1}{\sen
+x}}\)</span></p>
+<p><span
+class="math inline">\(\limite{x}{\infty}{\dfrac{x}{\ln\left(1+2e^x\right)}}\)</span></p>
+<p><span class="math inline">\(\limite{x}{0^+}{\sqrt{x}\ln
+x}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.61</h1>
+<div class="exercisedb" data-unit="2" data-exnum="61">
+<p>Calcula los límites siguientes:</p>
+<div class="enumeratealpha">
+<p><span
+class="math inline">\(\limite{x}{0}{\dfrac{5^x-3^x}{x}}\)</span></p>
+<p><span
+class="math inline">\(\limite{x}{0}{\dfrac{x+\tg(2x)}{x-\tg(2x)}}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.62</h1>
+<div class="exercisedb" data-unit="2" data-exnum="62">
+<p>Sea la función <span class="math inline">\(f(x) =
+\sqrt[5]{(x-2)^2}\)</span>.</p>
+<div class="enumeratealpha">
+<p>(0,5 puntos) Estudie su continuidad y derivabilidad en <span
+class="math inline">\([-2, 4]\)</span>.</p>
+<p>(1,25 puntos) Analice crecimiento, decrecimiento, máximos y mínimos
+absolutos de <span class="math inline">\(f\)</span> en <span
+class="math inline">\([-2,4]\)</span>.</p>
+<p>(0,75 puntos) Determine si la función <span
+class="math inline">\(g(x)=f&#39;(x)\)</span> es continua en <span
+class="math inline">\(x=2\)</span> y si tiene recta tangente en dicho
+punto.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.63</h1>
+<div class="exercisedb" data-unit="2" data-exnum="63">
+<p>(Mod. 2004, A.2, 2 ptos.) Dada la función</p>
+<div class="center">
+<p><span class="math display">\[f ( x ) =
+\left\{\begin{array}{ll}(e^x-1)/(x^2-x)&amp;\text{si }x\neq 0\\
+a&amp;\text{si }x=0\end{array}\right.\]</span></p>
+</div>
+<div class="enumeratealpha">
+<p>Determinar su dominio, y calcular los límites laterales cuando <span
+class="math inline">\(x \rightarrow 1\)</span>.</p>
+<p>Estudiar su continuidad, y hallar el valor de <span
+class="math inline">\(a\)</span> para el que <span
+class="math inline">\(f\)</span> es continua en <span
+class="math inline">\(x = 0\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.64</h1>
+<div class="exercisedb" data-unit="2" data-exnum="64">
+<p>(Septiembre 2002, B.4, 3 ptos.) Sea <span class="math inline">\(f ( x
+)\)</span> una función real de variable real, derivable y con derivada
+continua en todos los puntos y tal que:</p>
+<div class="center">
+<p><span class="math inline">\(f ( 0 ) = 1 ; f ( 1 ) = 2 ; f&#39; ( 0 )
+= 3 ; f&#39; ( 1 ) = 4\)</span></p>
+</div>
+<p>Se pide:</p>
+<div class="enumeratealpha">
+<p>Calcular <span class="math inline">\(g&#39; ( 0 )\)</span>, siendo
+<span class="math inline">\(g ( x ) = f ( x + f ( 0 ) ) .\)</span></p>
+<p>Calcular <span class="math inline">\(\underset{x \rightarrow 0}{\lim}
+\dfrac{2 ( f ( x ) )^2 - f ( x + 1 )}{e^x - 1}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.65</h1>
+<div class="exercisedb" data-unit="2" data-exnum="65">
+<p>(Septiembre 2002, A.2, 2 ptos.) Se considera la función real de
+variable real definida por:</p>
+<div class="center">
+<p><span class="math display">\[f ( x ) =
+\left\{\begin{array}{ll}\sqrt[3]{x-2}&amp;\text{si }x\geq
+2\\x(x-2)&amp;\text{si }x&lt;2\end{array}\right.\]</span></p>
+</div>
+<div class="enumeratealpha">
+<p>Estudiar su continuidad y derivabilidad.</p>
+<p>Hallar la ecuación cartesiana de la recta tangente a la gráfica de
+<span class="math inline">\(f\)</span> en el punto (3,1).</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.66</h1>
+<div class="exercisedb" data-unit="2" data-exnum="66">
+<p>(Junio 2004, A.1, 2 ptos.) Calcular la base y la altura del triángulo
+isósceles de perímetro 8 y área máxima.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.67</h1>
+<div class="exercisedb" data-unit="2" data-exnum="67">
+<p>(Septiembre 2004, A.4, 3 ptos.) Sabiendo que una función tiene como
+derivada:</p>
+<div class="center">
+<p><span class="math inline">\(f&#39; ( x ) = ( x - 4 )^2 ( x^2 - 8 x +
+7 )\)</span></p>
+</div>
+<div class="enumeratealpha">
+<p>Hallar los intervalos de crecimiento y decrecimiento de <span
+class="math inline">\(f\)</span>.</p>
+<p>Hallar los máximos y mínimos relativos de <span
+class="math inline">\(f\)</span>.</p>
+<p>¿Es el punto <span class="math inline">\(x = 4\)</span> un punto de
+inflexión de <span class="math inline">\(f\)</span>? Justificar
+razonadamente la respuesta.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.68</h1>
+<div class="exercisedb" data-unit="2" data-exnum="68">
+<p>(Junio 2007, A.4, 3 ptos.) Se considera la función <span
+class="math inline">\(f ( x ) = x^2 + m\)</span>, donde <span
+class="math inline">\(m &gt; 0\)</span> es una constante.</p>
+<div class="enumeratealpha">
+<p>Para cada valor de <span class="math inline">\(m\)</span> hallar el
+valor <span class="math inline">\(a&gt;0\)</span> tal que la recta
+tangente a la gráfica de <span class="math inline">\(f\)</span> en el
+punto <span class="math inline">\((a,f(a))\)</span> pase por el origen
+de coordenadas.</p>
+<p>Hallar el valor de <span class="math inline">\(m\)</span> para que la
+recta <span class="math inline">\(y = x\)</span> sea tangente a la
+gráfica de <span class="math inline">\(f ( x )\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.69</h1>
+<div class="exercisedb" data-unit="2" data-exnum="69">
+<p>(Mod. 2004, B.3, 3 ptos.) Se considera la función</p>
+<div class="center">
+<p><span class="math inline">\(f ( x ) = \dfrac{1}{1 + ( \tmop{sen} x
+)^2}\)</span></p>
+</div>
+<div class="enumeratealpha">
+<p>Calcular sus puntos críticos en el intervalo abierto <span
+class="math inline">\(( - \pi, \pi )\)</span>.</p>
+<p>Calcular los extremos relativos y/o absolutos de la función <span
+class="math inline">\(f( x )\)</span> en el intervalo cerrado <span
+class="math inline">\([ - \pi, \pi ]\)</span>.</p>
+<p>Hallar la ecuación de la recta tangente a la gráfica de la función
+<span class="math inline">\(f ( x )\)</span> en el punto <span
+class="math inline">\(( \pi / 4, f ( \pi / 4 ) ) .\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.70</h1>
+<div class="exercisedb" data-unit="2" data-exnum="70">
+<p>(Mod. 2006, B.2, 2 ptos.) Se considera la función:</p>
+<div class="center">
+<p><span class="math inline">\(f ( x ) = \dfrac{1}{2 + \tmop{sen} x -
+\cos x}\)</span></p>
+</div>
+<p>Se pide:</p>
+<div class="enumeratealpha">
+<p>Calcular sus extremos locales y/o globales en el intervalo <span
+class="math inline">\([- \pi, \pi ]\)</span>.</p>
+<p>Comprobar la existencia de, al menos, un punto <span
+class="math inline">\(c\in[-\pi,\pi]\)</span> tal que <span
+class="math inline">\(f&#39;&#39;(c)=0\)</span>. (Sugerencia: utilizar
+el teorema de Rolle). Demostrar que en <span
+class="math inline">\(c\)</span> hay un punto de inflexión.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.71</h1>
+<div class="exercisedb" data-unit="2" data-exnum="71">
+<p>(Junio 2004, B.4, 3 ptos.) Dada la función <span
+class="math inline">\(f ( x ) = 1 - x^2\)</span>, se pide:</p>
+<div class="enumeratealpha">
+<p>Hallar la ecuación de la recta tangente a la gráfica de <span
+class="math inline">\(f\)</span> en el punto <span
+class="math inline">\(P \left( a, f ( a ) \right)\)</span>, donde <span
+class="math inline">\(0 &lt; a &lt; 1\)</span>.</p>
+<p>Hallar los puntos <span class="math inline">\(A\)</span> y <span
+class="math inline">\(B\)</span> en los que la recta hallada en el
+apartado a) corta a los ejes vertical y horizontal, respectivamente.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.72</h1>
+<div class="exercisedb" data-unit="2" data-exnum="72">
+<p>(Junio 2000, A.4, 3 ptos.) Sea <span
+class="math inline">\(f(x)=ax^3+bx^2+cx+d\)</span> un polinomio que
+cumple <span class="math inline">\(f(1)=0\)</span>, <span
+class="math inline">\(f&#39;(0)=2\)</span>, y tiene dos extremos
+relativos para <span class="math inline">\(x=1\)</span> y <span
+class="math inline">\(x=2\)</span>.</p>
+<div class="enumeratealpha">
+<p>Determinar <span class="math inline">\(a\)</span>, <span
+class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span>
+y <span class="math inline">\(d\)</span>.</p>
+<p>¿Son máximos o mínimos los extremos relativos?</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.73</h1>
+<div class="exercisedb" data-unit="2" data-exnum="73">
+<p>(Mod. 2008, A.1, 2 ptos.) Se considera la función <span
+class="math inline">\(f ( x ) =  \dfrac{x}{e^x}\)</span>.</p>
+<div class="enumeratealpha">
+<p>Hallar sus asíntotas y extremos locales.</p>
+<p>Calcular los puntos de inflexión de <span class="math inline">\(f ( x
+)\)</span> y dibujar la gráfica de <span class="math inline">\(f ( x
+)\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.74</h1>
+<div class="exercisedb" data-unit="2" data-exnum="74">
+<p>(Junio 2005, B.3, 3 ptos.) Calcular los límites siguientes:</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(\underset{x \rightarrow \infty}{\lim}
+\left( \sqrt{x^2 + x} - \sqrt{x^2 - x} \right)\)</span></p>
+<p><span class="math inline">\(\underset{x \rightarrow \infty}{\lim} x
+\left[ \tmop{arctg} ( e^x ) - \frac{\pi}{2} \right]\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.75</h1>
+<div class="exercisedb" data-unit="2" data-exnum="75">
+<p>(Septiembre 2005, B.1, 2 ptos.) Dada la función <span
+class="math inline">\(f ( x ) = \ln\dfrac{x^2}{x - 1}\)</span> donde ln
+significa , definida para <span class="math inline">\(x &gt; 1\)</span>,
+hallar un punto <span class="math inline">\(( a, f ( a ) )\)</span> tal
+que la recta tangente a la gráfica de <span class="math inline">\(f ( x
+)\)</span> en ese punto sea paralela al eje OX.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.76</h1>
+<div class="exercisedb" data-unit="2" data-exnum="76">
+<p>(Junio 2003, A.1, 2 ptos.) Calcular los siguientes límites (donde ln
+significa ).</p>
+<div class="enumeratealpha">
+<p><span class="math inline">\(\underset{x \rightarrow 0}{\lim}
+\dfrac{\ln ( \cos ( 3 x ) )}{\ln ( \cos ( 2 x ) )}\)</span></p>
+<p><span class="math inline">\(\underset{x \rightarrow 0}{\lim}
+\dfrac{\sqrt{4 + x} - \sqrt{4 - x}}{4 x}\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.77</h1>
+<div class="exercisedb" data-unit="2" data-exnum="77">
+<p>(Junio 2003, B.3, 3 ptos.)</p>
+<div class="enumeratealpha">
+<p>Dibujar la gráfica de la función <span class="math inline">\(g ( x )
+= e^x - x\)</span>.</p>
+<p>Calcular el dominio de definición de <span class="math inline">\(f (
+x ) = \dfrac{1}{e^x - x}\)</span> y su comportamiento para <span
+class="math inline">\(x \rightarrow \infty\)</span> y <span
+class="math inline">\(x\rightarrow - \infty\)</span>.</p>
+<p>Determinar (si existen) los máximos y mínimos absolutos de <span
+class="math inline">\(f( x )\)</span> en su dominio de definición.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.78</h1>
+<div class="exercisedb" data-unit="2" data-exnum="78">
+<p>(Septiembre 2000, A.2, 2 ptos.) Dados tres números reales
+cualesquiera <span class="math inline">\(r_1\)</span>, <span
+class="math inline">\(r_2\)</span> y <span
+class="math inline">\(r_3\)</span>, hallar el número real <span
+class="math inline">\(x\)</span> que minimiza la función</p>
+<div class="center">
+<p><span class="math inline">\(D ( x ) = ( r_1 - x )^2 + ( r_2 - x )^2 +
+( r_3 - x )^2\)</span></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.79</h1>
+<div class="exercisedb" data-unit="2" data-exnum="79">
+<p>(Septiembre 2001, B.2, 2 ptos.) Sea <span class="math inline">\(P ( x
+)\)</span> un polinomio de grado 4 tal que:</p>
+<div class="enumerateroman">
+<p><span class="math inline">\(P ( x )\)</span> es una función par.</p>
+<p>Dos de sus raíces son <span class="math inline">\(x = 1\)</span>,
+<span class="math inline">\(x = - \sqrt{5}\)</span>.</p>
+<p><span class="math inline">\(P ( 0 ) = 5\)</span>.</p>
+</div>
+<p>Se pide:</p>
+<div class="enumeratealpha">
+<p>Hallar sus puntos de inflexión.</p>
+<p>Dibujar su gráfica.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.80</h1>
+<div class="exercisedb" data-unit="2" data-exnum="80">
+<p>(Septiembre 2005, A.4, 3 ptos.) Dada la función <span
+class="math inline">\(f ( x ) = \dfrac{1}{x}\)</span> se pide:</p>
+<div class="enumeratealpha">
+<p>Hallar la ecuación de la recta tangente a su gráfica en el punto
+<span class="math inline">\(( a, f ( a ) )\)</span>, para <span
+class="math inline">\(a &gt; 0\)</span>.</p>
+<p>Hallar los puntos de corte de la recta tangente hallada en el
+apartado a) con los dos ejes coordenados.</p>
+<p>Hallar el valor de <span class="math inline">\(a &gt; 0\)</span> que
+hace que la distancia entre los dos puntos hallados en b) sea
+mínima.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.81</h1>
+<div class="exercisedb" data-unit="2" data-exnum="81">
+<p>Considera la función <span class="math inline">\(f :\mathbb{R}
+\longrightarrow \mathbb{R}\)</span> definida por</p>
+<div class="center">
+<p><span class="math display">\[f ( x ) = e^{\frac{2 x}{x^2 +
+1}}\]</span></p>
+</div>
+<div class="enumeratealpha">
+<p>Calcula las asíntotas de la gráfica de <span
+class="math inline">\(f\)</span>.</p>
+<p>Determina los intervalos de crecimiento y decrecimiento, y los
+extremos relativos de <span class="math inline">\(f\)</span> (puntos
+donde se obtienen y valor que alcanzan).</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.82</h1>
+<div class="exercisedb" data-unit="2" data-exnum="82">
+<p>Se sabe que</p>
+<div class="center">
+<p><span class="math inline">\(\underset{x \rightarrow 0}{\lim} \dfrac{x
+- \alpha \tmop{sen} x}{x^2}\)</span></p>
+</div>
+<p>es finito. Determina el valor de <span
+class="math inline">\(\alpha\)</span> y calcula el límite.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.83</h1>
+<div class="exercisedb" data-unit="2" data-exnum="83">
+<p>(Junio 2000, B.2, 2 ptos.)</p>
+<div class="enumeratealpha">
+<p>Si es posible, dibujar de forma clara la gráfica de una función
+continua en el intervalo <span class="math inline">\([ 0, 4 ]\)</span>
+que tenga al menos un máximo relativo en el punto <span
+class="math inline">\(( 2, 3 )\)</span> y un mínimo relativo en el punto
+<span class="math inline">\(( 3, 4 )\)</span>.</p>
+<p>Si la función fuera polinómica, ¿cuál ha de ser como mínimo su
+grado?</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.84</h1>
+<div class="exercisedb" data-unit="2" data-exnum="84">
+<p>Calcula <span class="math inline">\(\underset{x \rightarrow 0}{\lim}
+\dfrac{\ln ( 1 + x ) - \tmop{sen} x}{x \cdot \tmop{sen} x}\)</span>.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.85</h1>
+<div class="exercisedb" data-unit="2" data-exnum="85">
+<p>(Septiembre 2012, A.1, 3 puntos) Dada la función <span
+class="math display">\[f(x)=\twpwf{3x+A}{\text{si
+}x\leq3}{-4+10x-x^2}{\text{si }x&gt;3}\]</span></p>
+<div class="enumeratealpha">
+<p>(1 punto) Hallar el valor de <span class="math inline">\(A\)</span>
+para que <span class="math inline">\(f(x)\)</span> sea continua. ¿Es
+derivable, para ese valor de <span class="math inline">\(A\)</span>?</p>
+<p>(1 punto) Hallar los puntos en los que <span
+class="math inline">\(f&#39;(x)=0\)</span>.</p>
+<p>(1 punto) Hallar el máximo absoluto y el mínimo absoluto de <span
+class="math inline">\(f(x)\)</span> en el intervalo <span
+class="math inline">\([4,8]\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.86</h1>
+<div class="exercisedb" data-unit="2" data-exnum="86">
+<p>(Junio 2001, B.2, 2 ptos.)</p>
+<div class="enumeratealpha">
+<p>Determinar los extremos relativos de la función <span
+class="math inline">\(f ( x ) = x^2 - 4 x + 2\)</span>. Dibujar su
+gráfica.</p>
+<p>Hallar las ecuaciones de las dos rectas tangentes a la gráfica de
+<span class="math inline">\(f\)</span> que pasan por el punto <span
+class="math inline">\(P ( 3, - 5 )\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.87</h1>
+<div class="exercisedb" data-unit="2" data-exnum="87">
+<p>(Mod. 2005, B.3, 3 ptos.) Sea la función <span
+class="math inline">\(f ( x ) = \ln ( 1 + x^2 )\)</span>, donde ln
+significa .</p>
+<div class="enumeratealpha">
+<p>Determinar los intervalos de crecimiento y decrecimiento y los
+intervalos de concavidad y convexidad.</p>
+<p>Dibujar la gráfica de la <span class="math inline">\(f\)</span>.</p>
+<p>Calcular las ecuaciones de las rectas tangentes a la gráfica de <span
+class="math inline">\(f\)</span> en sus puntos de inflexión.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.88</h1>
+<div class="exercisedb" data-unit="2" data-exnum="88">
+<p>(Mod. 2006, B.1, 2 ptos.)</p>
+<div class="enumeratealpha">
+<p>Hallar el punto <span class="math inline">\(P\)</span> en el que se
+cortan las gráficas de las funciones:</p>
+<div class="center">
+<p><span class="math inline">\(f ( x ) = \dfrac{2}{x}\)</span> <span
+class="math inline">\(g ( x ) = + \sqrt{x^2 - 3}\)</span></p>
+</div>
+<p>Hallar las ecuaciones de las rectas tangentes en el punto <span
+class="math inline">\(P\)</span> a cada una de las curvas anteriores y
+demostrar que son perpendiculares.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.89</h1>
+<div class="exercisedb" data-unit="2" data-exnum="89">
+<p>(Septiembre 2006, A.2, 2 ptos.)</p>
+<div class="enumeratealpha">
+<p>Calcular los valores de <span class="math inline">\(a\)</span> y
+<span class="math inline">\(b\)</span> para que la función <span
+class="math display">\[f ( x ) = \left\{\begin{array}{ll}
+3 x + 2 &amp; \tmop{si} x &lt; 0\\
+x^2 + 2 a \cos x &amp; \tmop{si} 0 \leqslant x &lt; \pi\\
+a x^2 + b &amp; \tmop{si} x \geqslant \pi
+\end{array}\right.\]</span> sea continua para todo valor de <span
+class="math inline">\(x\)</span>.</p>
+<p>Estudiar la derivabilidad de <span class="math inline">\(f ( x
+)\)</span> para los valores de <span class="math inline">\(a\)</span> y
+<span class="math inline">\(b\)</span> obtenidos en el apartado
+anterior.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.90</h1>
+<div class="exercisedb" data-unit="2" data-exnum="90">
+<p>(Mod. 2003, A.1, 2 ptos.) Determinar los valores de las constantes
+<span class="math inline">\(A\)</span>, <span
+class="math inline">\(B\)</span>, <span class="math inline">\(C\)</span>
+y <span class="math inline">\(D\)</span> para los cuales la gráfica de
+la función real de variable real</p>
+<div class="center">
+<p><span class="math inline">\(f ( x ) = A \tmop{sen} x + B x^2 + C x +
+D\)</span></p>
+</div>
+<p>tiene tangente horizontal en el punto <span class="math inline">\((
+0, 4 )\)</span> y además su derivada segunda es <span
+class="math inline">\(f&#39;&#39; ( x ) = 3 \tmop{sen} x -
+10\)</span>.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.91</h1>
+<div class="exercisedb" data-unit="2" data-exnum="91">
+<p>(Mod. 2005, A.1, 2 ptos.)</p>
+<div class="enumeratealpha">
+<p>Justificar razonadamente que la gráfica de la función <span
+class="math inline">\(f ( x ) = x^{15} + x + 1\)</span> corta al eje OX
+al menos una vez en el intervalo <span class="math inline">\([ - 1, 1
+]\)</span>.</p>
+<p>Determinar razonadamente el número exacto de puntos de corte con el
+eje OX cuando <span class="math inline">\(x\)</span> recorre toda la
+recta real.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.92</h1>
+<div class="exercisedb" data-unit="2" data-exnum="92">
+<p>Sea <span class="math inline">\(f\)</span> la función definida para
+<span class="math inline">\(x \neq 0\)</span> por <span
+class="math inline">\(f ( x ) = \dfrac{x^2 + 1}{x}\)</span>.</p>
+<div class="enumeratealpha">
+<p>Estudia y determina las asíntotas de la gráfica de <span
+class="math inline">\(f\)</span>.</p>
+<p>Determina los intervalos de crecimiento y de decrecimiento de <span
+class="math inline">\(f\)</span> y calcula sus extremos relativos o
+locales (puntos en los que se obtienen y valores que alcanza la
+función).</p>
+<p>Esboza la gráfica de <span class="math inline">\(f\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.93</h1>
+<div class="exercisedb" data-unit="2" data-exnum="93">
+<p>Se sabe que una función <span class="math inline">\(f\)</span> es
+derivable en todos los puntos y además se sabe que <span
+class="math inline">\(f ( 1 ) = 0\)</span> y que <span
+class="math inline">\(f&#39; ( 1 ) = - 2\)</span>. Se considera la
+función <span class="math inline">\(h(x)\)</span> definida por</p>
+<div class="center">
+<p><span class="math inline">\(h ( x ) = e^{f ( x )} + x^2 f ( x ) + ( f
+( x ) )^2\)</span></p>
+</div>
+<p>Calcular razonadamente <span class="math inline">\(h&#39; ( 1
+)\)</span>.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.94</h1>
+<div class="exercisedb" data-unit="2" data-exnum="94">
+<p>Hallar el punto de la curva de ecuación</p>
+<div class="center">
+<p><span class="math inline">\(y = x^3 - 3 x^2 + 6 x - 4\)</span></p>
+</div>
+<p>en el que la tangente a la misma tiene pendiente mínima. Escribir la
+ecuación de dicha tangente.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.95</h1>
+<div class="exercisedb" data-unit="2" data-exnum="95">
+<p>Determina el valor de las constantes <span
+class="math inline">\(c\)</span> y <span
+class="math inline">\(d\)</span> sabiendo que la gráfica de la función
+<span class="math inline">\(f :\mathbb{R} \longrightarrow
+\mathbb{R}\)</span> definida por <span class="math inline">\(f ( x ) =
+x^3 + 3 x^2 + c x + d\)</span> tiene como recta tangente en su punto de
+inflexión a la recta <span class="math inline">\(y = 3 x +
+4\)</span>.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.96</h1>
+<div class="exercisedb" data-unit="2" data-exnum="96">
+<p>Considera la función <span class="math inline">\(f :\mathbb{R}
+\longrightarrow \mathbb{R}\)</span> definida por <span
+class="math display">\[f ( x ) = \left\{\begin{array}{ll}
+3 a x + b &amp; \tmop{si} x \leqslant 0\\
+e^{x ( a x + b )} &amp; \tmop{si} x &gt; 0
+\end{array}\right.\]</span> Determina <span
+class="math inline">\(a\)</span> y <span
+class="math inline">\(b\)</span> sabiendo que <span
+class="math inline">\(f\)</span> es derivable.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.97</h1>
+<div class="exercisedb" data-unit="2" data-exnum="97">
+<p>Estudia la derivabilidad de la función <span class="math inline">\(f
+:\mathbb{R}\longrightarrow \mathbb{R}\)</span> definida por <span
+class="math display">\[f ( x ) = \left\{\begin{array}{ll}
+\dfrac{x}{1 - |x|} &amp; \text{si } x \neq - 1 \text{ y } x \neq 1\\
+0 &amp; \text{si } x = - 1 \text{ o } x = 1
+\end{array}\right.\]</span></p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.98</h1>
+<div class="exercisedb" data-unit="2" data-exnum="98">
+<div class="enumeratealpha">
+<p>Halla la ecuación de la recta tangente a la parábola <span
+class="math inline">\(y = x^2\)</span> que es paralela a la recta <span
+class="math inline">\(- 4 x + y + 3 = 0\)</span>.</p>
+<p>Halla las ecuaciones de las rectas tangentes a la parábola <span
+class="math inline">\(y = x^2\)</span> que pasan por el punto <span
+class="math inline">\(( 2, 0 )\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.99</h1>
+<div class="exercisedb" data-unit="2" data-exnum="99">
+<p>Sea <span class="math inline">\(f ( x ) = x + x e^{- x}\)</span>.
+Calcular la ecuación de la recta tangente a <span
+class="math inline">\(f\)</span> en un punto <span
+class="math inline">\(x\)</span> para el cual dicha recta tangente sea
+paralela a la recta que pasa por los puntos <span
+class="math inline">\(( 1, 1 )\)</span> y <span class="math inline">\((
+3, 3 )\)</span>.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.100</h1>
+<div class="exercisedb" data-unit="2" data-exnum="100">
+<p>De entre todos los rectángulos que tienen uno de sus vértices en el
+origen de coordenadas, el opuesto de este vértice en la curva <span
+class="math inline">\(y = \dfrac{2 x^2}{x^2 - 1}\)</span> (<span
+class="math inline">\(x &gt; 1\)</span>), uno de sus lados situado sobre
+el semieje positivo de abscisas y otro lado sobre el semieje positivo de
+ordenadas, halla el que tiene área mínima.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.101</h1>
+<div class="exercisedb" data-unit="2" data-exnum="101">
+<p>Sea <span class="math inline">\(f :\mathbb{R} \longrightarrow
+\mathbb{R}\)</span> la función definida por <span
+class="math inline">\(f ( x ) = ( x - 1 )^2 e^{- x}\)</span>.</p>
+<div class="enumeratealpha">
+<p>Halla las asíntotas de la gráfica de <span
+class="math inline">\(f\)</span>.</p>
+<p>Determina los intervalos de crecimiento y decrecimiento de <span
+class="math inline">\(f\)</span> y calcula, si existen, sus extremos
+relativos o locales y sus extremos absolutos o globales (puntos en los
+que se obtienen y valores que alcanza la función).</p>
+<p>Esboza la gráfica de <span class="math inline">\(f\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.102</h1>
+<div class="exercisedb" data-unit="2" data-exnum="102">
+<p>Determina los puntos de la parábola de ecuación <span
+class="math inline">\(y = 5 - x^2\)</span> que están más próximos al
+origen de coordenadas. Calcula la distancia entre los puntos obtenidos y
+el origen de coordenas.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.103</h1>
+<div class="exercisedb" data-unit="2" data-exnum="103">
+<p>Sea <span class="math inline">\(f :\mathbb{R} \longrightarrow
+\mathbb{R}\)</span> la función continua definida por <span
+class="math display">\[f ( x ) = \left\{\begin{array}{ll}|2-x| &amp;
+\text{si }x&lt;a\\x^2-5x+7 &amp; \text{si }x\geq
+a\end{array}\right.\]</span> donde <span
+class="math inline">\(a\)</span> es un número real.</p>
+<div class="enumeratealpha">
+<p>Determina <span class="math inline">\(a\)</span>.</p>
+<p>Halla la función derivada de <span
+class="math inline">\(f\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.104</h1>
+<div class="exercisedb" data-unit="2" data-exnum="104">
+<p>Sea <span class="math inline">\(f :\mathbb{R} \longrightarrow
+\mathbb{R}\)</span> la función definida por <span
+class="math inline">\(f ( x ) = \dfrac{5 x + 8}{x^2 + x +
+1}\)</span>.</p>
+<div class="enumeratealpha">
+<p>Calcula los puntos de corte de la gráfica de <span
+class="math inline">\(f\)</span> con los ejes coordenados.</p>
+<p>Halla las asíntotas de la gráfica de <span
+class="math inline">\(f\)</span>.</p>
+<p>Determina los intervalos de crecimiento y decrecimiento de <span
+class="math inline">\(f\)</span> y calcula sus extremos relativos.</p>
+<p>Esboza la gráfica de <span class="math inline">\(f\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.105</h1>
+<div class="exercisedb" data-unit="2" data-exnum="105">
+<p>Demostrar que cualquiera que sea <span
+class="math inline">\(m\)</span> la función polinómica <span
+class="math inline">\(f_m(x)=x^3-3x+m\)</span> no tiene nunca dos raíces
+en <span class="math inline">\([0,1]\)</span> (aplicar el Teorema de
+Rolle).</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.106</h1>
+<div class="exercisedb" data-unit="2" data-exnum="106">
+<p>Demostrar que la gráfica de la función <span
+class="math inline">\(f(x)=x^2-\cos x\)</span> tiene exactamente dos
+puntos de corte con el eje de abscisas (aplicar el Teorema de
+Rolle).</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.107</h1>
+<div class="exercisedb" data-unit="2" data-exnum="107">
+<p>Sea <span class="math inline">\(f ( x )\)</span> una función continua
+y derivable en <span class="math inline">\([ 0, 1 ]\)</span>, tal que
+<span class="math inline">\(f ( x ) \in [ 0, 1 ], \forall x \in [ 0, 1
+]\)</span>, y que cumple <span class="math inline">\(f&#39;( x ) \neq
+1,\forall x \in [ 0, 1 ]\)</span>. ¿En cuántos puntos del intervalo
+<span class="math inline">\([ 0, 1 ]\)</span> se cortan la gráfica de
+<span class="math inline">\(f ( x )\)</span> y la recta <span
+class="math inline">\(y = x\)</span>? (Sugerencia: aplicar el teorema
+del Valor Medio).</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.108</h1>
+<div class="exercisedb" data-unit="2" data-exnum="108">
+<p>Sea <span class="math inline">\(f ( x ) = \dfrac{e^x}{x -
+1}\)</span>.</p>
+<div class="enumeratealpha">
+<p>Halla las asíntotas de la gráfica <span
+class="math inline">\(f\)</span>.</p>
+<p>Determina los intervalos de crecimiento y decrecimiento de <span
+class="math inline">\(f\)</span>.</p>
+<p>Determina los intervalos de concavidad y convexidad de <span
+class="math inline">\(f\)</span>.</p>
+<p>Esboza la gráfica de <span class="math inline">\(f\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.109</h1>
+<div class="exercisedb" data-unit="2" data-exnum="109">
+<p>Sea <span class="math inline">\(f ( x ) = \dfrac{x^2 - 4 x + 3}{x -
+2}\)</span>.</p>
+<div class="enumeratealpha">
+<p>Estudia y determina las asíntotas de <span
+class="math inline">\(f\)</span>.</p>
+<p>Determina los intervalos de crecimiento y decrecimiento de <span
+class="math inline">\(f\)</span>.</p>
+<p>Calcula, si existen, el máximo y el mínimo absolutos de <span
+class="math inline">\(f\)</span> en el intervalo <span
+class="math inline">\([ 0, 2 )\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.110</h1>
+<div class="exercisedb" data-unit="2" data-exnum="110">
+<p>Sea <span class="math inline">\(f ( x ) = 2 - x|x|\)</span>.</p>
+<div class="enumeratealpha">
+<p>Esboza la gráfica de <span class="math inline">\(f\)</span>.</p>
+<p>Estudia la derivabilidad de <span class="math inline">\(f\)</span> en
+<span class="math inline">\(x = 0\)</span>.</p>
+<p>Halla la ecuación de la recta tangente a la gráfica de <span
+class="math inline">\(f\)</span> en el punto de abscisa <span
+class="math inline">\(x = 2\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.111</h1>
+<div class="exercisedb" data-unit="2" data-exnum="111">
+<p>Sea <span class="math inline">\(f ( x ) = x|x - 1|\)</span>.</p>
+<div class="enumeratealpha">
+<p>Halla los extremos y puntos de inflexión de la función <span
+class="math inline">\(f\)</span>.</p>
+<p>Calcula el límite de <span class="math inline">\(f\)</span> en <span
+class="math inline">\(+ \infty\)</span> y en <span
+class="math inline">\(- \infty\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.112</h1>
+<div class="exercisedb" data-unit="2" data-exnum="112">
+<p>Descomponer el número <span class="math inline">\(e\)</span> en dos
+sumandos positivos de forma que la suma de los logaritmos neperianos de
+los sumandos sea máxima.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.113</h1>
+<div class="exercisedb" data-unit="2" data-exnum="113">
+<p>Dada la función <span class="math inline">\(f(x) = \dfrac{\left|x^2 -
+x - 2\right|}{x^2 + 2x + 1}\)</span>, se pide:</p>
+<div class="enumeratealpha">
+<p>(1 punto) Hallar, si existen, las asíntotas de la gráfica de <span
+class="math inline">\(f\)</span>.</p>
+<p>(1,5 puntos) Estudiar los intervalos de crecimiento y decrecimiento y
+calcular, si existen, sus extremos relativos.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.114</h1>
+<div class="exercisedb" data-unit="2" data-exnum="114">
+<p>(Ordinaria 2020, B.2, 2.5 puntos) Sea la función: <span
+class="math display">\[f(x) = \left\{\begin{array}{ll} (x-1)^2 &amp;
+\text{si } x \leq 1 \\ (x-1)^3 &amp; \text{si } x &gt; 1
+\end{array}\right.\]</span></p>
+<div class="enumeratealpha">
+<p>(0.5 puntos) Estudie su continuidad en <span
+class="math inline">\([-4,4]\)</span>.</p>
+<p>(1 punto) Analice su derivabilidad y crecimiento en <span
+class="math inline">\([-4,4]\)</span>.</p>
+<p>(1 punto) Determine si la función <span
+class="math inline">\(g(x)=f&#39;(x)\)</span> está definida, es continua
+y derivable en <span class="math inline">\(x=1\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.115</h1>
+<div class="exercisedb" data-unit="2" data-exnum="115">
+<p>Dada la función real de variable real <span
+class="math inline">\(f(x) = x - \dfrac{4}{(x-1)^2}\)</span>:</p>
+<div class="enumeratealpha">
+<p>(0,75 puntos) Hallar el dominio de definición de <span
+class="math inline">\(f(x)\)</span> y determinar, en el caso de que
+existan, las ecuaciones de las asíntotas de su gráfica.</p>
+<p>(1 punto) Determinar los extremos relativos de la función, así como
+sus intervalos de crecimiento y decrecimiento.</p>
+<p>(0.75 puntos) Calcular la ecuación de una recta tangente a la gráfica
+de <span class="math inline">\(f(x)\)</span> que sea paralela a la recta
+de ecuación <span class="math inline">\(9x - 8y = 6\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.116</h1>
+<div class="exercisedb mid" data-unit="2" data-exnum="116">
+<p>Un equipo de ingenieros realiza pruebas de consumo de un nuevo
+vehículo híbrido. El gasto en combustible por cada 100 kilómetros en
+función de la velocidad, medida en decenas de kilómetros por hora, es:
+<span class="math display">\[c(v) = \twpwf{\dfrac{5v}{3}}{0 \leq v &lt;
+3}{14 - 4v + \dfrac{v^2}{3}}{v \geq 3}\]</span></p>
+<div class="enumeratealpha">
+<p>(1 punto) Si en una primera prueba el vehículo tiene que circular a
+más de 3 decenas de kilómetros por hora, ¿a qué velocidad debe ir el
+vehículo para obtener un consumo mínimo?</p>
+<p>(1,5 puntos) Si en otra prueba el vehículo debe circular a una
+velocidad <span class="math inline">\(v\)</span> tal que <span
+class="math inline">\(1 \leq v \leq 8\)</span>, ¿cuáles serán el máximo
+y el mínimo consumo posibles del vehículo?</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.117</h1>
+<div class="exercisedb long" data-unit="2" data-exnum="117">
+<p>El modelo logístico es un modelo matemático utilizado para describir
+la evolución de una población a lo largo del tiempo, cuando los recursos
+son limitados. Es uno de los modelos matemáticos más comunes en viología
+y describe cómo la población se estabiliza cuando alcanza la capacidad
+de carga del entrono, esto es, el tamaño máximo que puede alcanzar una
+población antes de que los recursos se vuelva insuficientes, lo que
+genera competencia y, en muchos casos, una desaceleración de la tasa de
+crecimiento o una crisis en la población.</p>
+<p>Un ejemplo de modelo logístico lo encontramos en las colonias de
+hormigas, que están compuestas por una red de túneles, entradas, cámaras
+de cría y áreas de almacenamiento, donde las hormigas establecen su
+hábitar.</p>
+<p>Un grupo dei nvestigadores ha estudiado el momento en el que unas
+hormigas forman una nueva colonia y ha modelizado el número de hormigas
+(<span class="math inline">\(H(t)\)</span>) después de <span
+class="math inline">\(t\)</span> meses con la función: <span
+class="math display">\[H(t) = \dfrac{6400}{1 + 159
+e^{-0.5t}}\]</span></p>
+<div class="enumeratealpha">
+<p>¿Cuántas hormigas formaron la nueva colonia inicialmente?</p>
+<p>¿Cuál es la tasa media de crecimiento del primer año? ¿Y el segundo
+año? Interpretar el resultado.</p>
+<p>¿Un observador afirma que el modelo siempre es creciente y entiende
+que la población de hormigas crece sin control. Justificar
+matemáticamente si esta afirmación es correcta o no.</p>
+<p>¿En qué momento la colonia de hormigas alcanzará la mitad de su
+capacidad de carga?</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.118</h1>
+<div class="exercisedb long" data-unit="2" data-exnum="118">
+<p>En un hospital, un equipo de investigación está analizando cómo se
+metaboliza en sangre un nuevo medicameto llamado Metabolix, utilizado
+para tratar infecciones bacterianas. La concentración residual del
+fármaco en el plasma sanguíneo, denotada como <span
+class="math inline">\(f(x)\)</span> (medida en miligramos por litro,
+<span class="math inline">\(mg/l\)</span>), depende del tiempo
+transcurrido <span class="math inline">\(x\)</span> (en horas) desde su
+administración. El estudio indica que el medicamento sigue dos fases
+diferenciadas. Fase de absorción: en las primeras dos horas, el fármaco
+se distribuye por el organismo. Fase de eliminación: a partir de la
+segunda hora, el fármaco empieza a eliminarse.</p>
+<p>Este comportamiento se modeliza mediante la siguiente función
+matemática: <span class="math display">\[f(x) = \twpwf{x^2 - 6x + 11}{0
+\leq x &lt; 2}{\dfrac{9}{\sqrt{5x - 1}}}{x \geq 2}\]</span> El equipo de
+investigación necesita aclarar algunas dudas sobre el modelo
+matemático:</p>
+<div class="enumeratealpha">
+<p>Confirmar si este modelo es realmente continuo.</p>
+<p>La concentración residual varía con el tiempo. Comprobar que la
+velocidad instantánea de crecimiento de la concentración residual a las
+3 horas de administrar Metabolix es mayor que <span
+class="math inline">\(-0.5\ mg/l/h\)</span>.</p>
+<p>¿Es cierto que la concentración residual del fármaco en la sangre
+siempre va disminuyendo con respecto al tiempo transcurrido? Averiguar
+en qué instante la concentración residual es máxima y calcular el valor
+de dicha concentración.</p>
+<p>Pasado un largo periodo de tiempo, ¿cuál será la concentración
+residual de este medicamento?</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.119</h1>
+<div class="exercisedb" data-unit="2" data-exnum="119">
+<p>Dada la función <span class="math inline">\(f(x) =
+\dfrac{x^3-1}{x^2-1}\)</span>, se pide:</p>
+<div class="enumeratealpha">
+<p>(1,25 puntos) Hallar su dominio y estudiar las asíntotas de su
+gráfica.</p>
+<p>(0,75 puntos) Calcular la recta tangente a la gráfica de <span
+class="math inline">\(f\)</span> en el punto <span
+class="math inline">\((2,7/3)\)</span>.</p>
+<p>(0,5 puntos) Encontrar, si es posible, algún punto <span
+class="math inline">\(x_0\)</span> tal que la pendiente de la recta
+tangente a la gráfica de <span class="math inline">\(f\)</span> en el
+punto <span class="math inline">\(\left( x_0,f(x_0) \right)\)</span> sea
+1.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.120</h1>
+<div class="exercisedb" data-unit="2" data-exnum="120">
+<div class="enumeratealpha">
+<p>(1 punto) Proponga un ejemplo de función polinómica de grado 2 cuya
+gráfica sea tangente a la recta <span class="math inline">\(y=x\)</span>
+en el punto <span class="math inline">\((0,0)\)</span>.</p>
+<p>(1 punto) Proponga un ejemplo de función polinómica de grado 2 que
+tenga un máximo relativo en el punto <span
+class="math inline">\((1,1)\)</span>.</p>
+<p>(0,5 puntos) Justifique si una función polinómica de grado 2 puede
+tener dos extremos relativos en <span
+class="math inline">\(\mathbb{R}\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.121</h1>
+<div class="exercisedb" data-unit="2" data-exnum="121">
+<div class="enumeratealpha">
+<p>(0,5 puntos) Escriba un ejemplo de una función polinómica de grado 3
+cuya gráfica corte al eje de abscisas en <span class="math inline">\(x =
+0\)</span>, <span class="math inline">\(x=1\)</span> y <span
+class="math inline">\(x=2\)</span>. Escriba también un ejemplo de una
+función polinómica de grado 3 cuya gráfica corte al eje de abscisas solo
+en los puntos <span class="math inline">\(x=1\)</span> y <span
+class="math inline">\(x=0\)</span>.</p>
+<p>(1 punto) Escxriba un ejemplo de una función polinómica de grado 3
+que tenga un máximo relativo en el punto <span
+class="math inline">\((0,0)\)</span> y un mínimo relativo en el punto
+<span class="math inline">\((1,-1)\)</span>.</p>
+<p>(1 punto) Justifique si la gráfica de una función polinómica de grado
+3 puede no cortar al eje de las abscisas.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.122</h1>
+<div class="exercisedb" data-unit="2" data-exnum="122">
+<p>Un agricultor dispone de 120 metros de valla para delimitar una
+parcela con forma de pentágono. Los vértices del pentagono se nombrarán
+consecutivamente como <span class="math inline">\(A\)</span>, <span
+class="math inline">\(B\)</span>, <span
+class="math inline">\(C\)</span>, <span class="math inline">\(D\)</span>
+y <span class="math inline">\(E\)</span>. Se sabe que <span
+class="math inline">\(A\)</span>, <span
+class="math inline">\(B\)</span>, <span class="math inline">\(D\)</span>
+y <span class="math inline">\(E\)</span> forman un rectángulo, y que el
+punto <span class="math inline">\(C\)</span> se encuentra en el exterior
+de este rectángulo, formando un triángulo equilatero con los puntos
+<span class="math inline">\(B\)</span> y <span
+class="math inline">\(D\)</span>. ¿A qué distancia del vértice <span
+class="math inline">\(A\)</span> el agricultor debe ubicar los vértices
+<span class="math inline">\(B\)</span> y <span
+class="math inline">\(E\)</span> si quiere que la parecela tenga la
+mayor área posible?</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.123</h1>
+<div class="exercisedb" data-unit="2" data-exnum="123">
+<p>Para la función <span class="math inline">\(f(x) =
+\sqrt{x^2+3x}\)</span>, se pide:</p>
+<div class="enumeratealpha">
+<p>(0,75 puntos) Determinar su dominio y estudiar su paridad.</p>
+<p>(1 punto) Calcular los límites: <span
+class="math inline">\(\limite{x}{-\infty}{\dfrac{f(x)}{x}}\)</span> y
+<span class="math inline">\(\limite{x}{-\infty}{\left( f(x) + x
+\right)}\)</span>.</p>
+<p>(0,75 puntos) Determinar la ecuación de la recta tangente a la
+gráfica de <span class="math inline">\(f(x)\)</span> para <span
+class="math inline">\(x = 1\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.124</h1>
+<div class="exercisedb mid" data-unit="2" data-exnum="124">
+<p>Un ayuntamiento ha dividido en parcelas parte del terreno municipal
+no urbanizable y lo ha cedido a los vecinos para su cultivo. Uno de los
+vecinos ha decidido que en su parcela asignada utilizará como huerto una
+zona rectangular de 72 metros cuadrados, dejando el resto para plantar
+frutales e instalar una caseta donde guardar las herramientas
+necesarias. La zona de huerto estará dividida en dos partes: la parte
+dedicada al cultivo de horatalizas será un rectángulo interior separado
+de los lados que delimitan el huerto. La separación será de medio metro
+entre cada uno de los lados de mayor longitud y un metro entre cada uno
+de los lados de menor longitud. La franja que delimita la zona de
+hortalizas la dedicará al cultivo de flores y plantas aromáticas.</p>
+<div class="enumeratealpha">
+<p>(2 puntos) Calcule las dimensiones del huerto para que el área de la
+zona para el cultivo de hortalizas sea máxima.</p>
+<p>(0,5 puntos) Calcule el área de la zona de cultivo de hortalizas.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.125</h1>
+<div class="exercisedb" data-unit="2" data-exnum="125">
+<p>Dada la función <span class="math inline">\(f(x) = \sqrt[3]{\left(
+x^2 - 1 \right)^2}\)</span> se pide:</p>
+<div class="enumeratealpha">
+<p>(0,25 puntos) Estudiar si es par o impar.</p>
+<p>(0,75 puntos) Estudiar su derivabilidad en el punto <span
+class="math inline">\(x = 1\)</span>.</p>
+<p>(1,5 puntos) Estudiar sus extremos relativos y absolutos.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.126</h1>
+<div class="exercisedb" data-unit="2" data-exnum="126">
+<p>Sean las funciones <span class="math inline">\(f(x) = \dfrac{e}{e^x -
+e}\)</span> y <span class="math inline">\(g(x) = \dfrac{1}{x -
+1}\)</span>,</p>
+<div class="enumeratealpha">
+<p>(1 punto) Calcule el límite <span
+class="math inline">\(\displaystyle\lim_{x \to 1} \left( f(x) - g(x)
+\right)\)</span>.</p>
+<p>(0.75 puntos) Estudie el crecimiento y decrecimiento de <span
+class="math inline">\(f(x)\)</span> en su dominio.</p>
+<p>(0.75 puntos) Estudie las asíntotas de la función <span
+class="math inline">\(g(x) + g(-x)\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.127</h1>
+<div class="exercisedb" data-unit="2" data-exnum="127">
+<p>Sea la función: <span class="math display">\[f(x) = \left\{
+\begin{array}{ll}
+\frac{1}{2}(-8 + \cos x) &amp; \text{si } 0 \leq x &lt; \frac{\pi}{2} \\
+a \sin x + 4 &amp; \text{si } \frac{\pi}{2} \leq x &lt; \pi \\
+2 \sin(2x) + b &amp; \text{si } \pi \leq x &lt; 2\pi
+\end{array}
+\right.\]</span></p>
+<div class="enumeratealpha">
+<p>(1 punto) Halle los valores de <span class="math inline">\(a\)</span>
+y <span class="math inline">\(b\)</span> para que se verifiquen las
+hipótesis del Teorema de Bolzano en <span class="math inline">\([0,
+2\pi]\)</span>.</p>
+<p>(1 punto) Justifique razonadamente que la función <span
+class="math inline">\(f(x)\)</span> tiene una única raíz en el intervalo
+<span class="math inline">\((0,2\pi)\)</span> y calcule dicha raíz.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.128</h1>
+<div class="exercisedb" data-unit="2" data-exnum="128">
+<p>Se considera la función <span class="math inline">\(f(x) = \left\{
+\begin{array}{ll}
+\dfrac{\ln \left( x^2 + 1 \right)}{x} &amp; \text{si } x \neq 0 \\
+0 &amp; \text{si } x = 0
+\end{array}
+\right.\)</span></p>
+<div class="enumeratealpha">
+<p>(1 punto) Determinar si <span class="math inline">\(f(x)\)</span> es
+continua en todo <span class="math inline">\(\mathbb{R}\)</span>.</p>
+<p>(1 punto) Determinar si <span class="math inline">\(f(x)\)</span> es
+derivable en el punto <span class="math inline">\(x=0\)</span> y, si
+existe, calcular la ecuación de la recta tangente a la gráfica de <span
+class="math inline">\(f(x)\)</span> para <span
+class="math inline">\(x=0\)</span>.</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.129</h1>
+<div class="exercisedb" data-unit="2" data-exnum="129">
+<p>Se quiere enlosaar un jardín con forma de triángulo rectángulo de
+catetos <span class="math inline">\(42\)</span> m y <span
+class="math inline">\(56\)</span> m. Dentro del jardín se va a
+diferenciar un espacio rectangular techado de forma que dos de sus lados
+sean paralelos a los catetos del triángulo, un vértice coincida con el
+vértice del ángulo recto del triángulo y el vértice opuesto esté sobre
+su hipotenusa.</p>
+<p>Alicatar la parte cubierta cuesta <span
+class="math inline">\(30\)</span> €/m<sup>2</sup> y la parte no techada,
+<span class="math inline">\(50\)</span> €/m<sup>2</sup> pues las
+baldosas llevan un tratamiento especial resistente al agua. Calcule las
+dimensiones de la parte techada que hacen que el coste de instalar el
+suelo en el jardín sea mínimo.</p>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.130</h1>
+<div class="exercisedb" data-unit="2" data-exnum="130">
+<p>Sea la función <span class="math inline">\(f(x) = \left\{
+\begin{array}{ll}
+3x^2 - \sin(ax) + b &amp; \text{si } x &lt; 0 \\
+\dfrac{2e^x}{1 + x^2} &amp; \text{si } x \geq 0
+\end{array}
+\right.\)</span>.</p>
+<ol>
+<li><p>(1 punto) Calcule los valores de <span
+class="math inline">\(a\)</span> y <span
+class="math inline">\(b\)</span> para que la función sea continua y
+derivable en <span class="math inline">\(x=0\)</span>.</p></li>
+<li><p>(1 punto) Halle la ecuación de la recta tangente a la gráfica de
+la función en el punto de abscisa <span
+class="math inline">\(x=2\)</span>.</p></li>
+</ol>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.131</h1>
+<div class="exercisedb" data-unit="2" data-exnum="131">
+<p>Sea la función <span class="math inline">\(f(x) = x^2 +
+bx\)</span>.</p>
+<ol>
+<li><p>(1 punto) Determine los valores de <span
+class="math inline">\(b\)</span> para que la recta <span
+class="math inline">\(y = x - 1\)</span> sea tangente a la gráfica de la
+función <span class="math inline">\(f(x)\)</span>.</p></li>
+<li><p>(1 punto) ¿Es cierto que para cualquier valor de <span
+class="math inline">\(b\)</span> existe una recta tangente a la gráfica
+de la función <span class="math inline">\(f(x)\)</span> que sea paralela
+a la recta <span class="math inline">\(y = x - 1\)</span>? Justifique la
+respuesta.</p></li>
+</ol>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.132</h1>
+<div class="exercisedb" data-unit="2" data-exnum="132">
+<p>Calcule los límites siguientes:</p>
+<ol>
+<li><p>(1 punto) <span class="math inline">\(\displaystyle\lim_{x \to
+\infty} \left( \sqrt{x^2 + 3x} - x \right))\)</span>.</p></li>
+<li><p>(1 punto) <span class="math inline">\(\displaystyle\lim_{x \to 0}
+\dfrac{e^{3x} - 1}{\ln(1 + 2x)}\)</span>.</p></li>
+</ol>
+</div>
+</section>
+<section class="slide level1">
+<h1>Exercise 2.133</h1>
+<div class="exercisedb" data-unit="2" data-exnum="133">
+<p>Sea la función <span class="math display">\[f(x) = \dfrac{x}{\ln
+x}\]</span> Halle el dominio, los intervalos de crecimiento y
+decrecimiento, los extremos relativos con sus correspondientes
+valores.</p>
+</div>
+</section>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/math/math.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/zoom/zoom.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      center: false,
+      width: 1100,
+
+      // --- MathJax 3 config ---
+      // Add every custom \newcommand from your LaTeX preamble here, in the
+      // same "macros" object, so slide math renders identically to your
+      // PDF output. Syntax: name: [replacement, numArgs] or just a string
+      // for zero-argument macros.
+      mathjax3: {
+        loader: { load: ['[tex]/color'] },
+        tex: {
+          packages: { '[+]': ['color'] },
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          macros: {
+            R: '\\mathbb{R}',
+            Z: '\\mathbb{Z}',
+            N: '\\mathbb{N}',
+            dd: '\\mathrm{d}',
+            matriz: ['{\\displaystyle\\left(\\begin{array}{#1}#2\\end{array}\\right)}', 2],
+            deter: ['{\\displaystyle\\left|\\begin{array}{#1}#2\\end{array}\\right|}', 2],
+            limite: ['{\\displaystyle\\lim_{#1\\rightarrow #2}#3}', 3],
+            tmop: ['{\\operatorname{#1}}', 1],
+            rg: '{\\operatorname{rg}}',
+            dom: '{\\operatorname{dom}}',
+            sen: '\\sin',
+            tg: '\\tan',
+            arctg: '\\arctan',
+            arcsen: '\\arcsin',
+            cotg: '{\\operatorname{cotg}}',
+            cosec: '{\\operatorname{cosec}}',
+            pwf: ['{\\displaystyle\\left\\{\begin{array}{ll} {#1} \\end{array}\\right.', 1],
+            twpwf: ['{\\displaystyle\\left\\{\\begin{array}{ll}{#1},&{#2}\\\\{#3},&{#4}\\end{array}\\right.}', 4],
+            thpwf: ['{\\displaystyle\\left\\{\\begin{array}{ll}{#1},&{#2}\\\\{#3},&{#4}\\\\{#5},&{#6}\\end{array}\\right.}', 6]
+            // add the rest of your preamble's \newcommand definitions here
+          }
+        }
+      },
+
+      plugins: [ RevealMath.MathJax3, RevealNotes, RevealZoom ]
+    });
+  </script>
+</body>
+</html>
